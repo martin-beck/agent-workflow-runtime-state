@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**45 ARs tracked** across 3 active status categories.
+**45 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 32 |
+| **Done** | Accepted, integrated, and durably verified | 33 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -64,7 +64,7 @@ flowchart LR
         AR_0034["AR-0034 - Planned"]:::status_planned
         AR_0035["AR-0035 - Planned"]:::status_planned
         AR_0036["AR-0036 - Planned"]:::status_planned
-        AR_0037["AR-0037 - In progress"]:::status_in_progress
+        AR_0037["AR-0037 - Done"]:::status_done
         AR_0038["AR-0038 - Planned"]:::status_planned
         AR_0039["AR-0039 - Planned"]:::status_planned
         AR_0040["AR-0040 - Planned"]:::status_planned
@@ -251,12 +251,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | awr-worker-0037 | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. |
-
 ### Planned (12)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -274,7 +268,7 @@ flowchart LR
 | P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | Unclaimed | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Unclaimed | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |
 
-### Done (32)
+### Done (33)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -310,3 +304,4 @@ flowchart LR
 | P1 | [AR-0030](tasks/AR-0030.md): Live admission, lease, and session bootstrap | Unclaimed | Start real revision-bound runtime sessions from Coordinator admission, claims, leases, and isolated worktree records. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0031](tasks/AR-0031.md): Host supervisor and enforcement integration | Unclaimed | Connect supervisor, capability, worktree, resource, timeout, and process controls to real host enforcement. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0032](tasks/AR-0032.md): Live adapter execution harness | Unclaimed | Provide the bounded process transport and normalized event harness used by live provider adapters. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Unclaimed | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. |

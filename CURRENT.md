@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. | awr-worker-0037 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -62,3 +56,4 @@ Never edit this file directly.
 | P1 | [AR-0030](tasks/AR-0030.md): Live admission, lease, and session bootstrap | Start real revision-bound runtime sessions from Coordinator admission, claims, leases, and isolated worktree records. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0031](tasks/AR-0031.md): Host supervisor and enforcement integration | Connect supervisor, capability, worktree, resource, timeout, and process controls to real host enforcement. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0032](tasks/AR-0032.md): Live adapter execution harness | Provide the bounded process transport and normalized event harness used by live provider adapters. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. | - |

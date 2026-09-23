@@ -62,6 +62,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0052` | `feature/ar-0052` | `875c2bb4cfb7` | 0 | behind 0, ahead 95 |
 | `agent-workflow-runtime-0053` | `feature/ar-0053` | `38d4c32fc6bc` | 0 | behind 0, ahead 99 |
 | `agent-workflow-runtime-0054` | `feature/ar-0054` | `feba5149c766` | 0 | behind 0, ahead 103 |
-| `agent-workflow-runtime-0055` | `feature/ar-0055` | `7dcaf68e0463` | 2 | behind 0, ahead 109 |
-| changed files | - | - | - | `README.md`, `specifications/README.md` |
-| `agent-workflow-runtime-0056` | `feature/ar-0056` | `464596a20315` | 0 | behind 0, ahead 110 |
+| `agent-workflow-runtime-0055` | `feature/ar-0055` | `7dcaf68e0463` | 0 | behind 0, ahead 109 |
+| `agent-workflow-runtime-0056` | `feature/ar-0056` | `b7a4d41c1a36` | 0 | behind 0, ahead 111 |

@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. | awr-worker-0039 |
 | P1 | [AR-0041](tasks/AR-0041.md): Live performance and reliability qualification harness | Measure real latency, throughput, recovery, resource use, and failure behavior under controlled workloads. | Write and check the versioned specification, then implement only after review. | awr-worker-0041 |
 | P1 | [AR-0042](tasks/AR-0042.md): Live security, privacy, and supply-chain enforcement | Enforce secrets, least privilege, dependency provenance, redaction, public evidence, and hostile-boundary controls on live paths. | Write and check the versioned specification, then implement only after review. | awr-worker-0042 |
 
@@ -61,4 +60,5 @@ Never edit this file directly.
 | P1 | [AR-0036](tasks/AR-0036.md): Durable journal, checkpoint, and recovery integration | Persist privacy-safe events and checkpoints and recover real interrupted sessions with fencing and replay protection. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0038](tasks/AR-0038.md): AWG live oracle transport and decision binding | Submit uncertainty to AWG, receive revision-bound decisions and guidance, and resume safely. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. | - |

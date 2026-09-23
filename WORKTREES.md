@@ -29,5 +29,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0022` | `feature/ar-0022` | `d1c27fdf21ef` | 0 | behind 0, ahead 41 |
 | `agent-workflow-runtime-0023` | `feature/ar-0023` | `43987fdd5a74` | 0 | behind 0, ahead 45 |
 | `agent-workflow-runtime-0025` | `feature/ar-0025` | `5a70e0df213b` | 0 | behind 0, ahead 45 |
-| `agent-workflow-runtime-0026` | `feature/ar-0026` | `e45d0fba75e4` | 8 | behind 0, ahead 44 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `specifications/README.md`, `scripts/check_performance_reliability.py`, `scripts/performance_reliability.py`, `specifications/fixtures/performance-reliability-ar0026-v1.json`, `specifications/performance-reliability-qualification-v1.json`, `tests/test_performance_reliability.py` |
+| `agent-workflow-runtime-0026` | `feature/ar-0026` | `b9d5d65a19d7` | 0 | behind 0, ahead 45 |

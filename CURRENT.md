@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0031](tasks/AR-0031.md): Host supervisor and enforcement integration | Connect supervisor, capability, worktree, resource, timeout, and process controls to real host enforcement. | Write and check the versioned specification, then implement only after review. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0032](tasks/AR-0032.md): Live adapter execution harness | Provide the bounded process transport and normalized event harness used by live provider adapters. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0033](tasks/AR-0033.md): Codex live provider adapter | Implement and qualify live Codex-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0034](tasks/AR-0034.md): OpenCode live provider adapter | Implement and qualify live OpenCode-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | - |

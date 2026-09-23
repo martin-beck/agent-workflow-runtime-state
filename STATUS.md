@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 1 active status categories.
+**45 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 17 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 28 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -56,6 +56,23 @@ flowchart LR
         AR_0026["AR-0026 - Done"]:::status_done
         AR_0027["AR-0027 - Done"]:::status_done
         AR_0028["AR-0028 - Done"]:::status_done
+        AR_0029["AR-0029 - Planned"]:::status_planned
+        AR_0030["AR-0030 - Planned"]:::status_planned
+        AR_0031["AR-0031 - Planned"]:::status_planned
+        AR_0032["AR-0032 - Planned"]:::status_planned
+        AR_0033["AR-0033 - Planned"]:::status_planned
+        AR_0034["AR-0034 - Planned"]:::status_planned
+        AR_0035["AR-0035 - Planned"]:::status_planned
+        AR_0036["AR-0036 - Planned"]:::status_planned
+        AR_0037["AR-0037 - Planned"]:::status_planned
+        AR_0038["AR-0038 - Planned"]:::status_planned
+        AR_0039["AR-0039 - Planned"]:::status_planned
+        AR_0040["AR-0040 - Planned"]:::status_planned
+        AR_0041["AR-0041 - Planned"]:::status_planned
+        AR_0042["AR-0042 - Planned"]:::status_planned
+        AR_0043["AR-0043 - Planned"]:::status_planned
+        AR_0044["AR-0044 - Planned"]:::status_planned
+        AR_0045["AR-0045 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -129,6 +146,49 @@ flowchart LR
     AR_0025 --> AR_0027
     AR_0026 --> AR_0027
     AR_0027 --> AR_0028
+    AR_0028 --> AR_0029
+    AR_0029 --> AR_0030
+    AR_0029 --> AR_0036
+    AR_0029 --> AR_0037
+    AR_0029 --> AR_0038
+    AR_0029 --> AR_0039
+    AR_0029 --> AR_0040
+    AR_0030 --> AR_0031
+    AR_0030 --> AR_0032
+    AR_0030 --> AR_0037
+    AR_0030 --> AR_0040
+    AR_0031 --> AR_0036
+    AR_0031 --> AR_0041
+    AR_0031 --> AR_0042
+    AR_0032 --> AR_0033
+    AR_0032 --> AR_0034
+    AR_0032 --> AR_0035
+    AR_0033 --> AR_0041
+    AR_0033 --> AR_0043
+    AR_0034 --> AR_0041
+    AR_0034 --> AR_0043
+    AR_0035 --> AR_0041
+    AR_0035 --> AR_0043
+    AR_0036 --> AR_0041
+    AR_0036 --> AR_0042
+    AR_0036 --> AR_0043
+    AR_0037 --> AR_0038
+    AR_0037 --> AR_0040
+    AR_0037 --> AR_0042
+    AR_0037 --> AR_0043
+    AR_0038 --> AR_0039
+    AR_0038 --> AR_0043
+    AR_0039 --> AR_0043
+    AR_0040 --> AR_0042
+    AR_0040 --> AR_0043
+    AR_0040 --> AR_0045
+    AR_0041 --> AR_0044
+    AR_0041 --> AR_0045
+    AR_0042 --> AR_0043
+    AR_0042 --> AR_0045
+    AR_0043 --> AR_0044
+    AR_0043 --> AR_0045
+    AR_0044 --> AR_0045
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -170,9 +230,48 @@ flowchart LR
 | [AR-0025](tasks/AR-0025.md) | [AR-0008](tasks/AR-0008.md), [AR-0019](tasks/AR-0019.md), [AR-0021](tasks/AR-0021.md) | [AR-0027](tasks/AR-0027.md) |
 | [AR-0026](tasks/AR-0026.md) | [AR-0006](tasks/AR-0006.md), [AR-0018](tasks/AR-0018.md), [AR-0022](tasks/AR-0022.md) | [AR-0027](tasks/AR-0027.md) |
 | [AR-0027](tasks/AR-0027.md) | [AR-0023](tasks/AR-0023.md), [AR-0024](tasks/AR-0024.md), [AR-0025](tasks/AR-0025.md), [AR-0026](tasks/AR-0026.md) | [AR-0028](tasks/AR-0028.md) |
-| [AR-0028](tasks/AR-0028.md) | [AR-0027](tasks/AR-0027.md) | None |
+| [AR-0028](tasks/AR-0028.md) | [AR-0027](tasks/AR-0027.md) | [AR-0029](tasks/AR-0029.md) |
+| [AR-0029](tasks/AR-0029.md) | [AR-0028](tasks/AR-0028.md) | [AR-0030](tasks/AR-0030.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md) |
+| [AR-0030](tasks/AR-0030.md) | [AR-0029](tasks/AR-0029.md) | [AR-0031](tasks/AR-0031.md), [AR-0032](tasks/AR-0032.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md) |
+| [AR-0031](tasks/AR-0031.md) | [AR-0030](tasks/AR-0030.md) | [AR-0036](tasks/AR-0036.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md) |
+| [AR-0032](tasks/AR-0032.md) | [AR-0030](tasks/AR-0030.md) | [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md) |
+| [AR-0033](tasks/AR-0033.md) | [AR-0032](tasks/AR-0032.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0034](tasks/AR-0034.md) | [AR-0032](tasks/AR-0032.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0035](tasks/AR-0035.md) | [AR-0032](tasks/AR-0032.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0036](tasks/AR-0036.md) | [AR-0029](tasks/AR-0029.md), [AR-0031](tasks/AR-0031.md) | [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0037](tasks/AR-0037.md) | [AR-0029](tasks/AR-0029.md), [AR-0030](tasks/AR-0030.md) | [AR-0038](tasks/AR-0038.md), [AR-0040](tasks/AR-0040.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0038](tasks/AR-0038.md) | [AR-0029](tasks/AR-0029.md), [AR-0037](tasks/AR-0037.md) | [AR-0039](tasks/AR-0039.md), [AR-0043](tasks/AR-0043.md) |
+| [AR-0039](tasks/AR-0039.md) | [AR-0029](tasks/AR-0029.md), [AR-0038](tasks/AR-0038.md) | [AR-0043](tasks/AR-0043.md) |
+| [AR-0040](tasks/AR-0040.md) | [AR-0029](tasks/AR-0029.md), [AR-0030](tasks/AR-0030.md), [AR-0037](tasks/AR-0037.md) | [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0045](tasks/AR-0045.md) |
+| [AR-0041](tasks/AR-0041.md) | [AR-0031](tasks/AR-0031.md), [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md), [AR-0036](tasks/AR-0036.md) | [AR-0044](tasks/AR-0044.md), [AR-0045](tasks/AR-0045.md) |
+| [AR-0042](tasks/AR-0042.md) | [AR-0031](tasks/AR-0031.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md) | [AR-0043](tasks/AR-0043.md), [AR-0045](tasks/AR-0045.md) |
+| [AR-0043](tasks/AR-0043.md) | [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md), [AR-0042](tasks/AR-0042.md) | [AR-0044](tasks/AR-0044.md), [AR-0045](tasks/AR-0045.md) |
+| [AR-0044](tasks/AR-0044.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) | [AR-0045](tasks/AR-0045.md) |
+| [AR-0045](tasks/AR-0045.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0044](tasks/AR-0044.md) | None |
 
 ## Complete AR inventory
+
+### Planned (17)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | Unclaimed | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0030](tasks/AR-0030.md): Live admission, lease, and session bootstrap | Unclaimed | Start real revision-bound runtime sessions from Coordinator admission, claims, leases, and isolated worktree records. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0031](tasks/AR-0031.md): Host supervisor and enforcement integration | Unclaimed | Connect supervisor, capability, worktree, resource, timeout, and process controls to real host enforcement. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0032](tasks/AR-0032.md): Live adapter execution harness | Unclaimed | Provide the bounded process transport and normalized event harness used by live provider adapters. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0033](tasks/AR-0033.md): Codex live provider adapter | Unclaimed | Implement and qualify live Codex-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0034](tasks/AR-0034.md): OpenCode live provider adapter | Unclaimed | Implement and qualify live OpenCode-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0035](tasks/AR-0035.md): OpenDesk live provider adapter | Unclaimed | Implement and qualify live OpenDesk-compatible process/session execution with explicit capability negotiation. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0036](tasks/AR-0036.md): Durable journal, checkpoint, and recovery integration | Unclaimed | Persist privacy-safe events and checkpoints and recover real interrupted sessions with fencing and replay protection. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Unclaimed | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0038](tasks/AR-0038.md): AWG live oracle transport and decision binding | Unclaimed | Submit uncertainty to AWG, receive revision-bound decisions and guidance, and resume safely. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Unclaimed | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Unclaimed | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0041](tasks/AR-0041.md): Live performance and reliability qualification harness | Unclaimed | Measure real latency, throughput, recovery, resource use, and failure behavior under controlled workloads. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0042](tasks/AR-0042.md): Live security, privacy, and supply-chain enforcement | Unclaimed | Enforce secrets, least privilege, dependency provenance, redaction, public evidence, and hostile-boundary controls on live paths. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0043](tasks/AR-0043.md): Full workflow orchestrator and terminal semantics | Unclaimed | Operate the complete live workflow from task admission through agent execution, quality, oracle, review, release, reconciliation, and terminal state. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | Unclaimed | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Unclaimed | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |
 
 ### Done (28)
 

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. | - |
+| P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. | awr-worker-0051 |
 
 ## Planned
 

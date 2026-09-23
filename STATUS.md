@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 4 active status categories.
+**60 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
@@ -80,7 +80,7 @@ flowchart LR
         AR_0050["AR-0050 - Planned"]:::status_planned
         AR_0051["AR-0051 - Planned"]:::status_planned
         AR_0052["AR-0052 - Done"]:::status_done
-        AR_0053["AR-0053 - Open"]:::status_open
+        AR_0053["AR-0053 - In progress"]:::status_in_progress
         AR_0054["AR-0054 - Planned"]:::status_planned
         AR_0055["AR-0055 - Planned"]:::status_planned
         AR_0056["AR-0056 - Planned"]:::status_planned
@@ -324,17 +324,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | awr-worker-0049 | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0053](tasks/AR-0053.md): Production AWG decision integration | Unclaimed | Connect runtime uncertainty and provider/workflow alternatives to AWG decisions without manufacturing guidance or approval. | Implement live AWG oracle escalation, decision retrieval, and decision binding for material runtime alternatives. |
+| P0 | [AR-0053](tasks/AR-0053.md): Production AWG decision integration | awr-worker-0053 | Connect runtime uncertainty and provider/workflow alternatives to AWG decisions without manufacturing guidance or approval. | Implement live AWG oracle escalation, decision retrieval, and decision binding for material runtime alternatives. |
 
 ### Planned (9)
 

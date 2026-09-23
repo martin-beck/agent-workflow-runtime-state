@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**45 ARs tracked** across 3 active status categories.
+**45 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 28 |
+| **Done** | Accepted, integrated, and durably verified | 29 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -56,7 +56,7 @@ flowchart LR
         AR_0026["AR-0026 - Done"]:::status_done
         AR_0027["AR-0027 - Done"]:::status_done
         AR_0028["AR-0028 - Done"]:::status_done
-        AR_0029["AR-0029 - In progress"]:::status_in_progress
+        AR_0029["AR-0029 - Done"]:::status_done
         AR_0030["AR-0030 - Planned"]:::status_planned
         AR_0031["AR-0031 - Planned"]:::status_planned
         AR_0032["AR-0032 - Planned"]:::status_planned
@@ -251,12 +251,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | awr-worker-0029 | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. |
-
 ### Planned (16)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -278,7 +272,7 @@ flowchart LR
 | P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | Unclaimed | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Unclaimed | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |
 
-### Done (28)
+### Done (29)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -310,3 +304,4 @@ flowchart LR
 | P1 | [AR-0026](tasks/AR-0026.md): Performance and reliability qualification | Unclaimed | Measure bounded latency, throughput, recovery, resource use, and failure behavior against explicit specifications. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Unclaimed | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Unclaimed | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | Unclaimed | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. |

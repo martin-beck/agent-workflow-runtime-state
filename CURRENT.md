@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0030](tasks/AR-0030.md): Live admission, lease, and session bootstrap | Start real revision-bound runtime sessions from Coordinator admission, claims, leases, and isolated worktree records. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0030](tasks/AR-0030.md): Live admission, lease, and session bootstrap | Start real revision-bound runtime sessions from Coordinator admission, claims, leases, and isolated worktree records. | Write and check the versioned specification, then implement only after review. | awr-worker-0030 |
 
 ## Planned
 

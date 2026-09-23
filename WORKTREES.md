@@ -24,5 +24,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0017` | `feature/ar-0017` | `f71e30048f6f` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0018` | `feature/ar-0018` | `a6c871b2ebf7` | 0 | behind 0, ahead 35 |
 | `agent-workflow-runtime-0019` | `feature/ar-0019` | `9c8d6007d369` | 0 | behind 0, ahead 37 |
-| `agent-workflow-runtime-0020` | `feature/ar-0020` | `098d2a6c2b7b` | 10 | behind 0, ahead 36 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md`, `scripts/awq_awg_bridge.py`, `scripts/check_awq_awg_bridge.py`, `specifications/awq-awg-bridge-v1.json`, `specifications/fixtures/awq-awg-bridge-ar0020-v1.json`, `specifications/fixtures/awq-awg-evidence-ar0020-v1.json`, `tests/test_awq_awg_bridge.py` |
+| `agent-workflow-runtime-0020` | `feature/ar-0020` | `0e67c0962ad2` | 0 | behind 0, ahead 37 |

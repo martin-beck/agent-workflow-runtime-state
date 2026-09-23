@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**45 ARs tracked** across 4 active status categories.
+**45 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 6 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -67,7 +67,7 @@ flowchart LR
         AR_0037["AR-0037 - Done"]:::status_done
         AR_0038["AR-0038 - In progress"]:::status_in_progress
         AR_0039["AR-0039 - Planned"]:::status_planned
-        AR_0040["AR-0040 - Open"]:::status_open
+        AR_0040["AR-0040 - In progress"]:::status_in_progress
         AR_0041["AR-0041 - Planned"]:::status_planned
         AR_0042["AR-0042 - Planned"]:::status_planned
         AR_0043["AR-0043 - Planned"]:::status_planned
@@ -251,7 +251,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -260,12 +260,7 @@ flowchart LR
 | P1 | [AR-0035](tasks/AR-0035.md): OpenDesk live provider adapter | awr-worker-0035 | Implement and qualify live OpenDesk-compatible process/session execution with explicit capability negotiation. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0036](tasks/AR-0036.md): Durable journal, checkpoint, and recovery integration | awr-worker-0036 | Persist privacy-safe events and checkpoints and recover real interrupted sessions with fencing and replay protection. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0038](tasks/AR-0038.md): AWG live oracle transport and decision binding | awr-worker-0038 | Submit uncertainty to AWG, receive revision-bound decisions and guidance, and resume safely. | Write and check the versioned specification, then implement only after review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Unclaimed | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | awr-worker-0040 | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (6)
 

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0056](tasks/AR-0056.md): Runtime observability and audit | Make live agent workflows diagnosable and auditable without publishing secrets, prompts, transcripts, paths, or host identifiers. | Implement production observability, audit, metrics, traces, alerts, and privacy-safe incident evidence. | - |
+| P0 | [AR-0056](tasks/AR-0056.md): Runtime observability and audit | Make live agent workflows diagnosable and auditable without publishing secrets, prompts, transcripts, paths, or host identifiers. | Implement production observability, audit, metrics, traces, alerts, and privacy-safe incident evidence. | awr-worker-0056 |
 
 ## Planned
 

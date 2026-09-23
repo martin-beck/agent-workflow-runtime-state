@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 3 active status categories.
+**60 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 15 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 44 |
+| **Done** | Accepted, integrated, and durably verified | 45 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -72,7 +72,7 @@ flowchart LR
         AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - Done"]:::status_done
         AR_0044["AR-0044 - Done"]:::status_done
-        AR_0045["AR-0045 - In progress"]:::status_in_progress
+        AR_0045["AR-0045 - Done"]:::status_done
         AR_0046["AR-0046 - Planned"]:::status_planned
         AR_0047["AR-0047 - Planned"]:::status_planned
         AR_0048["AR-0048 - Planned"]:::status_planned
@@ -324,12 +324,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | awr-worker-0045 | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |
-
 ### Planned (15)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -350,7 +344,7 @@ flowchart LR
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Unclaimed | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. |
 | P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Unclaimed | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. |
 
-### Done (44)
+### Done (45)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -398,3 +392,4 @@ flowchart LR
 | P1 | [AR-0042](tasks/AR-0042.md): Live security, privacy, and supply-chain enforcement | Unclaimed | Enforce secrets, least privilege, dependency provenance, redaction, public evidence, and hostile-boundary controls on live paths. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0043](tasks/AR-0043.md): Full workflow orchestrator and terminal semantics | Unclaimed | Operate the complete live workflow from task admission through agent execution, quality, oracle, review, release, reconciliation, and terminal state. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | Unclaimed | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Unclaimed | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |

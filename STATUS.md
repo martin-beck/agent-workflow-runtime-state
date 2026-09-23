@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 3 active status categories.
+**28 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 21 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 6 |
+| **Done** | Accepted, integrated, and durably verified | 7 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -34,7 +34,7 @@ flowchart LR
         AR_0004["AR-0004 - Done"]:::status_done
         AR_0005["AR-0005 - Done"]:::status_done
         AR_0006["AR-0006 - Done"]:::status_done
-        AR_0007["AR-0007 - In progress"]:::status_in_progress
+        AR_0007["AR-0007 - Done"]:::status_done
         AR_0008["AR-0008 - Planned"]:::status_planned
         AR_0009["AR-0009 - Planned"]:::status_planned
         AR_0010["AR-0010 - Planned"]:::status_planned
@@ -174,12 +174,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | awr-worker-0007 | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. |
-
 ### Planned (21)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -206,7 +200,7 @@ flowchart LR
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Unclaimed | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Unclaimed | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. |
 
-### Done (6)
+### Done (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -216,3 +210,4 @@ flowchart LR
 | P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Unclaimed | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0005](tasks/AR-0005.md): Supervisor admission, lease, and worker lifecycle | Unclaimed | Define admission, leases, heartbeats, cancellation, handoff, stale-worker recovery, and lifecycle state transitions. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0006](tasks/AR-0006.md): Resource, timeout, and process containment contract | Unclaimed | Define bounded CPU, memory, disk, network, process-tree, timeout, and cancellation behavior with fail-closed enforcement. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | Unclaimed | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. |

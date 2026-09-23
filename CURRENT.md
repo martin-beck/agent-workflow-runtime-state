@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. | - |
+| P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. | awr-worker-0055 |
 
 ## Planned
 

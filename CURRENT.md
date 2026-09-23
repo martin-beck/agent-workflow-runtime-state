@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0019](tasks/AR-0019.md): Capability broker and worktree enforcement | Implement capability grants, tool boundaries, isolated worktrees, project bindings, and fail-closed enforcement. | Write and check the versioned specification, then implement only after review. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0020](tasks/AR-0020.md): Evidence and oracle bridge implementation | Implement AWQ evidence submission and AWG batched oracle interaction with revision-bound decisions and reusable guidance. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0021](tasks/AR-0021.md): Publication and CI implementation | Implement signed-DCO publication, review/merge handoff, CI correlation, and exact-head verification. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0022](tasks/AR-0022.md): Adapter conformance and replay harness | Implement cross-adapter conformance tests, deterministic replay, hostile inputs, and capability mismatch reporting. | Write and check the versioned specification, then implement only after review. | - |

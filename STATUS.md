@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 2 active status categories.
+**28 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 10 |
+| **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 18 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -46,7 +46,7 @@ flowchart LR
         AR_0016["AR-0016 - Done"]:::status_done
         AR_0017["AR-0017 - Done"]:::status_done
         AR_0018["AR-0018 - Done"]:::status_done
-        AR_0019["AR-0019 - Planned"]:::status_planned
+        AR_0019["AR-0019 - Open"]:::status_open
         AR_0020["AR-0020 - Planned"]:::status_planned
         AR_0021["AR-0021 - Planned"]:::status_planned
         AR_0022["AR-0022 - Planned"]:::status_planned
@@ -174,11 +174,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (10)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0019](tasks/AR-0019.md): Capability broker and worktree enforcement | Unclaimed | Implement capability grants, tool boundaries, isolated worktrees, project bindings, and fail-closed enforcement. | Write and check the versioned specification, then implement only after review. |
+
+### Planned (9)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0020](tasks/AR-0020.md): Evidence and oracle bridge implementation | Unclaimed | Implement AWQ evidence submission and AWG batched oracle interaction with revision-bound decisions and reusable guidance. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0021](tasks/AR-0021.md): Publication and CI implementation | Unclaimed | Implement signed-DCO publication, review/merge handoff, CI correlation, and exact-head verification. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0022](tasks/AR-0022.md): Adapter conformance and replay harness | Unclaimed | Implement cross-adapter conformance tests, deterministic replay, hostile inputs, and capability mismatch reporting. | Write and check the versioned specification, then implement only after review. |

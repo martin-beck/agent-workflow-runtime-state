@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0050](tasks/AR-0050.md): Production provider adapters | Replace offline provider adapter models with bounded live adapter implementations and capability-specific conformance tests. | Implement production Codex, OpenCode, and OpenDesk adapters over the provider execution boundary. | - |
 | P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. | - |
 | P0 | [AR-0053](tasks/AR-0053.md): Production AWG decision integration | Connect runtime uncertainty and provider/workflow alternatives to AWG decisions without manufacturing guidance or approval. | Implement live AWG oracle escalation, decision retrieval, and decision binding for material runtime alternatives. | - |

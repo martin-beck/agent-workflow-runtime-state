@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0008](tasks/AR-0008.md): Privacy-safe event journal and provenance | Define the redacted journal, provenance chain, retention, digesting, and public-safe evidence projection. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0010](tasks/AR-0010.md): AWG oracle bridge and discussion admission | Define when uncertainty becomes a batched oracle discussion, how alternatives and confidence are recorded, and how final guidance is bound to revisions. | Write and check the versioned specification, then implement only after review. | - |

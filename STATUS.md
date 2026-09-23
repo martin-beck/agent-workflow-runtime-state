@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 22 |
 | **Future** | Deferred roadmap work | 0 |
@@ -33,7 +33,7 @@ flowchart LR
         AR_0003["AR-0003 - Done"]:::status_done
         AR_0004["AR-0004 - Done"]:::status_done
         AR_0005["AR-0005 - Done"]:::status_done
-        AR_0006["AR-0006 - Open"]:::status_open
+        AR_0006["AR-0006 - In progress"]:::status_in_progress
         AR_0007["AR-0007 - Planned"]:::status_planned
         AR_0008["AR-0008 - Planned"]:::status_planned
         AR_0009["AR-0009 - Planned"]:::status_planned
@@ -174,11 +174,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0006](tasks/AR-0006.md): Resource, timeout, and process containment contract | Unclaimed | Define bounded CPU, memory, disk, network, process-tree, timeout, and cancellation behavior with fail-closed enforcement. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0006](tasks/AR-0006.md): Resource, timeout, and process containment contract | awr-worker-0006 | Define bounded CPU, memory, disk, network, process-tree, timeout, and cancellation behavior with fail-closed enforcement. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (22)
 

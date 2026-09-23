@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. | awr-worker-0040 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -62,3 +56,4 @@ Never edit this file directly.
 | P1 | [AR-0036](tasks/AR-0036.md): Durable journal, checkpoint, and recovery integration | Persist privacy-safe events and checkpoints and recover real interrupted sessions with fencing and replay protection. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0038](tasks/AR-0038.md): AWG live oracle transport and decision binding | Submit uncertainty to AWG, receive revision-bound decisions and guidance, and resume safely. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. | - |

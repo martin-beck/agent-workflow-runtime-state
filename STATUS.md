@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 12 |
+| **Planned** | Defined work awaiting promotion or dependencies | 11 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 14 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -41,7 +41,7 @@ flowchart LR
         AR_0011["AR-0011 - Open"]:::status_open
         AR_0012["AR-0012 - Done"]:::status_done
         AR_0013["AR-0013 - Open"]:::status_open
-        AR_0014["AR-0014 - Planned"]:::status_planned
+        AR_0014["AR-0014 - Open"]:::status_open
         AR_0015["AR-0015 - Done"]:::status_done
         AR_0016["AR-0016 - Done"]:::status_done
         AR_0017["AR-0017 - Done"]:::status_done
@@ -174,18 +174,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0011](tasks/AR-0011.md): UI session bridge and safe resume | Unclaimed | Define the runtime-facing contract for revision-bound interactive discussions, resumable sessions, safe exit, and validated final events. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0013](tasks/AR-0013.md): CI and external-observation adapter | Unclaimed | Define how hosted checks and remote observations are requested, correlated, verified, and distinguished from local qualification. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Unclaimed | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. |
 
-### Planned (12)
+### Planned (11)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Unclaimed | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0018](tasks/AR-0018.md): Supervisor implementation | Unclaimed | Implement admission, leases, supervision, cancellation, recovery, and lifecycle evidence using the approved formal model. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0019](tasks/AR-0019.md): Capability broker and worktree enforcement | Unclaimed | Implement capability grants, tool boundaries, isolated worktrees, project bindings, and fail-closed enforcement. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0020](tasks/AR-0020.md): Evidence and oracle bridge implementation | Unclaimed | Implement AWQ evidence submission and AWG batched oracle interaction with revision-bound decisions and reusable guidance. | Write and check the versioned specification, then implement only after review. |

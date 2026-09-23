@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0020](tasks/AR-0020.md): Evidence and oracle bridge implementation | Implement AWQ evidence submission and AWG batched oracle interaction with revision-bound decisions and reusable guidance. | Write and check the versioned specification, then implement only after review. | awr-worker-0020 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -45,3 +39,4 @@ Never edit this file directly.
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0018](tasks/AR-0018.md): Supervisor implementation | Implement admission, leases, supervision, cancellation, recovery, and lifecycle evidence using the approved formal model. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0019](tasks/AR-0019.md): Capability broker and worktree enforcement | Implement capability grants, tool boundaries, isolated worktrees, project bindings, and fail-closed enforcement. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0020](tasks/AR-0020.md): Evidence and oracle bridge implementation | Implement AWQ evidence submission and AWG batched oracle interaction with revision-bound decisions and reusable guidance. | Write and check the versioned specification, then implement only after review. | - |

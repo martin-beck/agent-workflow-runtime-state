@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 3 active status categories.
+**28 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 26 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 1 |
+| **Done** | Accepted, integrated, and durably verified | 2 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -29,7 +29,7 @@ flowchart LR
     subgraph series_00["00 - Coordination foundation"]
         direction TB
         AR_0001["AR-0001 - Done"]:::status_done
-        AR_0002["AR-0002 - In progress"]:::status_in_progress
+        AR_0002["AR-0002 - Done"]:::status_done
         AR_0003["AR-0003 - Planned"]:::status_planned
         AR_0004["AR-0004 - Planned"]:::status_planned
         AR_0005["AR-0005 - Planned"]:::status_planned
@@ -174,12 +174,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0002](tasks/AR-0002.md): Versioned normalized session-event protocol | awr-worker-0002 | Define the provider-neutral event envelope, ordering, correlation, revision binding, and compatibility rules for agent execution. | Write and check the versioned specification, then implement only after review. |
-
 ### Planned (26)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -211,8 +205,9 @@ flowchart LR
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Unclaimed | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Unclaimed | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. |
 
-### Done (1)
+### Done (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): Runtime scope, authority boundaries, and formal specification admission | Unclaimed | Establish the runtime charter, authority matrix, and admission rule that every design or conceptual decision is a versioned, machine-checkable specification before implementation. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0002](tasks/AR-0002.md): Versioned normalized session-event protocol | Unclaimed | Define the provider-neutral event envelope, ordering, correlation, revision binding, and compatibility rules for agent execution. | Write and check the versioned specification, then implement only after review. |

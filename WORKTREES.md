@@ -43,7 +43,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0036` | `feature/ar-0036` | `8b5230e57e42` | 0 | behind 0, ahead 67 |
 | `agent-workflow-runtime-0037` | `feature/ar-0037` | `fbfe328f92bf` | 0 | behind 0, ahead 61 |
 | `agent-workflow-runtime-0038` | `feature/ar-0038` | `647e67b382c3` | 0 | behind 0, ahead 67 |
-| `agent-workflow-runtime-0039` | `feature/ar-0039` | `a0bb8d930bce` | 0 | behind 0, ahead 78 |
+| `agent-workflow-runtime-0039` | `feature/ar-0039` | `8d31b5ee2f51` | 0 | behind 0, ahead 79 |
 | `agent-workflow-runtime-0040` | `feature/ar-0040` | `914c6dff6b53` | 0 | behind 0, ahead 67 |
-| `agent-workflow-runtime-0041` | `feature/ar-0041` | `a0bb8d930bce` | 0 | behind 0, ahead 78 |
-| `agent-workflow-runtime-0042` | `feature/ar-0042` | `a0bb8d930bce` | 0 | behind 0, ahead 78 |
+| `agent-workflow-runtime-0041` | `feature/ar-0041` | `9f56f15d65f2` | 0 | behind 0, ahead 79 |
+| `agent-workflow-runtime-0042` | `feature/ar-0042` | `a0bb8d930bce` | 4 | behind 0, ahead 78 |
+| changed files | - | - | - | `scripts/check_security_policy_gate.py`, `scripts/security_policy_gate.py`, `specifications/fixtures/security-policy-gate-ar0042-v1.json`, `specifications/security-policy-gate-v1.json` |

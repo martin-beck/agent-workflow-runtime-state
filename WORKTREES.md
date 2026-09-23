@@ -53,6 +53,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0045` | `feature/ar-0045` | `721ab4c085f5` | 0 | behind 0, ahead 89 |
 | `agent-workflow-runtime-0046` | `feature/ar-0046` | `a60f73ffbd47` | 0 | behind 0, ahead 91 |
 | `agent-workflow-runtime-0047` | `feature/ar-0047` | `57729978a8ab` | 0 | behind 0, ahead 93 |
-| `agent-workflow-runtime-0048` | `feature/ar-0048` | `cf9c29c56d4b` | 5 | behind 0, ahead 94 |
-| changed files | - | - | - | `scripts/check_host_admission.py`, `scripts/host_admission.py`, `specifications/fixtures/host-admission-ar0048-v1.json`, `specifications/host-admission-v1.json`, `tests/test_host_admission.py` |
+| `agent-workflow-runtime-0048` | `feature/ar-0048` | `0aaec70558ba` | 0 | behind 0, ahead 95 |
 | `agent-workflow-runtime-0052` | `feature/ar-0052` | `875c2bb4cfb7` | 0 | behind 0, ahead 95 |

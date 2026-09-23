@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. | awr-worker-0045 |
 
 ## Planned
 

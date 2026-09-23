@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0024](tasks/AR-0024.md): Operational CLI, configuration, and onboarding | Provide a documented operator interface for setup, run, observe, resume, diagnose, and safe shutdown. | Write and check the versioned specification, then implement only after review. | awr-worker-0024 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -43,5 +37,6 @@ Never edit this file directly.
 | P1 | [AR-0021](tasks/AR-0021.md): Publication and CI implementation | Implement signed-DCO publication, review/merge handoff, CI correlation, and exact-head verification. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0022](tasks/AR-0022.md): Adapter conformance and replay harness | Implement cross-adapter conformance tests, deterministic replay, hostile inputs, and capability mismatch reporting. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0023](tasks/AR-0023.md): End-to-end autonomous development workflow | Integrate planning, execution, quality, oracle discussion, review, merge, recovery, and durable state into one bounded workflow. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0024](tasks/AR-0024.md): Operational CLI, configuration, and onboarding | Provide a documented operator interface for setup, run, observe, resume, diagnose, and safe shutdown. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0025](tasks/AR-0025.md): Security, privacy, and supply-chain assurance | Qualify secret handling, least privilege, dependency provenance, redaction, public evidence, and hostile boundary cases. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): Performance and reliability qualification | Measure bounded latency, throughput, recovery, resource use, and failure behavior against explicit specifications. | Write and check the versioned specification, then implement only after review. | - |

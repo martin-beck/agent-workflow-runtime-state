@@ -10,4 +10,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 0, ahead 5 |
 | `agent-workflow-runtime-0004` | `feature/ar-0004` | `59df59ac8419` | 0 | behind 0, ahead 5 |
 | `agent-workflow-runtime-0005` | `feature/ar-0005` | `b36db37faa60` | 8 | behind 0, ahead 8 |
-| changed files | - | - | - | `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md`, `scripts/check_supervisor.py`, `scripts/supervisor.py`, `specifications/fixtures/supervisor-trace-ar0005-v1.json`, `specifications/supervisor-lifecycle-v1.json`, `tests/test_supervisor.py` |
+| changed files | - | - | - | `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `scripts/check_supervisor.py`, `scripts/supervisor.py`, `specifications/README.md`, `specifications/fixtures/supervisor-trace-ar0005-v1.json`, `specifications/supervisor-lifecycle-v1.json`, `tests/test_supervisor.py` |

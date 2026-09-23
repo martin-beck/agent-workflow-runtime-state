@@ -1260,14 +1260,14 @@ class HandoffTest(unittest.TestCase):
         )
 
     def test_live_document_generation_and_observation_sync(self) -> None:
-        path = self.make_task(worktree_key="agent-systems-benchmark-test")
+        path = self.make_task(worktree_key="fixture-project-test")
         state = {
             "remote_main": "a" * 40,
             "origin_main": "a" * 40,
             "primary_head": "b" * 40,
             "worktrees": [
                 {
-                    "key": "agent-systems-benchmark-test",
+                    "key": "fixture-project-test",
                     "branch": "feature/test",
                     "head": "c" * 40,
                     "dirty": 2,
@@ -1459,8 +1459,8 @@ class HandoffTest(unittest.TestCase):
         }
 
     def test_project_scan_covers_dirty_and_detached_worktrees(self) -> None:  # noqa: C901
-        product = self.root / "agent-systems-benchmark"
-        second = self.root / "agent-systems-benchmark-two"
+        product = self.root / "fixture-project"
+        second = self.root / "fixture-project-two"
         product.mkdir()
         second.mkdir()
         CORE.CONFIG.parent.mkdir()
@@ -1552,14 +1552,14 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual([], CORE.generated_view_errors(CORE.all_tasks()))
 
     def test_reconcile_generation_failure_rolls_back_every_view(self) -> None:
-        path = self.make_task(worktree_key="agent-systems-benchmark-test")
+        path = self.make_task(worktree_key="fixture-project-test")
         before_task = path.read_text()
         before_current = (self.root / "CURRENT.md").read_text()
         before_status = (self.root / "STATUS.md").read_text()
         state = self.fake_scan()
         state["worktrees"] = [
             {
-                "key": "agent-systems-benchmark-test",
+                "key": "fixture-project-test",
                 "branch": "feature/test",
                 "head": "c" * 40,
                 "dirty": 1,
@@ -1591,7 +1591,7 @@ class HandoffTest(unittest.TestCase):
         self.assertFalse((self.root / "WORKTREES.md").exists())
 
     def test_reconcile_commit_failure_rolls_back_and_push_failure_preserves(self) -> None:
-        path = self.make_task(worktree_key="agent-systems-benchmark-test")
+        path = self.make_task(worktree_key="fixture-project-test")
         before = {
             item: item.read_text()
             for item in (path, self.root / "CURRENT.md", self.root / "STATUS.md")

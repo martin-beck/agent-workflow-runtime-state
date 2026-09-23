@@ -14,8 +14,9 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0007` | `feature/ar-0007` | `db2acf9c458f` | 0 | behind 0, ahead 13 |
 | `agent-workflow-runtime-0008` | `feature/ar-0008` | `281fef6b06a6` | 0 | behind 0, ahead 15 |
 | `agent-workflow-runtime-0009` | `feature/ar-0009` | `78cf33f6a001` | 0 | behind 0, ahead 17 |
-| `agent-workflow-runtime-0010` | `feature/ar-0010` | `38dfe60e70f6` | 0 | behind 0, ahead 24 |
-| `agent-workflow-runtime-0012` | `feature/ar-0012` | `38dfe60e70f6` | 0 | behind 0, ahead 24 |
+| `agent-workflow-runtime-0010` | `feature/ar-0010` | `0b253e933328` | 0 | behind 0, ahead 25 |
+| `agent-workflow-runtime-0012` | `feature/ar-0012` | `38dfe60e70f6` | 10 | behind 0, ahead 24 |
+| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md`, `scripts/check_publication_bridge.py`, `scripts/publication_bridge.py`, `specifications/fixtures/publication-bridge-ar0012-v1.json`, `specifications/fixtures/publication-evidence-ar0012-v1.json`, `specifications/publication-bridge-v1.json`, `tests/test_publication_bridge.py` |
 | `agent-workflow-runtime-0015` | `feature/ar-0015` | `832b0ca6beca` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0016` | `feature/ar-0016` | `185f076f7bbd` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0017` | `feature/ar-0017` | `f71e30048f6f` | 0 | behind 0, ahead 17 |

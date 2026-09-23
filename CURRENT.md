@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. | awr-worker-0028 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -40,3 +34,4 @@ Never edit this file directly.
 | P1 | [AR-0025](tasks/AR-0025.md): Security, privacy, and supply-chain assurance | Qualify secret handling, least privilege, dependency provenance, redaction, public evidence, and hostile boundary cases. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): Performance and reliability qualification | Measure bounded latency, throughput, recovery, resource use, and failure behavior against explicit specifications. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. | - |

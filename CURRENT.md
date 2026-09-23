@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0061](tasks/AR-0061.md): Durable job contract | Create the durable, auditable job contract consumed by every scheduler and contractor operation. | Define and implement the revision-bound durable job contract and checker. | - |
+| P0 | [AR-0061](tasks/AR-0061.md): Durable job contract | Create the durable, auditable job contract consumed by every scheduler and contractor operation. | Define and implement the revision-bound durable job contract and checker. | awr-worker-0061 |
 
 ## Planned
 

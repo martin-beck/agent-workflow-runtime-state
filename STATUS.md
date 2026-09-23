@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 2 active status categories.
+**60 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 15 |
+| **Planned** | Defined work awaiting promotion or dependencies | 14 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 45 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -73,7 +73,7 @@ flowchart LR
         AR_0043["AR-0043 - Done"]:::status_done
         AR_0044["AR-0044 - Done"]:::status_done
         AR_0045["AR-0045 - Done"]:::status_done
-        AR_0046["AR-0046 - Planned"]:::status_planned
+        AR_0046["AR-0046 - Open"]:::status_open
         AR_0047["AR-0047 - Planned"]:::status_planned
         AR_0048["AR-0048 - Planned"]:::status_planned
         AR_0049["AR-0049 - Planned"]:::status_planned
@@ -324,11 +324,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (15)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Unclaimed | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. |
+
+### Planned (14)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Unclaimed | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | Unclaimed | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. |
 | P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Unclaimed | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. |

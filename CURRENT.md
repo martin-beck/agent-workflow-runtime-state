@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. | - |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. | - |
 | P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. | - |

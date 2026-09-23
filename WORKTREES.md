@@ -42,3 +42,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0035` | `feature/ar-0035` | `b0d21e12d87c` | 0 | behind 0, ahead 66 |
 | `agent-workflow-runtime-0036` | `feature/ar-0036` | `b0d21e12d87c` | 0 | behind 0, ahead 66 |
 | `agent-workflow-runtime-0037` | `feature/ar-0037` | `fbfe328f92bf` | 0 | behind 0, ahead 61 |
+| `agent-workflow-runtime-0038` | `feature/ar-0038` | `b0d21e12d87c` | 0 | behind 0, ahead 66 |

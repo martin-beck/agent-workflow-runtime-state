@@ -1,4 +1,5 @@
 # Coordinator runtime observations remain local and are never public state.
 .runtime/last-reconcile.json
+.runtime/command-results.jsonl
 tools/__pycache__/
 tests/__pycache__/

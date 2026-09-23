@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 3 active status categories.
+**60 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 46 |
+| **Done** | Accepted, integrated, and durably verified | 47 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -74,7 +74,7 @@ flowchart LR
         AR_0044["AR-0044 - Done"]:::status_done
         AR_0045["AR-0045 - Done"]:::status_done
         AR_0046["AR-0046 - Done"]:::status_done
-        AR_0047["AR-0047 - In progress"]:::status_in_progress
+        AR_0047["AR-0047 - Done"]:::status_done
         AR_0048["AR-0048 - Planned"]:::status_planned
         AR_0049["AR-0049 - Planned"]:::status_planned
         AR_0050["AR-0050 - Planned"]:::status_planned
@@ -324,12 +324,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | awr-worker-0047 | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. |
-
 ### Planned (13)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -348,7 +342,7 @@ flowchart LR
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Unclaimed | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. |
 | P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Unclaimed | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. |
 
-### Done (46)
+### Done (47)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -367,6 +361,7 @@ flowchart LR
 | P0 | [AR-0013](tasks/AR-0013.md): CI and external-observation adapter | Unclaimed | Define how hosted checks and remote observations are requested, correlated, verified, and distinguished from local qualification. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Unclaimed | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Unclaimed | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. |
+| P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Unclaimed | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

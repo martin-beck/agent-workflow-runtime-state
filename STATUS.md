@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 3 active status categories.
+**28 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 14 |
 | **Future** | Deferred roadmap work | 0 |
@@ -37,7 +37,7 @@ flowchart LR
         AR_0007["AR-0007 - Done"]:::status_done
         AR_0008["AR-0008 - Done"]:::status_done
         AR_0009["AR-0009 - Done"]:::status_done
-        AR_0010["AR-0010 - Open"]:::status_open
+        AR_0010["AR-0010 - In progress"]:::status_in_progress
         AR_0011["AR-0011 - Planned"]:::status_planned
         AR_0012["AR-0012 - Open"]:::status_open
         AR_0013["AR-0013 - Planned"]:::status_planned
@@ -174,11 +174,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0010](tasks/AR-0010.md): AWG oracle bridge and discussion admission | Unclaimed | Define when uncertainty becomes a batched oracle discussion, how alternatives and confidence are recorded, and how final guidance is bound to revisions. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0010](tasks/AR-0010.md): AWG oracle bridge and discussion admission | awr-worker-0010 | Define when uncertainty becomes a batched oracle discussion, how alternatives and confidence are recorded, and how final guidance is bound to revisions. | Write and check the versioned specification, then implement only after review. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0012](tasks/AR-0012.md): Git, branch, and pull-request publication bridge | Unclaimed | Define safe branch, commit, review, merge, and publication operations with exact-head and signed-DCO evidence. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (14)

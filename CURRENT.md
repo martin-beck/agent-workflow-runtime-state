@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0030](tasks/AR-0030.md): Live admission, lease, and session bootstrap | Start real revision-bound runtime sessions from Coordinator admission, claims, leases, and isolated worktree records. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0031](tasks/AR-0031.md): Host supervisor and enforcement integration | Connect supervisor, capability, worktree, resource, timeout, and process controls to real host enforcement. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0032](tasks/AR-0032.md): Live adapter execution harness | Provide the bounded process transport and normalized event harness used by live provider adapters. | Write and check the versioned specification, then implement only after review. | - |

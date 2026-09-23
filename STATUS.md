@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 2 active status categories.
+**28 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 23 |
+| **Planned** | Defined work awaiting promotion or dependencies | 22 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 5 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -33,7 +33,7 @@ flowchart LR
         AR_0003["AR-0003 - Done"]:::status_done
         AR_0004["AR-0004 - Done"]:::status_done
         AR_0005["AR-0005 - Done"]:::status_done
-        AR_0006["AR-0006 - Planned"]:::status_planned
+        AR_0006["AR-0006 - Open"]:::status_open
         AR_0007["AR-0007 - Planned"]:::status_planned
         AR_0008["AR-0008 - Planned"]:::status_planned
         AR_0009["AR-0009 - Planned"]:::status_planned
@@ -174,11 +174,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (23)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0006](tasks/AR-0006.md): Resource, timeout, and process containment contract | Unclaimed | Define bounded CPU, memory, disk, network, process-tree, timeout, and cancellation behavior with fail-closed enforcement. | Write and check the versioned specification, then implement only after review. |
+
+### Planned (22)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | Unclaimed | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0008](tasks/AR-0008.md): Privacy-safe event journal and provenance | Unclaimed | Define the redacted journal, provenance chain, retention, digesting, and public-safe evidence projection. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | Unclaimed | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. |

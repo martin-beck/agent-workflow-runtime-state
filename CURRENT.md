@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. | - |
 | P0 | [AR-0066](tasks/AR-0066.md): Closed-loop contractor behavior | Turn scheduled agent work into an evidence-backed contracting loop with revision, quality, oracle, and human controls. | Implement closed-loop contractor orchestration from job admission through acceptance or bounded rejection. | - |
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. | - |

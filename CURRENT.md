@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. | - |
 | P0 | [AR-0050](tasks/AR-0050.md): Production provider adapters | Replace offline provider adapter models with bounded live adapter implementations and capability-specific conformance tests. | Implement production Codex, OpenCode, and OpenDesk adapters over the provider execution boundary. | - |
 | P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. | - |

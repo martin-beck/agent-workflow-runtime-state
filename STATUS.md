@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 14 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 12 |
+| **Done** | Accepted, integrated, and durably verified | 13 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -37,7 +37,7 @@ flowchart LR
         AR_0007["AR-0007 - Done"]:::status_done
         AR_0008["AR-0008 - Done"]:::status_done
         AR_0009["AR-0009 - Done"]:::status_done
-        AR_0010["AR-0010 - In progress"]:::status_in_progress
+        AR_0010["AR-0010 - Done"]:::status_done
         AR_0011["AR-0011 - Planned"]:::status_planned
         AR_0012["AR-0012 - In progress"]:::status_in_progress
         AR_0013["AR-0013 - Planned"]:::status_planned
@@ -174,11 +174,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0010](tasks/AR-0010.md): AWG oracle bridge and discussion admission | awr-worker-0010 | Define when uncertainty becomes a batched oracle discussion, how alternatives and confidence are recorded, and how final guidance is bound to revisions. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0012](tasks/AR-0012.md): Git, branch, and pull-request publication bridge | awr-worker-0012 | Define safe branch, commit, review, merge, and publication operations with exact-head and signed-DCO evidence. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (14)
@@ -200,7 +199,7 @@ flowchart LR
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Unclaimed | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Unclaimed | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. |
 
-### Done (12)
+### Done (13)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -213,6 +212,7 @@ flowchart LR
 | P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | Unclaimed | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0008](tasks/AR-0008.md): Privacy-safe event journal and provenance | Unclaimed | Define the redacted journal, provenance chain, retention, digesting, and public-safe evidence projection. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | Unclaimed | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0010](tasks/AR-0010.md): AWG oracle bridge and discussion admission | Unclaimed | Define when uncertainty becomes a batched oracle discussion, how alternatives and confidence are recorded, and how final guidance is bound to revisions. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

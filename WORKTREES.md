@@ -48,5 +48,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0041` | `feature/ar-0041` | `9f56f15d65f2` | 0 | behind 0, ahead 79 |
 | `agent-workflow-runtime-0042` | `feature/ar-0042` | `f7741ee973e8` | 0 | behind 0, ahead 79 |
 | `agent-workflow-runtime-0043` | `feature/ar-0043` | `6fe56360f942` | 0 | behind 0, ahead 85 |
-| `agent-workflow-runtime-0044` | `feature/ar-0044` | `e5d6671de80f` | 5 | behind 0, ahead 86 |
-| changed files | - | - | - | `scripts/asb_pilot.py`, `scripts/check_asb_pilot.py`, `specifications/asb-pilot-harness-v1.json`, `specifications/fixtures/asb-pilot-ar0044-v1.json`, `tests/test_asb_pilot.py` |
+| `agent-workflow-runtime-0044` | `feature/ar-0044` | `589ace49ec52` | 0 | behind 0, ahead 87 |

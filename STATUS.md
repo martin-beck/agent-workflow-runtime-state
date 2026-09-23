@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 3 active status categories.
+**60 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 58 |
+| **Done** | Accepted, integrated, and durably verified | 59 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -85,7 +85,7 @@ flowchart LR
         AR_0055["AR-0055 - Done"]:::status_done
         AR_0056["AR-0056 - Done"]:::status_done
         AR_0057["AR-0057 - Done"]:::status_done
-        AR_0058["AR-0058 - In progress"]:::status_in_progress
+        AR_0058["AR-0058 - Done"]:::status_done
         AR_0059["AR-0059 - Done"]:::status_done
         AR_0060["AR-0060 - Planned"]:::status_planned
     end
@@ -324,19 +324,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | awr-worker-0058 | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. |
-
 ### Planned (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Unclaimed | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. |
 
-### Done (58)
+### Done (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -366,6 +360,7 @@ flowchart LR
 | P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Unclaimed | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. |
 | P0 | [AR-0056](tasks/AR-0056.md): Runtime observability and audit | Unclaimed | Make live agent workflows diagnosable and auditable without publishing secrets, prompts, transcripts, paths, or host identifiers. | Implement production observability, audit, metrics, traces, alerts, and privacy-safe incident evidence. |
 | P0 | [AR-0057](tasks/AR-0057.md): Production security hardening | Unclaimed | Turn offline security policy observations into enforced runtime security and supply-chain controls. | Implement production security hardening, supply-chain verification, threat controls, and incident containment. |
+| P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | Unclaimed | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. |
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Unclaimed | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |

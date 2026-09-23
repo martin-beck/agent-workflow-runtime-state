@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 2 active status categories.
+**60 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 51 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -77,7 +77,7 @@ flowchart LR
         AR_0047["AR-0047 - Done"]:::status_done
         AR_0048["AR-0048 - Done"]:::status_done
         AR_0049["AR-0049 - Done"]:::status_done
-        AR_0050["AR-0050 - Planned"]:::status_planned
+        AR_0050["AR-0050 - Open"]:::status_open
         AR_0051["AR-0051 - Planned"]:::status_planned
         AR_0052["AR-0052 - Done"]:::status_done
         AR_0053["AR-0053 - Done"]:::status_done
@@ -324,11 +324,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (9)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0050](tasks/AR-0050.md): Production provider adapters | Unclaimed | Replace offline provider adapter models with bounded live adapter implementations and capability-specific conformance tests. | Implement production Codex, OpenCode, and OpenDesk adapters over the provider execution boundary. |
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Unclaimed | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. |
 | P0 | [AR-0054](tasks/AR-0054.md): Production UI human-gate integration | Unclaimed | Make human approval, rejection, or clarification available to runtime only through revision-bound validated UI events. | Implement the production UI human-gate session bridge with private session files and validated final events. |
 | P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Unclaimed | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. |

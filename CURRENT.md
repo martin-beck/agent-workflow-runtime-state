@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0050](tasks/AR-0050.md): Production provider adapters | Replace offline provider adapter models with bounded live adapter implementations and capability-specific conformance tests. | Implement production Codex, OpenCode, and OpenDesk adapters over the provider execution boundary. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. | - |
 | P0 | [AR-0054](tasks/AR-0054.md): Production UI human-gate integration | Make human approval, rejection, or clarification available to runtime only through revision-bound validated UI events. | Implement the production UI human-gate session bridge with private session files and validated final events. | - |
 | P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. | - |

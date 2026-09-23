@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `ad9995dd3a68` | 10 | behind 0, ahead 26 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `scripts/check_publication_bridge.py`, `scripts/publication_bridge.py`, `specifications/README.md`, `specifications/fixtures/publication-bridge-ar0012-v1.json`, `specifications/fixtures/publication-evidence-ar0012-v1.json`, `specifications/publication-bridge-v1.json`, `tests/test_publication_bridge.py` |
+| `agent-workflow-runtime` | `main` | `37a61570fbc1` | 0 | behind 0, ahead 28 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 0, ahead 1 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 0, ahead 3 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 0, ahead 5 |

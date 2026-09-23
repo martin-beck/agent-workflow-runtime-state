@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
@@ -85,7 +85,7 @@ flowchart LR
         AR_0055["AR-0055 - Done"]:::status_done
         AR_0056["AR-0056 - Done"]:::status_done
         AR_0057["AR-0057 - Done"]:::status_done
-        AR_0058["AR-0058 - Open"]:::status_open
+        AR_0058["AR-0058 - In progress"]:::status_in_progress
         AR_0059["AR-0059 - Done"]:::status_done
         AR_0060["AR-0060 - Planned"]:::status_planned
     end
@@ -324,11 +324,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | Unclaimed | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. |
+| P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | awr-worker-0058 | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. |
 
 ### Planned (1)
 

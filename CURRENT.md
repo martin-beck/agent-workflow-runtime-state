@@ -8,12 +8,12 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0011](tasks/AR-0011.md): UI session bridge and safe resume | Define the runtime-facing contract for revision-bound interactive discussions, resumable sessions, safe exit, and validated final events. | Write and check the versioned specification, then implement only after review. | awr-worker-0011 |
+| P0 | [AR-0013](tasks/AR-0013.md): CI and external-observation adapter | Define how hosted checks and remote observations are requested, correlated, verified, and distinguished from local qualification. | Write and check the versioned specification, then implement only after review. | awr-worker-0013 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0013](tasks/AR-0013.md): CI and external-observation adapter | Define how hosted checks and remote observations are requested, correlated, verified, and distinguished from local qualification. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. | - |
 
 ## Planned

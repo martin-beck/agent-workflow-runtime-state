@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**45 ARs tracked** across 3 active status categories.
+**60 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 1 |
+| **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 43 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -73,6 +73,21 @@ flowchart LR
         AR_0043["AR-0043 - Done"]:::status_done
         AR_0044["AR-0044 - In progress"]:::status_in_progress
         AR_0045["AR-0045 - Planned"]:::status_planned
+        AR_0046["AR-0046 - Planned"]:::status_planned
+        AR_0047["AR-0047 - Planned"]:::status_planned
+        AR_0048["AR-0048 - Planned"]:::status_planned
+        AR_0049["AR-0049 - Planned"]:::status_planned
+        AR_0050["AR-0050 - Planned"]:::status_planned
+        AR_0051["AR-0051 - Planned"]:::status_planned
+        AR_0052["AR-0052 - Planned"]:::status_planned
+        AR_0053["AR-0053 - Planned"]:::status_planned
+        AR_0054["AR-0054 - Planned"]:::status_planned
+        AR_0055["AR-0055 - Planned"]:::status_planned
+        AR_0056["AR-0056 - Planned"]:::status_planned
+        AR_0057["AR-0057 - Planned"]:::status_planned
+        AR_0058["AR-0058 - Planned"]:::status_planned
+        AR_0059["AR-0059 - Planned"]:::status_planned
+        AR_0060["AR-0060 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -153,16 +168,19 @@ flowchart LR
     AR_0029 --> AR_0038
     AR_0029 --> AR_0039
     AR_0029 --> AR_0040
+    AR_0029 --> AR_0046
     AR_0030 --> AR_0031
     AR_0030 --> AR_0032
     AR_0030 --> AR_0037
     AR_0030 --> AR_0040
+    AR_0030 --> AR_0048
     AR_0031 --> AR_0036
     AR_0031 --> AR_0041
     AR_0031 --> AR_0042
     AR_0032 --> AR_0033
     AR_0032 --> AR_0034
     AR_0032 --> AR_0035
+    AR_0032 --> AR_0049
     AR_0033 --> AR_0041
     AR_0033 --> AR_0043
     AR_0034 --> AR_0041
@@ -176,19 +194,59 @@ flowchart LR
     AR_0037 --> AR_0040
     AR_0037 --> AR_0042
     AR_0037 --> AR_0043
+    AR_0037 --> AR_0052
     AR_0038 --> AR_0039
     AR_0038 --> AR_0043
+    AR_0038 --> AR_0053
     AR_0039 --> AR_0043
+    AR_0039 --> AR_0054
     AR_0040 --> AR_0042
     AR_0040 --> AR_0043
     AR_0040 --> AR_0045
+    AR_0040 --> AR_0058
     AR_0041 --> AR_0044
     AR_0041 --> AR_0045
+    AR_0041 --> AR_0059
     AR_0042 --> AR_0043
     AR_0042 --> AR_0045
+    AR_0042 --> AR_0057
     AR_0043 --> AR_0044
     AR_0043 --> AR_0045
     AR_0044 --> AR_0045
+    AR_0044 --> AR_0055
+    AR_0045 --> AR_0060
+    AR_0046 --> AR_0047
+    AR_0046 --> AR_0052
+    AR_0046 --> AR_0056
+    AR_0046 --> AR_0057
+    AR_0047 --> AR_0048
+    AR_0047 --> AR_0056
+    AR_0048 --> AR_0049
+    AR_0048 --> AR_0056
+    AR_0048 --> AR_0059
+    AR_0049 --> AR_0050
+    AR_0049 --> AR_0051
+    AR_0049 --> AR_0057
+    AR_0049 --> AR_0059
+    AR_0050 --> AR_0051
+    AR_0050 --> AR_0055
+    AR_0050 --> AR_0059
+    AR_0051 --> AR_0055
+    AR_0052 --> AR_0053
+    AR_0052 --> AR_0055
+    AR_0053 --> AR_0054
+    AR_0053 --> AR_0055
+    AR_0054 --> AR_0055
+    AR_0055 --> AR_0056
+    AR_0055 --> AR_0059
+    AR_0055 --> AR_0060
+    AR_0056 --> AR_0057
+    AR_0056 --> AR_0058
+    AR_0056 --> AR_0059
+    AR_0057 --> AR_0058
+    AR_0057 --> AR_0060
+    AR_0058 --> AR_0060
+    AR_0059 --> AR_0060
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -231,23 +289,38 @@ flowchart LR
 | [AR-0026](tasks/AR-0026.md) | [AR-0006](tasks/AR-0006.md), [AR-0018](tasks/AR-0018.md), [AR-0022](tasks/AR-0022.md) | [AR-0027](tasks/AR-0027.md) |
 | [AR-0027](tasks/AR-0027.md) | [AR-0023](tasks/AR-0023.md), [AR-0024](tasks/AR-0024.md), [AR-0025](tasks/AR-0025.md), [AR-0026](tasks/AR-0026.md) | [AR-0028](tasks/AR-0028.md) |
 | [AR-0028](tasks/AR-0028.md) | [AR-0027](tasks/AR-0027.md) | [AR-0029](tasks/AR-0029.md) |
-| [AR-0029](tasks/AR-0029.md) | [AR-0028](tasks/AR-0028.md) | [AR-0030](tasks/AR-0030.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md) |
-| [AR-0030](tasks/AR-0030.md) | [AR-0029](tasks/AR-0029.md) | [AR-0031](tasks/AR-0031.md), [AR-0032](tasks/AR-0032.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md) |
+| [AR-0029](tasks/AR-0029.md) | [AR-0028](tasks/AR-0028.md) | [AR-0030](tasks/AR-0030.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md), [AR-0046](tasks/AR-0046.md) |
+| [AR-0030](tasks/AR-0030.md) | [AR-0029](tasks/AR-0029.md) | [AR-0031](tasks/AR-0031.md), [AR-0032](tasks/AR-0032.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md), [AR-0048](tasks/AR-0048.md) |
 | [AR-0031](tasks/AR-0031.md) | [AR-0030](tasks/AR-0030.md) | [AR-0036](tasks/AR-0036.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md) |
-| [AR-0032](tasks/AR-0032.md) | [AR-0030](tasks/AR-0030.md) | [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md) |
+| [AR-0032](tasks/AR-0032.md) | [AR-0030](tasks/AR-0030.md) | [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md), [AR-0049](tasks/AR-0049.md) |
 | [AR-0033](tasks/AR-0033.md) | [AR-0032](tasks/AR-0032.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) |
 | [AR-0034](tasks/AR-0034.md) | [AR-0032](tasks/AR-0032.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) |
 | [AR-0035](tasks/AR-0035.md) | [AR-0032](tasks/AR-0032.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) |
 | [AR-0036](tasks/AR-0036.md) | [AR-0029](tasks/AR-0029.md), [AR-0031](tasks/AR-0031.md) | [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md) |
-| [AR-0037](tasks/AR-0037.md) | [AR-0029](tasks/AR-0029.md), [AR-0030](tasks/AR-0030.md) | [AR-0038](tasks/AR-0038.md), [AR-0040](tasks/AR-0040.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md) |
-| [AR-0038](tasks/AR-0038.md) | [AR-0029](tasks/AR-0029.md), [AR-0037](tasks/AR-0037.md) | [AR-0039](tasks/AR-0039.md), [AR-0043](tasks/AR-0043.md) |
-| [AR-0039](tasks/AR-0039.md) | [AR-0029](tasks/AR-0029.md), [AR-0038](tasks/AR-0038.md) | [AR-0043](tasks/AR-0043.md) |
-| [AR-0040](tasks/AR-0040.md) | [AR-0029](tasks/AR-0029.md), [AR-0030](tasks/AR-0030.md), [AR-0037](tasks/AR-0037.md) | [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0045](tasks/AR-0045.md) |
-| [AR-0041](tasks/AR-0041.md) | [AR-0031](tasks/AR-0031.md), [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md), [AR-0036](tasks/AR-0036.md) | [AR-0044](tasks/AR-0044.md), [AR-0045](tasks/AR-0045.md) |
-| [AR-0042](tasks/AR-0042.md) | [AR-0031](tasks/AR-0031.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md) | [AR-0043](tasks/AR-0043.md), [AR-0045](tasks/AR-0045.md) |
+| [AR-0037](tasks/AR-0037.md) | [AR-0029](tasks/AR-0029.md), [AR-0030](tasks/AR-0030.md) | [AR-0038](tasks/AR-0038.md), [AR-0040](tasks/AR-0040.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0052](tasks/AR-0052.md) |
+| [AR-0038](tasks/AR-0038.md) | [AR-0029](tasks/AR-0029.md), [AR-0037](tasks/AR-0037.md) | [AR-0039](tasks/AR-0039.md), [AR-0043](tasks/AR-0043.md), [AR-0053](tasks/AR-0053.md) |
+| [AR-0039](tasks/AR-0039.md) | [AR-0029](tasks/AR-0029.md), [AR-0038](tasks/AR-0038.md) | [AR-0043](tasks/AR-0043.md), [AR-0054](tasks/AR-0054.md) |
+| [AR-0040](tasks/AR-0040.md) | [AR-0029](tasks/AR-0029.md), [AR-0030](tasks/AR-0030.md), [AR-0037](tasks/AR-0037.md) | [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0045](tasks/AR-0045.md), [AR-0058](tasks/AR-0058.md) |
+| [AR-0041](tasks/AR-0041.md) | [AR-0031](tasks/AR-0031.md), [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md), [AR-0036](tasks/AR-0036.md) | [AR-0044](tasks/AR-0044.md), [AR-0045](tasks/AR-0045.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0042](tasks/AR-0042.md) | [AR-0031](tasks/AR-0031.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md) | [AR-0043](tasks/AR-0043.md), [AR-0045](tasks/AR-0045.md), [AR-0057](tasks/AR-0057.md) |
 | [AR-0043](tasks/AR-0043.md) | [AR-0033](tasks/AR-0033.md), [AR-0034](tasks/AR-0034.md), [AR-0035](tasks/AR-0035.md), [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0038](tasks/AR-0038.md), [AR-0039](tasks/AR-0039.md), [AR-0040](tasks/AR-0040.md), [AR-0042](tasks/AR-0042.md) | [AR-0044](tasks/AR-0044.md), [AR-0045](tasks/AR-0045.md) |
-| [AR-0044](tasks/AR-0044.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) | [AR-0045](tasks/AR-0045.md) |
-| [AR-0045](tasks/AR-0045.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0044](tasks/AR-0044.md) | None |
+| [AR-0044](tasks/AR-0044.md) | [AR-0041](tasks/AR-0041.md), [AR-0043](tasks/AR-0043.md) | [AR-0045](tasks/AR-0045.md), [AR-0055](tasks/AR-0055.md) |
+| [AR-0045](tasks/AR-0045.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md), [AR-0043](tasks/AR-0043.md), [AR-0044](tasks/AR-0044.md) | [AR-0060](tasks/AR-0060.md) |
+| [AR-0046](tasks/AR-0046.md) | [AR-0029](tasks/AR-0029.md) | [AR-0047](tasks/AR-0047.md), [AR-0052](tasks/AR-0052.md), [AR-0056](tasks/AR-0056.md), [AR-0057](tasks/AR-0057.md) |
+| [AR-0047](tasks/AR-0047.md) | [AR-0046](tasks/AR-0046.md) | [AR-0048](tasks/AR-0048.md), [AR-0056](tasks/AR-0056.md) |
+| [AR-0048](tasks/AR-0048.md) | [AR-0030](tasks/AR-0030.md), [AR-0047](tasks/AR-0047.md) | [AR-0049](tasks/AR-0049.md), [AR-0056](tasks/AR-0056.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0049](tasks/AR-0049.md) | [AR-0032](tasks/AR-0032.md), [AR-0048](tasks/AR-0048.md) | [AR-0050](tasks/AR-0050.md), [AR-0051](tasks/AR-0051.md), [AR-0057](tasks/AR-0057.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0050](tasks/AR-0050.md) | [AR-0049](tasks/AR-0049.md) | [AR-0051](tasks/AR-0051.md), [AR-0055](tasks/AR-0055.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0051](tasks/AR-0051.md) | [AR-0049](tasks/AR-0049.md), [AR-0050](tasks/AR-0050.md) | [AR-0055](tasks/AR-0055.md) |
+| [AR-0052](tasks/AR-0052.md) | [AR-0037](tasks/AR-0037.md), [AR-0046](tasks/AR-0046.md) | [AR-0053](tasks/AR-0053.md), [AR-0055](tasks/AR-0055.md) |
+| [AR-0053](tasks/AR-0053.md) | [AR-0038](tasks/AR-0038.md), [AR-0052](tasks/AR-0052.md) | [AR-0054](tasks/AR-0054.md), [AR-0055](tasks/AR-0055.md) |
+| [AR-0054](tasks/AR-0054.md) | [AR-0039](tasks/AR-0039.md), [AR-0053](tasks/AR-0053.md) | [AR-0055](tasks/AR-0055.md) |
+| [AR-0055](tasks/AR-0055.md) | [AR-0044](tasks/AR-0044.md), [AR-0050](tasks/AR-0050.md), [AR-0051](tasks/AR-0051.md), [AR-0052](tasks/AR-0052.md), [AR-0053](tasks/AR-0053.md), [AR-0054](tasks/AR-0054.md) | [AR-0056](tasks/AR-0056.md), [AR-0059](tasks/AR-0059.md), [AR-0060](tasks/AR-0060.md) |
+| [AR-0056](tasks/AR-0056.md) | [AR-0046](tasks/AR-0046.md), [AR-0047](tasks/AR-0047.md), [AR-0048](tasks/AR-0048.md), [AR-0055](tasks/AR-0055.md) | [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md) |
+| [AR-0057](tasks/AR-0057.md) | [AR-0042](tasks/AR-0042.md), [AR-0046](tasks/AR-0046.md), [AR-0049](tasks/AR-0049.md), [AR-0056](tasks/AR-0056.md) | [AR-0058](tasks/AR-0058.md), [AR-0060](tasks/AR-0060.md) |
+| [AR-0058](tasks/AR-0058.md) | [AR-0040](tasks/AR-0040.md), [AR-0056](tasks/AR-0056.md), [AR-0057](tasks/AR-0057.md) | [AR-0060](tasks/AR-0060.md) |
+| [AR-0059](tasks/AR-0059.md) | [AR-0041](tasks/AR-0041.md), [AR-0048](tasks/AR-0048.md), [AR-0049](tasks/AR-0049.md), [AR-0050](tasks/AR-0050.md), [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md) | [AR-0060](tasks/AR-0060.md) |
+| [AR-0060](tasks/AR-0060.md) | [AR-0045](tasks/AR-0045.md), [AR-0055](tasks/AR-0055.md), [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md) | None |
 
 ## Complete AR inventory
 
@@ -257,10 +330,25 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | awr-worker-0044 | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. |
 
-### Planned (1)
+### Planned (16)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Unclaimed | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. |
+| P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Unclaimed | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. |
+| P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | Unclaimed | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. |
+| P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Unclaimed | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. |
+| P0 | [AR-0050](tasks/AR-0050.md): Production provider adapters | Unclaimed | Replace offline provider adapter models with bounded live adapter implementations and capability-specific conformance tests. | Implement production Codex, OpenCode, and OpenDesk adapters over the provider execution boundary. |
+| P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Unclaimed | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. |
+| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | Unclaimed | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. |
+| P0 | [AR-0053](tasks/AR-0053.md): Production AWG decision integration | Unclaimed | Connect runtime uncertainty and provider/workflow alternatives to AWG decisions without manufacturing guidance or approval. | Implement live AWG oracle escalation, decision retrieval, and decision binding for material runtime alternatives. |
+| P0 | [AR-0054](tasks/AR-0054.md): Production UI human-gate integration | Unclaimed | Make human approval, rejection, or clarification available to runtime only through revision-bound validated UI events. | Implement the production UI human-gate session bridge with private session files and validated final events. |
+| P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Unclaimed | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. |
+| P0 | [AR-0056](tasks/AR-0056.md): Runtime observability and audit | Unclaimed | Make live agent workflows diagnosable and auditable without publishing secrets, prompts, transcripts, paths, or host identifiers. | Implement production observability, audit, metrics, traces, alerts, and privacy-safe incident evidence. |
+| P0 | [AR-0057](tasks/AR-0057.md): Production security hardening | Unclaimed | Turn offline security policy observations into enforced runtime security and supply-chain controls. | Implement production security hardening, supply-chain verification, threat controls, and incident containment. |
+| P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | Unclaimed | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. |
+| P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Unclaimed | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. |
+| P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Unclaimed | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. |
 | P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Unclaimed | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |
 
 ### Done (43)

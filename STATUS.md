@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 4 active status categories.
+**28 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
@@ -44,7 +44,7 @@ flowchart LR
         AR_0014["AR-0014 - Planned"]:::status_planned
         AR_0015["AR-0015 - In progress"]:::status_in_progress
         AR_0016["AR-0016 - In progress"]:::status_in_progress
-        AR_0017["AR-0017 - Open"]:::status_open
+        AR_0017["AR-0017 - In progress"]:::status_in_progress
         AR_0018["AR-0018 - Planned"]:::status_planned
         AR_0019["AR-0019 - Planned"]:::status_planned
         AR_0020["AR-0020 - Planned"]:::status_planned
@@ -174,19 +174,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | awr-worker-0009 | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | awr-worker-0015 | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | awr-worker-0016 | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | awr-worker-0017 | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (16)
 

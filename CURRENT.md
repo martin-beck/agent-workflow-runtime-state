@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0003](tasks/AR-0003.md): Agent adapter capability and lifecycle contract | Define the adapter contract for heterogeneous agent CLIs, including discovery, start, interaction, termination, failure, and capability reporting. | Write and check the versioned specification, then implement only after review. | awr-worker-0003 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. | - |
+| P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. | awr-worker-0004 |
 
 ## Planned
 

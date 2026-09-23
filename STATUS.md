@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**45 ARs tracked** across 3 active status categories.
+**45 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 33 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -63,7 +63,7 @@ flowchart LR
         AR_0033["AR-0033 - In progress"]:::status_in_progress
         AR_0034["AR-0034 - In progress"]:::status_in_progress
         AR_0035["AR-0035 - In progress"]:::status_in_progress
-        AR_0036["AR-0036 - Planned"]:::status_planned
+        AR_0036["AR-0036 - Open"]:::status_open
         AR_0037["AR-0037 - Done"]:::status_done
         AR_0038["AR-0038 - Planned"]:::status_planned
         AR_0039["AR-0039 - Planned"]:::status_planned
@@ -259,11 +259,16 @@ flowchart LR
 | P1 | [AR-0034](tasks/AR-0034.md): OpenCode live provider adapter | awr-worker-0034 | Implement and qualify live OpenCode-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0035](tasks/AR-0035.md): OpenDesk live provider adapter | awr-worker-0035 | Implement and qualify live OpenDesk-compatible process/session execution with explicit capability negotiation. | Write and check the versioned specification, then implement only after review. |
 
-### Planned (9)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0036](tasks/AR-0036.md): Durable journal, checkpoint, and recovery integration | Unclaimed | Persist privacy-safe events and checkpoints and recover real interrupted sessions with fencing and replay protection. | Write and check the versioned specification, then implement only after review. |
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0038](tasks/AR-0038.md): AWG live oracle transport and decision binding | Unclaimed | Submit uncertainty to AWG, receive revision-bound decisions and guidance, and resume safely. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Unclaimed | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Unclaimed | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. |

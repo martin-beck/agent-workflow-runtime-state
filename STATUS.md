@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 6 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 61 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -90,7 +90,7 @@ flowchart LR
         AR_0060["AR-0060 - Done"]:::status_done
         AR_0061["AR-0061 - Done"]:::status_done
         AR_0062["AR-0062 - Open"]:::status_open
-        AR_0063["AR-0063 - Planned"]:::status_planned
+        AR_0063["AR-0063 - Open"]:::status_open
         AR_0064["AR-0064 - Planned"]:::status_planned
         AR_0065["AR-0065 - Planned"]:::status_planned
         AR_0066["AR-0066 - Planned"]:::status_planned
@@ -357,17 +357,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Unclaimed | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. |
+| P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Unclaimed | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. |
 
-### Planned (6)
+### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Unclaimed | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. |
 | P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Unclaimed | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. |
 | P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | Unclaimed | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. |
 | P0 | [AR-0066](tasks/AR-0066.md): Closed-loop contractor behavior | Unclaimed | Turn scheduled agent work into an evidence-backed contracting loop with revision, quality, oracle, and human controls. | Implement closed-loop contractor orchestration from job admission through acceptance or bounded rejection. |

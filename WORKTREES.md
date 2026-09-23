@@ -51,4 +51,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0044` | `feature/ar-0044` | `589ace49ec52` | 6 | behind 0, ahead 87 |
 | changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `scripts/asb_pilot.py`, `specifications/README.md`, `tests/test_asb_pilot.py` |
 | `agent-workflow-runtime-0045` | `feature/ar-0045` | `721ab4c085f5` | 0 | behind 0, ahead 89 |
-| `agent-workflow-runtime-0046` | `feature/ar-0046` | `d7bccbb61059` | 0 | behind 0, ahead 90 |
+| `agent-workflow-runtime-0046` | `feature/ar-0046` | `a60f73ffbd47` | 0 | behind 0, ahead 91 |

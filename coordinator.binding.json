@@ -1,0 +1,6 @@
+{
+  "product_repository": "martin-beck/agent-workflow-runtime",
+  "project_id": "b52ff18a-5629-408c-876f-936eed2295b5",
+  "schema_version": 1,
+  "state_repository": "martin-beck/agent-workflow-runtime-state"
+}

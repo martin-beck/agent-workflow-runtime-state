@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `919bef9df8a8` | 10 | behind 0, ahead 30 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `scripts/check_ci_observation_adapter.py`, `scripts/ci_observation_adapter.py`, `specifications/README.md`, `specifications/ci-observation-adapter-v1.json`, `specifications/fixtures/ci-observation-ar0013-v1.json`, `specifications/fixtures/ci-observation-evidence-ar0013-v1.json`, `tests/test_ci_observation_adapter.py` |
+| `agent-workflow-runtime` | `main` | `cc86766fb440` | 0 | behind 0, ahead 32 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 0, ahead 1 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 0, ahead 3 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 0, ahead 5 |

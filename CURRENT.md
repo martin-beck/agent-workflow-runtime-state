@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0033](tasks/AR-0033.md): Codex live provider adapter | Implement and qualify live Codex-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | awr-worker-0033 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0034](tasks/AR-0034.md): OpenCode live provider adapter | Implement and qualify live OpenCode-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0034](tasks/AR-0034.md): OpenCode live provider adapter | Implement and qualify live OpenCode-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | awr-worker-0034 |
 
 ## Planned
 

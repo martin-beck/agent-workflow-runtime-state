@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**68 ARs tracked** across 2 active status categories.
+**68 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 8 |
+| **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 60 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -88,7 +88,7 @@ flowchart LR
         AR_0058["AR-0058 - Done"]:::status_done
         AR_0059["AR-0059 - Done"]:::status_done
         AR_0060["AR-0060 - Done"]:::status_done
-        AR_0061["AR-0061 - Planned"]:::status_planned
+        AR_0061["AR-0061 - Open"]:::status_open
         AR_0062["AR-0062 - Planned"]:::status_planned
         AR_0063["AR-0063 - Planned"]:::status_planned
         AR_0064["AR-0064 - Planned"]:::status_planned
@@ -357,11 +357,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (8)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0061](tasks/AR-0061.md): Durable job contract | Unclaimed | Create the durable, auditable job contract consumed by every scheduler and contractor operation. | Define and implement the revision-bound durable job contract and checker. |
+
+### Planned (7)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Unclaimed | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. |
 | P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Unclaimed | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. |
 | P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Unclaimed | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. |

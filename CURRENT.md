@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. | awr-worker-0029 |
 
 ## Planned
 

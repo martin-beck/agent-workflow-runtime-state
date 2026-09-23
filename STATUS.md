@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
@@ -56,7 +56,7 @@ flowchart LR
         AR_0026["AR-0026 - Done"]:::status_done
         AR_0027["AR-0027 - Done"]:::status_done
         AR_0028["AR-0028 - Done"]:::status_done
-        AR_0029["AR-0029 - Open"]:::status_open
+        AR_0029["AR-0029 - In progress"]:::status_in_progress
         AR_0030["AR-0030 - Planned"]:::status_planned
         AR_0031["AR-0031 - Planned"]:::status_planned
         AR_0032["AR-0032 - Planned"]:::status_planned
@@ -251,11 +251,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | Unclaimed | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0029](tasks/AR-0029.md): Coordinator live state client and event persistence | awr-worker-0029 | Implement the live Coordinator client and durable event persistence needed to consume task identity, revisions, claims, leases, and state transitions. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (16)
 

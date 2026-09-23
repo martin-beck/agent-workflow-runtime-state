@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 2 active status categories.
+**28 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 14 |
+| **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 14 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -38,7 +38,7 @@ flowchart LR
         AR_0008["AR-0008 - Done"]:::status_done
         AR_0009["AR-0009 - Done"]:::status_done
         AR_0010["AR-0010 - Done"]:::status_done
-        AR_0011["AR-0011 - Planned"]:::status_planned
+        AR_0011["AR-0011 - Open"]:::status_open
         AR_0012["AR-0012 - Done"]:::status_done
         AR_0013["AR-0013 - Planned"]:::status_planned
         AR_0014["AR-0014 - Planned"]:::status_planned
@@ -174,11 +174,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (14)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0011](tasks/AR-0011.md): UI session bridge and safe resume | Unclaimed | Define the runtime-facing contract for revision-bound interactive discussions, resumable sessions, safe exit, and validated final events. | Write and check the versioned specification, then implement only after review. |
+
+### Planned (13)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0013](tasks/AR-0013.md): CI and external-observation adapter | Unclaimed | Define how hosted checks and remote observations are requested, correlated, verified, and distinguished from local qualification. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Unclaimed | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0018](tasks/AR-0018.md): Supervisor implementation | Unclaimed | Implement admission, leases, supervision, cancellation, recovery, and lifecycle evidence using the approved formal model. | Write and check the versioned specification, then implement only after review. |

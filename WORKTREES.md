@@ -33,5 +33,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0026` | `feature/ar-0026` | `7949af71ebe8` | 0 | behind 0, ahead 45 |
 | `agent-workflow-runtime-0027` | `feature/ar-0027` | `ee34db0c4559` | 0 | behind 0, ahead 53 |
 | `agent-workflow-runtime-0028` | `feature/ar-0028` | `230924ac5390` | 0 | behind 0, ahead 55 |
-| `agent-workflow-runtime-0029` | `feature/ar-0029` | `c4b19ccb30e9` | 8 | behind 0, ahead 56 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `scripts/check_coordinator_state.py`, `scripts/coordinator_state.py`, `specifications/coordinator-live-state-v1.json`, `specifications/fixtures/coordinator-live-state-ar0029-v1.json`, `tests/test_coordinator_state.py` |
+| `agent-workflow-runtime-0029` | `feature/ar-0029` | `d3704847c68c` | 0 | behind 0, ahead 57 |

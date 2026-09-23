@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 15 |
+| **Planned** | Defined work awaiting promotion or dependencies | 14 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 12 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -39,7 +39,7 @@ flowchart LR
         AR_0009["AR-0009 - Done"]:::status_done
         AR_0010["AR-0010 - Open"]:::status_open
         AR_0011["AR-0011 - Planned"]:::status_planned
-        AR_0012["AR-0012 - Planned"]:::status_planned
+        AR_0012["AR-0012 - Open"]:::status_open
         AR_0013["AR-0013 - Planned"]:::status_planned
         AR_0014["AR-0014 - Planned"]:::status_planned
         AR_0015["AR-0015 - Done"]:::status_done
@@ -174,18 +174,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0010](tasks/AR-0010.md): AWG oracle bridge and discussion admission | Unclaimed | Define when uncertainty becomes a batched oracle discussion, how alternatives and confidence are recorded, and how final guidance is bound to revisions. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0012](tasks/AR-0012.md): Git, branch, and pull-request publication bridge | Unclaimed | Define safe branch, commit, review, merge, and publication operations with exact-head and signed-DCO evidence. | Write and check the versioned specification, then implement only after review. |
 
-### Planned (15)
+### Planned (14)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0011](tasks/AR-0011.md): UI session bridge and safe resume | Unclaimed | Define the runtime-facing contract for revision-bound interactive discussions, resumable sessions, safe exit, and validated final events. | Write and check the versioned specification, then implement only after review. |
-| P0 | [AR-0012](tasks/AR-0012.md): Git, branch, and pull-request publication bridge | Unclaimed | Define safe branch, commit, review, merge, and publication operations with exact-head and signed-DCO evidence. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0013](tasks/AR-0013.md): CI and external-observation adapter | Unclaimed | Define how hosted checks and remote observations are requested, correlated, verified, and distinguished from local qualification. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Unclaimed | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0018](tasks/AR-0018.md): Supervisor implementation | Unclaimed | Implement admission, leases, supervision, cancellation, recovery, and lifecycle evidence using the approved formal model. | Write and check the versioned specification, then implement only after review. |

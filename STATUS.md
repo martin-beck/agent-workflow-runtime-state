@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 10 |
+| **Done** | Accepted, integrated, and durably verified | 11 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -44,7 +44,7 @@ flowchart LR
         AR_0014["AR-0014 - Planned"]:::status_planned
         AR_0015["AR-0015 - Done"]:::status_done
         AR_0016["AR-0016 - In progress"]:::status_in_progress
-        AR_0017["AR-0017 - In progress"]:::status_in_progress
+        AR_0017["AR-0017 - Done"]:::status_done
         AR_0018["AR-0018 - Planned"]:::status_planned
         AR_0019["AR-0019 - Planned"]:::status_planned
         AR_0020["AR-0020 - Planned"]:::status_planned
@@ -174,12 +174,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | awr-worker-0016 | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
-| P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | awr-worker-0017 | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (16)
 
@@ -202,7 +201,7 @@ flowchart LR
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Unclaimed | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Unclaimed | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. |
 
-### Done (10)
+### Done (11)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -216,3 +215,4 @@ flowchart LR
 | P0 | [AR-0008](tasks/AR-0008.md): Privacy-safe event journal and provenance | Unclaimed | Define the redacted journal, provenance chain, retention, digesting, and public-safe evidence projection. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | Unclaimed | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

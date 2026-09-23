@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0033](tasks/AR-0033.md): Codex live provider adapter | Implement and qualify live Codex-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0033](tasks/AR-0033.md): Codex live provider adapter | Implement and qualify live Codex-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. | awr-worker-0033 |
 
 ## Planned
 

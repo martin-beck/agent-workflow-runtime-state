@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 23 |
 | **Future** | Deferred roadmap work | 0 |
@@ -32,7 +32,7 @@ flowchart LR
         AR_0002["AR-0002 - Done"]:::status_done
         AR_0003["AR-0003 - Done"]:::status_done
         AR_0004["AR-0004 - Done"]:::status_done
-        AR_0005["AR-0005 - Open"]:::status_open
+        AR_0005["AR-0005 - In progress"]:::status_in_progress
         AR_0006["AR-0006 - Planned"]:::status_planned
         AR_0007["AR-0007 - Planned"]:::status_planned
         AR_0008["AR-0008 - Planned"]:::status_planned
@@ -174,11 +174,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0005](tasks/AR-0005.md): Supervisor admission, lease, and worker lifecycle | Unclaimed | Define admission, leases, heartbeats, cancellation, handoff, stale-worker recovery, and lifecycle state transitions. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0005](tasks/AR-0005.md): Supervisor admission, lease, and worker lifecycle | awr-worker-0005 | Define admission, leases, heartbeats, cancellation, handoff, stale-worker recovery, and lifecycle state transitions. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (23)
 

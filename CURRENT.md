@@ -10,11 +10,16 @@ Never edit this file directly.
 | P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. | awr-worker-0039 |
 | P1 | [AR-0041](tasks/AR-0041.md): Live performance and reliability qualification harness | Measure real latency, throughput, recovery, resource use, and failure behavior under controlled workloads. | Write and check the versioned specification, then implement only after review. | awr-worker-0041 |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0042](tasks/AR-0042.md): Live security, privacy, and supply-chain enforcement | Enforce secrets, least privilege, dependency provenance, redaction, public evidence, and hostile-boundary controls on live paths. | Write and check the versioned specification, then implement only after review. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0043](tasks/AR-0043.md): Full workflow orchestrator and terminal semantics | Operate the complete live workflow from task admission through agent execution, quality, oracle, review, release, reconciliation, and terminal state. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. | - |

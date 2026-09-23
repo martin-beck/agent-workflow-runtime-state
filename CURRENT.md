@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. | awr-worker-0004 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -45,3 +39,4 @@ Never edit this file directly.
 | P0 | [AR-0001](tasks/AR-0001.md): Runtime scope, authority boundaries, and formal specification admission | Establish the runtime charter, authority matrix, and admission rule that every design or conceptual decision is a versioned, machine-checkable specification before implementation. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0002](tasks/AR-0002.md): Versioned normalized session-event protocol | Define the provider-neutral event envelope, ordering, correlation, revision binding, and compatibility rules for agent execution. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0003](tasks/AR-0003.md): Agent adapter capability and lifecycle contract | Define the adapter contract for heterogeneous agent CLIs, including discovery, start, interaction, termination, failure, and capability reporting. | Write and check the versioned specification, then implement only after review. | - |
+| P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. | - |

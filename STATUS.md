@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -52,7 +52,7 @@ flowchart LR
         AR_0022["AR-0022 - Done"]:::status_done
         AR_0023["AR-0023 - In progress"]:::status_in_progress
         AR_0024["AR-0024 - Planned"]:::status_planned
-        AR_0025["AR-0025 - Open"]:::status_open
+        AR_0025["AR-0025 - In progress"]:::status_in_progress
         AR_0026["AR-0026 - Open"]:::status_open
         AR_0027["AR-0027 - Planned"]:::status_planned
         AR_0028["AR-0028 - Planned"]:::status_planned
@@ -174,17 +174,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0023](tasks/AR-0023.md): End-to-end autonomous development workflow | awr-worker-0023 | Integrate planning, execution, quality, oracle discussion, review, merge, recovery, and durable state into one bounded workflow. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0025](tasks/AR-0025.md): Security, privacy, and supply-chain assurance | awr-worker-0025 | Qualify secret handling, least privilege, dependency provenance, redaction, public evidence, and hostile boundary cases. | Write and check the versioned specification, then implement only after review. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0025](tasks/AR-0025.md): Security, privacy, and supply-chain assurance | Unclaimed | Qualify secret handling, least privilege, dependency provenance, redaction, public evidence, and hostile boundary cases. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0026](tasks/AR-0026.md): Performance and reliability qualification | Unclaimed | Measure bounded latency, throughput, recovery, resource use, and failure behavior against explicit specifications. | Write and check the versioned specification, then implement only after review. |
 
 ### Planned (3)

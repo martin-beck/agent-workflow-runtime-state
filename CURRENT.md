@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0057](tasks/AR-0057.md): Production security hardening | Turn offline security policy observations into enforced runtime security and supply-chain controls. | Implement production security hardening, supply-chain verification, threat controls, and incident containment. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. | - |
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. | - |
 | P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. | - |

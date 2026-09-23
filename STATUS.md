@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 11 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 47 |
+| **Done** | Accepted, integrated, and durably verified | 48 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -79,7 +79,7 @@ flowchart LR
         AR_0049["AR-0049 - Planned"]:::status_planned
         AR_0050["AR-0050 - Planned"]:::status_planned
         AR_0051["AR-0051 - Planned"]:::status_planned
-        AR_0052["AR-0052 - In progress"]:::status_in_progress
+        AR_0052["AR-0052 - Done"]:::status_done
         AR_0053["AR-0053 - Planned"]:::status_planned
         AR_0054["AR-0054 - Planned"]:::status_planned
         AR_0055["AR-0055 - Planned"]:::status_planned
@@ -324,12 +324,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | awr-worker-0048 | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. |
-| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | awr-worker-0052 | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. |
 
 ### Planned (11)
 
@@ -347,7 +346,7 @@ flowchart LR
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Unclaimed | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. |
 | P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Unclaimed | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. |
 
-### Done (47)
+### Done (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -367,6 +366,7 @@ flowchart LR
 | P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Unclaimed | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. |
 | P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Unclaimed | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. |
 | P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Unclaimed | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. |
+| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | Unclaimed | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

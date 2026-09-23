@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. | awr-worker-0048 |
-| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. | awr-worker-0052 |
 
 ## Planned
 
@@ -46,6 +45,7 @@ Never edit this file directly.
 | P0 | [AR-0014](tasks/AR-0014.md): Formal runtime models and hostile trace corpus | Define executable models and adversarial traces covering lifecycle, oracle, recovery, publication, and authority invariants. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. | - |
 | P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. | - |
+| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

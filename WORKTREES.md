@@ -16,5 +16,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0009` | `feature/ar-0009` | `78cf33f6a001` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0015` | `feature/ar-0015` | `832b0ca6beca` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0016` | `feature/ar-0016` | `185f076f7bbd` | 0 | behind 0, ahead 17 |
-| `agent-workflow-runtime-0017` | `feature/ar-0017` | `9a5d60518cc6` | 9 | behind 0, ahead 16 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md`, `scripts/check_opendesk_adapter.py`, `scripts/opendesk_adapter.py`, `specifications/fixtures/opendesk-trace-ar0017-v1.json`, `specifications/opendesk-adapter-v1.json`, `tests/test_opendesk_adapter.py` |
+| `agent-workflow-runtime-0017` | `feature/ar-0017` | `f71e30048f6f` | 0 | behind 0, ahead 17 |

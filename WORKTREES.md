@@ -18,8 +18,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0011` | `feature/ar-0011` | `942d69e2045d` | 0 | behind 0, ahead 29 |
 | `agent-workflow-runtime-0012` | `feature/ar-0012` | `169234ec1451` | 0 | behind 0, ahead 25 |
 | `agent-workflow-runtime-0013` | `feature/ar-0013` | `c8a33a9081d0` | 0 | behind 0, ahead 29 |
-| `agent-workflow-runtime-0014` | `feature/ar-0014` | `37a61570fbc1` | 10 | behind 0, ahead 28 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md`, `scripts/check_runtime_model.py`, `scripts/runtime_model.py`, `specifications/fixtures/runtime-hostile-ar0014-v1.json`, `specifications/fixtures/runtime-trace-ar0014-v1.json`, `specifications/runtime-model-v1.json`, `tests/test_runtime_model.py` |
+| `agent-workflow-runtime-0014` | `feature/ar-0014` | `83bf9cf9ab45` | 0 | behind 0, ahead 29 |
 | `agent-workflow-runtime-0015` | `feature/ar-0015` | `832b0ca6beca` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0016` | `feature/ar-0016` | `185f076f7bbd` | 0 | behind 0, ahead 17 |
 | `agent-workflow-runtime-0017` | `feature/ar-0017` | `f71e30048f6f` | 0 | behind 0, ahead 17 |

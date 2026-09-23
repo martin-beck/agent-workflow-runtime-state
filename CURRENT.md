@@ -8,12 +8,12 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0003](tasks/AR-0003.md): Agent adapter capability and lifecycle contract | Define the adapter contract for heterogeneous agent CLIs, including discovery, start, interaction, termination, failure, and capability reporting. | Write and check the versioned specification, then implement only after review. | - |
+| P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. | - |
 
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0004](tasks/AR-0004.md): Worktree, project binding, and capability boundary | Define how a runtime session is bound to a project, exact revision, isolated worktree, allowed tools, and authority boundaries. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0005](tasks/AR-0005.md): Supervisor admission, lease, and worker lifecycle | Define admission, leases, heartbeats, cancellation, handoff, stale-worker recovery, and lifecycle state transitions. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0006](tasks/AR-0006.md): Resource, timeout, and process containment contract | Define bounded CPU, memory, disk, network, process-tree, timeout, and cancellation behavior with fail-closed enforcement. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. | - |

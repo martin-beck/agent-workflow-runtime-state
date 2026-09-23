@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 4 active status categories.
+**60 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 11 |
 | **Future** | Deferred roadmap work | 0 |
@@ -79,7 +79,7 @@ flowchart LR
         AR_0049["AR-0049 - Planned"]:::status_planned
         AR_0050["AR-0050 - Planned"]:::status_planned
         AR_0051["AR-0051 - Planned"]:::status_planned
-        AR_0052["AR-0052 - Open"]:::status_open
+        AR_0052["AR-0052 - In progress"]:::status_in_progress
         AR_0053["AR-0053 - Planned"]:::status_planned
         AR_0054["AR-0054 - Planned"]:::status_planned
         AR_0055["AR-0055 - Planned"]:::status_planned
@@ -324,17 +324,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | awr-worker-0048 | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | Unclaimed | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. |
+| P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | awr-worker-0052 | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. |
 
 ### Planned (11)
 

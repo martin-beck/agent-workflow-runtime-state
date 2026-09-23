@@ -4,7 +4,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `89f2a2aa2a3e` | 0 | behind 0, ahead 4 |
+| `agent-workflow-runtime` | `main` | `89f2a2aa2a3e` | 9 | behind 0, ahead 4 |
+| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `scripts/check_durable_scheduler.py`, `scripts/durable_scheduler.py`, `specifications/README.md`, `specifications/durable-scheduler-v1.json`, `specifications/fixtures/durable-scheduler-ar0062-v1.json`, `tests/test_durable_scheduler.py` |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 122, ahead 0 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 120, ahead 0 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 118, ahead 0 |

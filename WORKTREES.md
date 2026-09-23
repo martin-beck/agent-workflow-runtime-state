@@ -26,5 +26,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0019` | `feature/ar-0019` | `9c8d6007d369` | 0 | behind 0, ahead 37 |
 | `agent-workflow-runtime-0020` | `feature/ar-0020` | `0e67c0962ad2` | 0 | behind 0, ahead 37 |
 | `agent-workflow-runtime-0021` | `feature/ar-0021` | `beff56a68375` | 0 | behind 0, ahead 41 |
-| `agent-workflow-runtime-0022` | `feature/ar-0022` | `bf0e63cefc83` | 9 | behind 0, ahead 40 |
-| changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md`, `scripts/adapter_conformance.py`, `scripts/check_adapter_conformance.py`, `specifications/adapter-conformance-v1.json`, `specifications/fixtures/adapter-conformance-ar0022-v1.json`, `tests/test_adapter_conformance.py` |
+| `agent-workflow-runtime-0022` | `feature/ar-0022` | `d1c27fdf21ef` | 0 | behind 0, ahead 41 |

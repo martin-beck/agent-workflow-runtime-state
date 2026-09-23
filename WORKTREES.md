@@ -65,5 +65,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0055` | `feature/ar-0055` | `7dcaf68e0463` | 0 | behind 0, ahead 109 |
 | `agent-workflow-runtime-0056` | `feature/ar-0056` | `b7a4d41c1a36` | 0 | behind 0, ahead 111 |
 | `agent-workflow-runtime-0057` | `feature/ar-0057` | `de315ffd5b74` | 0 | behind 0, ahead 113 |
-| `agent-workflow-runtime-0059` | `feature/ar-0059` | `cbafe4c1374e` | 5 | behind 0, ahead 112 |
-| changed files | - | - | - | `scripts/check_production_qualification_chaos.py`, `scripts/production_qualification_chaos.py`, `specifications/fixtures/production-qualification-chaos-ar0059-v1.json`, `specifications/production-qualification-chaos-v1.json`, `tests/test_production_qualification_chaos.py` |
+| `agent-workflow-runtime-0059` | `feature/ar-0059` | `5c388000fffb` | 0 | behind 0, ahead 113 |

@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. | awr-worker-0049 |
 | P0 | [AR-0053](tasks/AR-0053.md): Production AWG decision integration | Connect runtime uncertainty and provider/workflow alternatives to AWG decisions without manufacturing guidance or approval. | Implement live AWG oracle escalation, decision retrieval, and decision binding for material runtime alternatives. | awr-worker-0053 |
 
 ## Planned
@@ -45,6 +44,7 @@ Never edit this file directly.
 | P0 | [AR-0046](tasks/AR-0046.md): Production Coordinator transport | Implement the production Coordinator transport, authentication boundary, revision reads, event writes, and fail-closed remote error handling. | Define and implement the bounded production Coordinator transport behind explicit authority and network gates. | - |
 | P0 | [AR-0047](tasks/AR-0047.md): Production lease and claim fencing | Make claims, leases, heartbeats, handoff, expiry recovery, and fencing correct under concurrent workers and ambiguous transport failures. | Implement durable CAS leases, fencing tokens, and crash-safe claim recovery using the production transport. | - |
 | P0 | [AR-0048](tasks/AR-0048.md): Host enforcement integration | Connect session admission and leases to OS process, filesystem, resource, network, and cancellation enforcement. | Implement real host admission and enforcement integration behind a least-privilege capability gate. | - |
+| P0 | [AR-0049](tasks/AR-0049.md): Provider execution security boundary | Add the live provider execution security boundary: secret references, network policy, timeouts, streaming, cancellation, and redacted evidence. | Implement bounded credential, network, and provider-session injection without exposing secrets or unbounded transport. | - |
 | P0 | [AR-0052](tasks/AR-0052.md): Production AWQ evidence integration | Deliver production transport of evidence to AWQ with revision binding, acceptance, rejection, blocking, and unknown-outcome semantics. | Implement live AWQ evidence transport and independent quality-gate acceptance at runtime boundaries. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |

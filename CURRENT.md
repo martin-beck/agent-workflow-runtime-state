@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0050](tasks/AR-0050.md): Production provider adapters | Replace offline provider adapter models with bounded live adapter implementations and capability-specific conformance tests. | Implement production Codex, OpenCode, and OpenDesk adapters over the provider execution boundary. | awr-worker-0050 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0054](tasks/AR-0054.md): Production UI human-gate integration | Make human approval, rejection, or clarification available to runtime only through revision-bound validated UI events. | Implement the production UI human-gate session bridge with private session files and validated final events. | - |
+| P0 | [AR-0054](tasks/AR-0054.md): Production UI human-gate integration | Make human approval, rejection, or clarification available to runtime only through revision-bound validated UI events. | Implement the production UI human-gate session bridge with private session files and validated final events. | awr-worker-0054 |
 
 ## Planned
 

@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0051](tasks/AR-0051.md): Agent capability and preflight qualification | Determine whether an agent can be used under the current configuration without confusing setup acceptance with runtime support. | Implement agent capability discovery, configuration validation, preflight, and benchmark eligibility checks. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0055](tasks/AR-0055.md): ASB production integration | Connect the production runtime to ASB and asb-tui for real agent workflows while preserving all authority and evidence boundaries. | Implement live ASB integration for setup, preflight, benchmark execution, record/replay, extension, and multi-agent comparison. | - |
 | P0 | [AR-0056](tasks/AR-0056.md): Runtime observability and audit | Make live agent workflows diagnosable and auditable without publishing secrets, prompts, transcripts, paths, or host identifiers. | Implement production observability, audit, metrics, traces, alerts, and privacy-safe incident evidence. | - |
 | P0 | [AR-0057](tasks/AR-0057.md): Production security hardening | Turn offline security policy observations into enforced runtime security and supply-chain controls. | Implement production security hardening, supply-chain verification, threat controls, and incident containment. | - |

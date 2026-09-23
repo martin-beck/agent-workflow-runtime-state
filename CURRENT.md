@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -22,7 +28,6 @@ Never edit this file directly.
 | P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. | - |
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. | - |
 | P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. | - |
-| P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. | - |
 
 ## Done
 

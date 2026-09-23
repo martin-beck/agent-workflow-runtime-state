@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. | awr-worker-0060 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -41,6 +35,7 @@ Never edit this file directly.
 | P0 | [AR-0057](tasks/AR-0057.md): Production security hardening | Turn offline security policy observations into enforced runtime security and supply-chain controls. | Implement production security hardening, supply-chain verification, threat controls, and incident containment. | - |
 | P0 | [AR-0058](tasks/AR-0058.md): Deployment and release implementation | Make the runtime installable, deployable, upgradeable, and recoverable across supported hosts and workflow projects. | Implement production packaging, deployment, compatibility, upgrade, rollback, and release automation. | - |
 | P0 | [AR-0059](tasks/AR-0059.md): Production qualification and chaos | Establish evidence that the integrated runtime remains reliable and bounded across supported agents, hosts, workloads, and failure modes. | Run production-scale reliability, performance, compatibility, and multi-agent qualification with bounded failure injection. | - |
+| P0 | [AR-0060](tasks/AR-0060.md): Production pilot and operational acceptance | Prove the fully integrated runtime in a bounded production pilot and make the final go/no-go decision evidence-based. | Execute the gated production pilot, cutover, rollback rehearsal, and final operational acceptance. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

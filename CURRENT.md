@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. | awr-worker-0027 |
 
 ## Planned
 

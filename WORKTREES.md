@@ -57,8 +57,9 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0049` | `feature/ar-0049` | `03ef2a63b35e` | 4 | behind 0, ahead 99 |
 | changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md` |
 | `agent-workflow-runtime-0050` | `feature/ar-0050` | `17fe5d8ec32d` | 0 | behind 0, ahead 103 |
-| `agent-workflow-runtime-0051` | `feature/ar-0051` | `f1aebc2d2de6` | 2 | behind 0, ahead 107 |
-| changed files | - | - | - | `scripts/agent_capability_preflight.py`, `specifications/README.md` |
+| `agent-workflow-runtime-0051` | `feature/ar-0051` | `f1aebc2d2de6` | 3 | behind 0, ahead 107 |
+| changed files | - | - | - | `scripts/agent_capability_preflight.py`, `specifications/README.md`, `tests/test_agent_capability_preflight.py` |
 | `agent-workflow-runtime-0052` | `feature/ar-0052` | `875c2bb4cfb7` | 0 | behind 0, ahead 95 |
 | `agent-workflow-runtime-0053` | `feature/ar-0053` | `38d4c32fc6bc` | 0 | behind 0, ahead 99 |
 | `agent-workflow-runtime-0054` | `feature/ar-0054` | `feba5149c766` | 0 | behind 0, ahead 103 |
+| `agent-workflow-runtime-0055` | `feature/ar-0055` | `7042501d8cda` | 0 | behind 0, ahead 108 |

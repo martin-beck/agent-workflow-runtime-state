@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**60 ARs tracked** across 1 active status categories.
+**68 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 60 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -88,6 +88,14 @@ flowchart LR
         AR_0058["AR-0058 - Done"]:::status_done
         AR_0059["AR-0059 - Done"]:::status_done
         AR_0060["AR-0060 - Done"]:::status_done
+        AR_0061["AR-0061 - Planned"]:::status_planned
+        AR_0062["AR-0062 - Planned"]:::status_planned
+        AR_0063["AR-0063 - Planned"]:::status_planned
+        AR_0064["AR-0064 - Planned"]:::status_planned
+        AR_0065["AR-0065 - Planned"]:::status_planned
+        AR_0066["AR-0066 - Planned"]:::status_planned
+        AR_0067["AR-0067 - Planned"]:::status_planned
+        AR_0068["AR-0068 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -247,6 +255,23 @@ flowchart LR
     AR_0057 --> AR_0060
     AR_0058 --> AR_0060
     AR_0059 --> AR_0060
+    AR_0060 --> AR_0061
+    AR_0061 --> AR_0062
+    AR_0061 --> AR_0063
+    AR_0061 --> AR_0064
+    AR_0061 --> AR_0065
+    AR_0061 --> AR_0066
+    AR_0062 --> AR_0064
+    AR_0062 --> AR_0065
+    AR_0062 --> AR_0066
+    AR_0063 --> AR_0064
+    AR_0063 --> AR_0065
+    AR_0063 --> AR_0066
+    AR_0064 --> AR_0067
+    AR_0065 --> AR_0066
+    AR_0065 --> AR_0067
+    AR_0066 --> AR_0067
+    AR_0067 --> AR_0068
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -320,9 +345,30 @@ flowchart LR
 | [AR-0057](tasks/AR-0057.md) | [AR-0042](tasks/AR-0042.md), [AR-0046](tasks/AR-0046.md), [AR-0049](tasks/AR-0049.md), [AR-0056](tasks/AR-0056.md) | [AR-0058](tasks/AR-0058.md), [AR-0060](tasks/AR-0060.md) |
 | [AR-0058](tasks/AR-0058.md) | [AR-0040](tasks/AR-0040.md), [AR-0056](tasks/AR-0056.md), [AR-0057](tasks/AR-0057.md) | [AR-0060](tasks/AR-0060.md) |
 | [AR-0059](tasks/AR-0059.md) | [AR-0041](tasks/AR-0041.md), [AR-0048](tasks/AR-0048.md), [AR-0049](tasks/AR-0049.md), [AR-0050](tasks/AR-0050.md), [AR-0055](tasks/AR-0055.md), [AR-0056](tasks/AR-0056.md) | [AR-0060](tasks/AR-0060.md) |
-| [AR-0060](tasks/AR-0060.md) | [AR-0045](tasks/AR-0045.md), [AR-0055](tasks/AR-0055.md), [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md) | None |
+| [AR-0060](tasks/AR-0060.md) | [AR-0045](tasks/AR-0045.md), [AR-0055](tasks/AR-0055.md), [AR-0057](tasks/AR-0057.md), [AR-0058](tasks/AR-0058.md), [AR-0059](tasks/AR-0059.md) | [AR-0061](tasks/AR-0061.md) |
+| [AR-0061](tasks/AR-0061.md) | [AR-0060](tasks/AR-0060.md) | [AR-0062](tasks/AR-0062.md), [AR-0063](tasks/AR-0063.md), [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md), [AR-0066](tasks/AR-0066.md) |
+| [AR-0062](tasks/AR-0062.md) | [AR-0061](tasks/AR-0061.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md), [AR-0066](tasks/AR-0066.md) |
+| [AR-0063](tasks/AR-0063.md) | [AR-0061](tasks/AR-0061.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md), [AR-0066](tasks/AR-0066.md) |
+| [AR-0064](tasks/AR-0064.md) | [AR-0061](tasks/AR-0061.md), [AR-0062](tasks/AR-0062.md), [AR-0063](tasks/AR-0063.md) | [AR-0067](tasks/AR-0067.md) |
+| [AR-0065](tasks/AR-0065.md) | [AR-0061](tasks/AR-0061.md), [AR-0062](tasks/AR-0062.md), [AR-0063](tasks/AR-0063.md) | [AR-0066](tasks/AR-0066.md), [AR-0067](tasks/AR-0067.md) |
+| [AR-0066](tasks/AR-0066.md) | [AR-0061](tasks/AR-0061.md), [AR-0062](tasks/AR-0062.md), [AR-0063](tasks/AR-0063.md), [AR-0065](tasks/AR-0065.md) | [AR-0067](tasks/AR-0067.md) |
+| [AR-0067](tasks/AR-0067.md) | [AR-0064](tasks/AR-0064.md), [AR-0065](tasks/AR-0065.md), [AR-0066](tasks/AR-0066.md) | [AR-0068](tasks/AR-0068.md) |
+| [AR-0068](tasks/AR-0068.md) | [AR-0067](tasks/AR-0067.md) | None |
 
 ## Complete AR inventory
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0061](tasks/AR-0061.md): Durable job contract | Unclaimed | Create the durable, auditable job contract consumed by every scheduler and contractor operation. | Define and implement the revision-bound durable job contract and checker. |
+| P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Unclaimed | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. |
+| P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Unclaimed | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. |
+| P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Unclaimed | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. |
+| P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | Unclaimed | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. |
+| P0 | [AR-0066](tasks/AR-0066.md): Closed-loop contractor behavior | Unclaimed | Turn scheduled agent work into an evidence-backed contracting loop with revision, quality, oracle, and human controls. | Implement closed-loop contractor orchestration from job admission through acceptance or bounded rejection. |
+| P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Unclaimed | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. |
+| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Conduct the separately approved bounded live pilot and make the evidence-based scheduler/contractor go-no-go decision. |
 
 ### Done (60)
 

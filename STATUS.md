@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**28 ARs tracked** across 3 active status categories.
+**28 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
@@ -36,7 +36,7 @@ flowchart LR
         AR_0006["AR-0006 - Done"]:::status_done
         AR_0007["AR-0007 - Done"]:::status_done
         AR_0008["AR-0008 - Done"]:::status_done
-        AR_0009["AR-0009 - Open"]:::status_open
+        AR_0009["AR-0009 - In progress"]:::status_in_progress
         AR_0010["AR-0010 - Planned"]:::status_planned
         AR_0011["AR-0011 - Planned"]:::status_planned
         AR_0012["AR-0012 - Planned"]:::status_planned
@@ -174,11 +174,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | Unclaimed | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. |
+| P0 | [AR-0009](tasks/AR-0009.md): AWQ evidence bridge | awr-worker-0009 | Define the runtime contract for submitting evidence to Agent Workflow Quality and consuming quality gates without duplicating quality authority. | Write and check the versioned specification, then implement only after review. |
+
+### Open (3)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

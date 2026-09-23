@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `0f29f6451da8` | 0 | behind 0, ahead 106 |
+| `agent-workflow-runtime` | `main` | `7042501d8cda` | 0 | behind 0, ahead 108 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 0, ahead 1 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 0, ahead 3 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 0, ahead 5 |
@@ -57,8 +57,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0049` | `feature/ar-0049` | `03ef2a63b35e` | 4 | behind 0, ahead 99 |
 | changed files | - | - | - | `README.md`, `docs/ARCHITECTURE.md`, `docs/PROTOCOL.md`, `specifications/README.md` |
 | `agent-workflow-runtime-0050` | `feature/ar-0050` | `17fe5d8ec32d` | 0 | behind 0, ahead 103 |
-| `agent-workflow-runtime-0051` | `feature/ar-0051` | `f1aebc2d2de6` | 1 | behind 0, ahead 107 |
-| changed files | - | - | - | `scripts/agent_capability_preflight.py` |
+| `agent-workflow-runtime-0051` | `feature/ar-0051` | `f1aebc2d2de6` | 2 | behind 0, ahead 107 |
+| changed files | - | - | - | `scripts/agent_capability_preflight.py`, `specifications/README.md` |
 | `agent-workflow-runtime-0052` | `feature/ar-0052` | `875c2bb4cfb7` | 0 | behind 0, ahead 95 |
 | `agent-workflow-runtime-0053` | `feature/ar-0053` | `38d4c32fc6bc` | 0 | behind 0, ahead 99 |
 | `agent-workflow-runtime-0054` | `feature/ar-0054` | `feba5149c766` | 0 | behind 0, ahead 103 |

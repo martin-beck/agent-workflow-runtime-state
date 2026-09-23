@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. | awr-worker-0039 |
 
 ## Planned
 

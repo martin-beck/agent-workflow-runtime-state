@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. | awr-worker-0062 |
 | P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. | awr-worker-0063 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. | - |
 
 ## Planned
 

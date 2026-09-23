@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**45 ARs tracked** across 3 active status categories.
+**45 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 13 |
+| **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 30 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -64,7 +64,7 @@ flowchart LR
         AR_0034["AR-0034 - Planned"]:::status_planned
         AR_0035["AR-0035 - Planned"]:::status_planned
         AR_0036["AR-0036 - Planned"]:::status_planned
-        AR_0037["AR-0037 - Planned"]:::status_planned
+        AR_0037["AR-0037 - Open"]:::status_open
         AR_0038["AR-0038 - Planned"]:::status_planned
         AR_0039["AR-0039 - Planned"]:::status_planned
         AR_0040["AR-0040 - Planned"]:::status_planned
@@ -258,7 +258,13 @@ flowchart LR
 | P1 | [AR-0031](tasks/AR-0031.md): Host supervisor and enforcement integration | awr-worker-0031 | Connect supervisor, capability, worktree, resource, timeout, and process controls to real host enforcement. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0032](tasks/AR-0032.md): Live adapter execution harness | awr-worker-0032 | Provide the bounded process transport and normalized event harness used by live provider adapters. | Write and check the versioned specification, then implement only after review. |
 
-### Planned (13)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Unclaimed | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. |
+
+### Planned (12)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -266,7 +272,6 @@ flowchart LR
 | P1 | [AR-0034](tasks/AR-0034.md): OpenCode live provider adapter | Unclaimed | Implement and qualify live OpenCode-compatible process/session execution through the normalized runtime contract. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0035](tasks/AR-0035.md): OpenDesk live provider adapter | Unclaimed | Implement and qualify live OpenDesk-compatible process/session execution with explicit capability negotiation. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0036](tasks/AR-0036.md): Durable journal, checkpoint, and recovery integration | Unclaimed | Persist privacy-safe events and checkpoints and recover real interrupted sessions with fencing and replay protection. | Write and check the versioned specification, then implement only after review. |
-| P1 | [AR-0037](tasks/AR-0037.md): AWQ live evidence transport and gate consumption | Unclaimed | Submit runtime evidence to AWQ and consume authoritative quality gates without duplicating AWQ policy. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0038](tasks/AR-0038.md): AWG live oracle transport and decision binding | Unclaimed | Submit uncertainty to AWG, receive revision-bound decisions and guidance, and resume safely. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0039](tasks/AR-0039.md): UI live session and human-gate integration | Unclaimed | Connect the runtime UI bridge to live human discussion, validated input, safe exit, and resumable decisions. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0040](tasks/AR-0040.md): Live publication, CI, release, and rollback bridge | Unclaimed | Observe and coordinate exact-head review, hosted CI, merge, release, rollback, and remote verification. | Write and check the versioned specification, then implement only after review. |

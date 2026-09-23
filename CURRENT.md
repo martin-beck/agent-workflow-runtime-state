@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0005](tasks/AR-0005.md): Supervisor admission, lease, and worker lifecycle | Define admission, leases, heartbeats, cancellation, handoff, stale-worker recovery, and lifecycle state transitions. | Write and check the versioned specification, then implement only after review. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0006](tasks/AR-0006.md): Resource, timeout, and process containment contract | Define bounded CPU, memory, disk, network, process-tree, timeout, and cancellation behavior with fail-closed enforcement. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0007](tasks/AR-0007.md): Checkpoint, interruption, and crash recovery | Define durable checkpoints, restart safety, idempotence, replay, interruption, and recovery after host or agent failure. | Write and check the versioned specification, then implement only after review. | - |
 | P0 | [AR-0008](tasks/AR-0008.md): Privacy-safe event journal and provenance | Define the redacted journal, provenance chain, retention, digesting, and public-safe evidence projection. | Write and check the versioned specification, then implement only after review. | - |

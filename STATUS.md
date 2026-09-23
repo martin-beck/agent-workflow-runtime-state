@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 22 |
+| **Done** | Accepted, integrated, and durably verified | 23 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -50,7 +50,7 @@ flowchart LR
         AR_0020["AR-0020 - Done"]:::status_done
         AR_0021["AR-0021 - Done"]:::status_done
         AR_0022["AR-0022 - Done"]:::status_done
-        AR_0023["AR-0023 - In progress"]:::status_in_progress
+        AR_0023["AR-0023 - Done"]:::status_done
         AR_0024["AR-0024 - Planned"]:::status_planned
         AR_0025["AR-0025 - In progress"]:::status_in_progress
         AR_0026["AR-0026 - In progress"]:::status_in_progress
@@ -174,11 +174,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0023](tasks/AR-0023.md): End-to-end autonomous development workflow | awr-worker-0023 | Integrate planning, execution, quality, oracle discussion, review, merge, recovery, and durable state into one bounded workflow. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0025](tasks/AR-0025.md): Security, privacy, and supply-chain assurance | awr-worker-0025 | Qualify secret handling, least privilege, dependency provenance, redaction, public evidence, and hostile boundary cases. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0026](tasks/AR-0026.md): Performance and reliability qualification | awr-worker-0026 | Measure bounded latency, throughput, recovery, resource use, and failure behavior against explicit specifications. | Write and check the versioned specification, then implement only after review. |
 
@@ -190,7 +189,7 @@ flowchart LR
 | P1 | [AR-0027](tasks/AR-0027.md): Fresh-clone release and compatibility lock | Unclaimed | Prove reproducible installation, clean-checkout operation, compatibility declarations, release evidence, and rollback. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0028](tasks/AR-0028.md): Umbrella integration and maintenance workflow | Unclaimed | Register the runtime in the Agent Workflow family and define its ongoing Coordinator, AWQ, AWG, UI, release, and self-evolution workflow. | Write and check the versioned specification, then implement only after review. |
 
-### Done (22)
+### Done (23)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -216,3 +215,4 @@ flowchart LR
 | P1 | [AR-0020](tasks/AR-0020.md): Evidence and oracle bridge implementation | Unclaimed | Implement AWQ evidence submission and AWG batched oracle interaction with revision-bound decisions and reusable guidance. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0021](tasks/AR-0021.md): Publication and CI implementation | Unclaimed | Implement signed-DCO publication, review/merge handoff, CI correlation, and exact-head verification. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0022](tasks/AR-0022.md): Adapter conformance and replay harness | Unclaimed | Implement cross-adapter conformance tests, deterministic replay, hostile inputs, and capability mismatch reporting. | Write and check the versioned specification, then implement only after review. |
+| P1 | [AR-0023](tasks/AR-0023.md): End-to-end autonomous development workflow | Unclaimed | Integrate planning, execution, quality, oracle discussion, review, merge, recovery, and durable state into one bounded workflow. | Write and check the versioned specification, then implement only after review. |

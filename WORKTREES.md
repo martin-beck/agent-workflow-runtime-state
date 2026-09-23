@@ -12,5 +12,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0005` | `feature/ar-0005` | `57db9412d778` | 0 | behind 0, ahead 9 |
 | `agent-workflow-runtime-0006` | `feature/ar-0006` | `e4869955bb03` | 0 | behind 0, ahead 11 |
 | `agent-workflow-runtime-0007` | `feature/ar-0007` | `db2acf9c458f` | 0 | behind 0, ahead 13 |
-| `agent-workflow-runtime-0008` | `feature/ar-0008` | `d4fabcf1b9aa` | 7 | behind 0, ahead 14 |
-| changed files | - | - | - | `scripts/check_privacy_safe_journal.py`, `scripts/privacy_safe_journal.py`, `specifications/README.md`, `specifications/fixtures/journal-ar0008-v1.json`, `specifications/fixtures/journal-evidence-ar0008-v1.json`, `specifications/privacy-safe-journal-v1.json`, `tests/test_privacy_safe_journal.py` |
+| `agent-workflow-runtime-0008` | `feature/ar-0008` | `281fef6b06a6` | 0 | behind 0, ahead 15 |

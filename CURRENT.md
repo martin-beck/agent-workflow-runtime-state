@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | awr-board-0124 |
-| P0 | [AR-0126](tasks/AR-0126.md): Release identity consistency | Ensure the released CLI version, wheel metadata, Git tag, source commit, and umbrella lock are identical. | Implement and verify: exact package, tag, artifact, and umbrella version identity. | awr-release-0126 |
 
 ## Open
 
@@ -107,6 +106,7 @@ Never edit this file directly.
 | P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. | - |
 | P0 | [AR-0122](tasks/AR-0122.md): Production release and umbrella integration alignment | Publish a coherent runtime release containing the executable integration and pin it in the umbrella. | Implement and verify: release runtime integration and update umbrella compatibility pins. | - |
 | P0 | [AR-0123](tasks/AR-0123.md): Enforceable worker sandbox profile | Replace reported-but-unenforced host controls with an explicit enforceable sandbox profile. | Implement and verify: enforceable OS sandbox and network/filesystem policy adapter. | - |
+| P0 | [AR-0126](tasks/AR-0126.md): Release identity consistency | Ensure the released CLI version, wheel metadata, Git tag, source commit, and umbrella lock are identical. | Implement and verify: exact package, tag, artifact, and umbrella version identity. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

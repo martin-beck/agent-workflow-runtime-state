@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. | awr-worker-0097 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -111,3 +105,4 @@ Never edit this file directly.
 | P1 | [AR-0043](tasks/AR-0043.md): Full workflow orchestrator and terminal semantics | Operate the complete live workflow from task admission through agent execution, quality, oracle, review, release, reconciliation, and terminal state. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0044](tasks/AR-0044.md): ASB end-to-end pilot | Run the Agent Systems Benchmark as the first real project through the complete Agent Workflow lifecycle. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. | - |
+| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. | - |

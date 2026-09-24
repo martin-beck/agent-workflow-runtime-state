@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `ed1911bd9c65` | 0 | behind 0, ahead 0 |
+| `agent-workflow-runtime` | `main` | `c089954d19cc` | 0 | behind 0, ahead 3 |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 48, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 46, ahead 0 |
 | `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `d9b3f9438f92` | 0 | behind 42, ahead 0 |
@@ -18,6 +18,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0090-worker` | `feature/ar-0090-worker` | `2b98d26b8291` | 0 | behind 18, ahead 0 |
 | `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `a243e88e1924` | 0 | behind 46, ahead 0 |
 | `agent-workflow-runtime-0099-worker` | `feature/ar-0099-worker` | `a8a436318d4f` | 0 | behind 32, ahead 0 |
+| `agent-workflow-runtime-0101-worker` | `feature/ar-0101-bootstrap-lifecycle` | `ed1911bd9c65` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `awr_cli/cli.py`, `awr_cli/install.py`, `docs/awr-install.md`, `tests/test_awr_install.py` |
+| `agent-workflow-runtime-local-authority-bridge` | `prep/local-authority-bridge` | `ed1911bd9c65` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `scripts/check_local_authority_bridge.py`, `scripts/local_authority_bridge.py`, `tests/test_local_authority_bridge.py` |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 211, ahead 0 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 209, ahead 0 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 207, ahead 0 |
@@ -80,3 +84,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0057` | `feature/ar-0057` | `de315ffd5b74` | 0 | behind 99, ahead 0 |
 | `agent-workflow-runtime-0058` | `feature/ar-0058` | `f6eed586a02c` | 0 | behind 96, ahead 0 |
 | `agent-workflow-runtime-0059` | `feature/ar-0059` | `5c388000fffb` | 0 | behind 99, ahead 0 |
+| `agent-workflow-runtime-local-project-workflow` | `prep/local-project-workflow` | `ed1911bd9c65` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/local-project-workflow.md`, `scripts/check_local_project_workflow.py`, `scripts/local_project_workflow.py`, `tests/test_local_project_workflow.py` |

@@ -3,6 +3,28 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0080](tasks/AR-0080.md): Production integration baseline and compatibility matrix | Turn the offline runtime contracts into an explicit production-integration baseline across hosts, projects, authorities, and agent profiles. | Define the executable production-integration baseline and compatibility matrix. | - |
+| P0 | [AR-0081](tasks/AR-0081.md): Executable Coordinator state client | Connect runtime admission, revisions, claims, leases, events, and terminal state to Coordinator without moving authority into AWR. | Implement the production Coordinator client behind a bounded transport interface. | - |
+| P0 | [AR-0082](tasks/AR-0082.md): Concurrent lease and worker coordination | Make simultaneous agents safe under claims, heartbeats, expiry, handoff, retries, and ambiguous writes. | Implement shared-state lease fencing and crash-safe multi-worker coordination. | - |
+| P0 | [AR-0083](tasks/AR-0083.md): Local host supervisor and sandbox enforcement | Run bounded local worker processes with worktree, resource, timeout, cancellation, and cleanup enforcement. | Implement the local host process supervisor and enforceable sandbox boundary. | - |
+| P0 | [AR-0084](tasks/AR-0084.md): Agent registry and capability preflight | Select compatible agent profiles without confusing catalog/setup acceptance with executable support. | Implement the runtime agent registry, capability negotiation, and admission preflight. | - |
+| P0 | [AR-0085](tasks/AR-0085.md): Multi-agent executable adapter sessions | Make multiple agent profiles concurrently executable behind one bounded lifecycle and local-mock response boundary. | Implement executable provider-neutral adapter sessions over the supervised local transport. | - |
+| P0 | [AR-0086](tasks/AR-0086.md): Multi-agent fairness and resource scheduler | Schedule many heterogeneous agents simultaneously without starvation, overcommitment, or cross-tenant leakage. | Implement fair multi-agent scheduling with quotas, backpressure, priorities, and resource pools. | - |
+| P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. | - |
+| P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. | - |
+| P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. | - |
+| P0 | [AR-0090](tasks/AR-0090.md): Cross-agent evidence and accounting integration | Attribute every agent action and project result to exact jobs, budgets, revisions, and replayable evidence. | Implement durable evidence, usage accounting, replay, and comparison across simultaneous agents. | - |
+| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. | - |
+| P0 | [AR-0092](tasks/AR-0092.md): Executable security and supply-chain enforcement | Make security controls executable and fail closed for every concurrent agent session and artifact. | Enforce runtime security, supply-chain, secret, and egress policy at executable boundaries. | - |
+| P0 | [AR-0093](tasks/AR-0093.md): Runtime deployment and release operations | Make the integrated runtime installable and recoverable across supported hosts and workflow projects. | Implement reproducible packaging, deployment, upgrade, rollback, and configuration migration. | - |
+| P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. | - |
+| P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. | - |
+| P0 | [AR-0096](tasks/AR-0096.md): Production readiness and staged rollout gate | Make the integrated runtime releasable with explicit readiness, rollback, ownership, and residual-risk evidence. | Perform production-readiness review and staged local-mock rollout qualification. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

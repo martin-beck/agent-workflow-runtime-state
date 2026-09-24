@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -95,7 +95,7 @@ flowchart LR
         AR_0065["AR-0065 - Done"]:::status_done
         AR_0066["AR-0066 - Done"]:::status_done
         AR_0067["AR-0067 - Done"]:::status_done
-        AR_0068["AR-0068 - Open"]:::status_open
+        AR_0068["AR-0068 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -357,11 +357,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Conduct the separately approved bounded live pilot and make the evidence-based scheduler/contractor go-no-go decision. |
+| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | awr-worker-0068 | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Conduct the separately approved bounded live pilot and make the evidence-based scheduler/contractor go-no-go decision. |
 
 ### Done (67)
 

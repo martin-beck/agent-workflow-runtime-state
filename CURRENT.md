@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. | awr-board-0120-cleanup |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | awr-board-0124 |
 
 ## Open
@@ -14,7 +15,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
-| P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. | - |
 
 ## Done
 

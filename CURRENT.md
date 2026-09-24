@@ -9,6 +9,22 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Obtain separately approved live-pilot authority before any real provider or host execution; current offline gate remains blocked by design. | - |
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | - |
+| P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. | - |
+| P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | - |
+| P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. | - |
+| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. | - |
+| P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. | - |
+| P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. | - |
+| P0 | [AR-0076](tasks/AR-0076.md): OpenDesk-compatible executable adapter | Add a third independently qualified adapter with explicit unsupported-capability behavior. | Implement the OpenDesk-compatible adapter through the bounded transport and fake conformance suite. | - |
+| P0 | [AR-0077](tasks/AR-0077.md): Executable scheduler-to-contractor workflow | Make scheduled work flow through a real adapter into evidence-backed contractor acceptance or rejection. | Compose executable scheduling, adapters, evidence, accounting, and contractor lifecycle into one local end-to-end runtime. | - |
+| P0 | [AR-0078](tasks/AR-0078.md): Runtime observability and incident operations | Make the executable runtime operable and auditable under failure without exposing private data. | Implement production-shaped observability, incident evidence, metrics, and privacy-safe operational diagnostics. | - |
+| P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

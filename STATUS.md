@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**124 ARs tracked** across 2 active status categories.
+**124 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -154,7 +154,7 @@ flowchart LR
         AR_0121["AR-0121 - Done"]:::status_done
         AR_0122["AR-0122 - Done"]:::status_done
         AR_0123["AR-0123 - Done"]:::status_done
-        AR_0124["AR-0124 - Open"]:::status_open
+        AR_0124["AR-0124 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -587,13 +587,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
+
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
-| P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Unclaimed | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
 
 ### Done (121)
 

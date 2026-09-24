@@ -15,7 +15,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0087-worker` | `feature/ar-0087-worker` | `44565435511b` | 0 | behind 4, ahead 0 |
 | `agent-workflow-runtime-0088-worker` | `feature/ar-0088-worker` | `a0cdeb55a349` | 0 | behind 8, ahead 0 |
 | `agent-workflow-runtime-0089-worker` | `feature/ar-0089-worker` | `80be706043d5` | 0 | behind 1, ahead 0 |
-| `agent-workflow-runtime-0090-worker` | `feature/ar-0090-worker` | `956b567589a4` | 0 | behind 0, ahead 0 |
+| `agent-workflow-runtime-0090-worker` | `feature/ar-0090-worker` | `2b98d26b8291` | 0 | behind 0, ahead 1 |
 | `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `a243e88e1924` | 0 | behind 27, ahead 0 |
 | `agent-workflow-runtime-0099-worker` | `feature/ar-0099-worker` | `a8a436318d4f` | 0 | behind 13, ahead 0 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 192, ahead 0 |

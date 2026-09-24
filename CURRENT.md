@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. | awr-worker-0118 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -101,6 +95,7 @@ Never edit this file directly.
 | P0 | [AR-0115](tasks/AR-0115.md): Host process and sandbox enforcement | Run bounded workers with process, filesystem, timeout, cancellation, and cleanup enforcement. | Implement and verify: host process supervision and enforceable worktree/resource boundary. | - |
 | P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. | - |
 | P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. | - |
+| P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

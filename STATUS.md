@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 2 active status categories.
+**112 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -140,7 +140,7 @@ flowchart LR
         AR_0107["AR-0107 - Done"]:::status_done
         AR_0108["AR-0108 - Done"]:::status_done
         AR_0109["AR-0109 - Done"]:::status_done
-        AR_0110["AR-0110 - Open"]:::status_open
+        AR_0110["AR-0110 - In progress"]:::status_in_progress
         AR_0111["AR-0111 - Open"]:::status_open
         AR_0112["AR-0112 - Open"]:::status_open
     end
@@ -550,12 +550,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | awr-worker-0110 | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
+
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
-| P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
 
 ### Done (109)

@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**130 ARs tracked** across 3 active status categories.
+**130 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 125 |
+| **Done** | Accepted, integrated, and durably verified | 126 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -160,7 +160,7 @@ flowchart LR
         AR_0127["AR-0127 - Done"]:::status_done
         AR_0128["AR-0128 - Done"]:::status_done
         AR_0129["AR-0129 - Done"]:::status_done
-        AR_0130["AR-0130 - In progress"]:::status_in_progress
+        AR_0130["AR-0130 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -606,13 +606,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | awr-board-0130 | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. |
-
-### Done (125)
+### Done (126)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -705,6 +699,7 @@ flowchart LR
 | P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Unclaimed | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. |
 | P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Unclaimed | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. |
 | P0 | [AR-0129](tasks/AR-0129.md): Local LLM mock, streaming, and record/replay adapter | Unclaimed | Test real agent lifecycle and comparison flows against a local deterministic LLM mock without external provider connections. | Implement and verify: local LLM-mock conversation protocol and record/replay integration. |
+| P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | Unclaimed | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 2 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 92 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -118,7 +118,7 @@ flowchart LR
         AR_0088["AR-0088 - Done"]:::status_done
         AR_0089["AR-0089 - Done"]:::status_done
         AR_0090["AR-0090 - Done"]:::status_done
-        AR_0091["AR-0091 - Planned"]:::status_planned
+        AR_0091["AR-0091 - Open"]:::status_open
         AR_0092["AR-0092 - Planned"]:::status_planned
         AR_0093["AR-0093 - Planned"]:::status_planned
         AR_0094["AR-0094 - Planned"]:::status_planned
@@ -508,11 +508,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (7)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Unclaimed | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. |
+
+### Planned (6)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0092](tasks/AR-0092.md): Executable security and supply-chain enforcement | Unclaimed | Make security controls executable and fail closed for every concurrent agent session and artifact. | Enforce runtime security, supply-chain, secret, and egress policy at executable boundaries. |
 | P0 | [AR-0093](tasks/AR-0093.md): Runtime deployment and release operations | Unclaimed | Make the integrated runtime installable and recoverable across supported hosts and workflow projects. | Implement reproducible packaging, deployment, upgrade, rollback, and configuration migration. |
 | P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Unclaimed | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. |

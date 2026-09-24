@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0092](tasks/AR-0092.md): Executable security and supply-chain enforcement | Make security controls executable and fail closed for every concurrent agent session and artifact. | Enforce runtime security, supply-chain, secret, and egress policy at executable boundaries. | - |
 | P0 | [AR-0093](tasks/AR-0093.md): Runtime deployment and release operations | Make the integrated runtime installable and recoverable across supported hosts and workflow projects. | Implement reproducible packaging, deployment, upgrade, rollback, and configuration migration. | - |
 | P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. | - |

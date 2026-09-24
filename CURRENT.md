@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0077](tasks/AR-0077.md): Executable scheduler-to-contractor workflow | Make scheduled work flow through a real adapter into evidence-backed contractor acceptance or rejection. | Compose executable scheduling, adapters, evidence, accounting, and contractor lifecycle into one local end-to-end runtime. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -13,7 +19,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0077](tasks/AR-0077.md): Executable scheduler-to-contractor workflow | Make scheduled work flow through a real adapter into evidence-backed contractor acceptance or rejection. | Compose executable scheduling, adapters, evidence, accounting, and contractor lifecycle into one local end-to-end runtime. | - |
 | P0 | [AR-0078](tasks/AR-0078.md): Runtime observability and incident operations | Make the executable runtime operable and auditable under failure without exposing private data. | Implement production-shaped observability, incident evidence, metrics, and privacy-safe operational diagnostics. | - |
 | P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. | - |
 

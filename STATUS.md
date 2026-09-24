@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 118 |
+| **Done** | Accepted, integrated, and durably verified | 119 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -151,7 +151,7 @@ flowchart LR
         AR_0118["AR-0118 - Done"]:::status_done
         AR_0119["AR-0119 - Done"]:::status_done
         AR_0120["AR-0120 - Open"]:::status_open
-        AR_0121["AR-0121 - In progress"]:::status_in_progress
+        AR_0121["AR-0121 - Done"]:::status_done
         AR_0122["AR-0122 - Open"]:::status_open
         AR_0123["AR-0123 - In progress"]:::status_in_progress
         AR_0124["AR-0124 - Open"]:::status_open
@@ -587,11 +587,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | codex-AR-0121 | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. |
 | P0 | [AR-0123](tasks/AR-0123.md): Enforceable worker sandbox profile | codex-ar0123-20260924 | Replace reported-but-unenforced host controls with an explicit enforceable sandbox profile. | Implement and verify: enforceable OS sandbox and network/filesystem policy adapter. |
 
 ### Open (4)
@@ -603,7 +602,7 @@ flowchart LR
 | P0 | [AR-0122](tasks/AR-0122.md): Production release and umbrella integration alignment | Unclaimed | Publish a coherent runtime release containing the executable integration and pin it in the umbrella. | Implement and verify: release runtime integration and update umbrella compatibility pins. |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Unclaimed | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
 
-### Done (118)
+### Done (119)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -689,6 +688,7 @@ flowchart LR
 | P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Unclaimed | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. |
 | P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Unclaimed | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. |
 | P0 | [AR-0119](tasks/AR-0119.md): Concurrent multi-agent qualification | Unclaimed | Prove safe and efficient operation of heterogeneous agents on a large software system workload. | Implement and verify: concurrent multi-agent and multi-project qualification. |
+| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | Unclaimed | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

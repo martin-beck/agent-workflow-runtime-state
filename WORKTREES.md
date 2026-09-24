@@ -7,7 +7,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime` | `main` | `915d2ddd93b6` | 0 | behind 6, ahead 0 |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 7, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 5, ahead 0 |
-| `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `dfd2e144f9bc` | 0 | behind 2, ahead 0 |
+| `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `dfd2e144f9bc` | 5 | behind 2, ahead 0 |
+| changed files | - | - | - | `scripts/check_lease_service.py`, `scripts/lease_service.py`, `specifications/fixtures/lease-service-ar0082-v1.json`, `specifications/lease-service-v1.json`, `tests/test_lease_service.py` |
 | `agent-workflow-runtime-0084-worker` | `feature/ar-0084-worker` | `b3c01cf548c7` | 0 | behind 5, ahead 0 |
 | `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `a243e88e1924` | 0 | behind 5, ahead 0 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 170, ahead 0 |

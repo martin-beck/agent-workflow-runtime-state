@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**79 ARs tracked** across 4 active status categories.
+**79 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 71 |
+| **Done** | Accepted, integrated, and durably verified | 72 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -100,7 +100,7 @@ flowchart LR
         AR_0070["AR-0070 - Done"]:::status_done
         AR_0071["AR-0071 - Done"]:::status_done
         AR_0072["AR-0072 - Done"]:::status_done
-        AR_0073["AR-0073 - In progress"]:::status_in_progress
+        AR_0073["AR-0073 - Done"]:::status_done
         AR_0074["AR-0074 - Planned"]:::status_planned
         AR_0075["AR-0075 - Planned"]:::status_planned
         AR_0076["AR-0076 - Planned"]:::status_planned
@@ -406,12 +406,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | awr-worker-0073 | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. |
-
 ### Blocked (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -429,7 +423,7 @@ flowchart LR
 | P0 | [AR-0078](tasks/AR-0078.md): Runtime observability and incident operations | Unclaimed | Make the executable runtime operable and auditable under failure without exposing private data. | Implement production-shaped observability, incident evidence, metrics, and privacy-safe operational diagnostics. |
 | P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Unclaimed | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. |
 
-### Done (71)
+### Done (72)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -473,6 +467,7 @@ flowchart LR
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Unclaimed | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. |
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Unclaimed | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. |
 | P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Unclaimed | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. |
+| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Unclaimed | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. | awr-worker-0073 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -70,6 +64,7 @@ Never edit this file directly.
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. | - |
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | - |
 | P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. | - |
+| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

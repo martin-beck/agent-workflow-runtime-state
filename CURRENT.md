@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | - |
+| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | awr-worker-0069 |
 
 ## Blocked
 

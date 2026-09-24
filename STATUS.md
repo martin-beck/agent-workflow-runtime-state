@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 10 |
 | **Future** | Deferred roadmap work | 0 |
@@ -96,7 +96,7 @@ flowchart LR
         AR_0066["AR-0066 - Done"]:::status_done
         AR_0067["AR-0067 - Done"]:::status_done
         AR_0068["AR-0068 - Blocked"]:::status_blocked
-        AR_0069["AR-0069 - Open"]:::status_open
+        AR_0069["AR-0069 - In progress"]:::status_in_progress
         AR_0070["AR-0070 - Planned"]:::status_planned
         AR_0071["AR-0071 - Planned"]:::status_planned
         AR_0072["AR-0072 - Planned"]:::status_planned
@@ -406,11 +406,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Unclaimed | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. |
+| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | awr-worker-0069 | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. |
 
 ### Blocked (1)
 

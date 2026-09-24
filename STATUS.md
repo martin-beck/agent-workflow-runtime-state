@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**130 ARs tracked** across 4 active status categories.
+**130 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -160,7 +160,7 @@ flowchart LR
         AR_0127["AR-0127 - Done"]:::status_done
         AR_0128["AR-0128 - Done"]:::status_done
         AR_0129["AR-0129 - Done"]:::status_done
-        AR_0130["AR-0130 - Open"]:::status_open
+        AR_0130["AR-0130 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -606,17 +606,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | Unclaimed | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. |
+| P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | awr-board-0130 | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. |
 
 ### Done (125)
 

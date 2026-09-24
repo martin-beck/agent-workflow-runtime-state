@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 2 active status categories.
+**120 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 8 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 7 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -144,7 +144,7 @@ flowchart LR
         AR_0111["AR-0111 - Done"]:::status_done
         AR_0112["AR-0112 - Open"]:::status_open
         AR_0113["AR-0113 - Done"]:::status_done
-        AR_0114["AR-0114 - Open"]:::status_open
+        AR_0114["AR-0114 - In progress"]:::status_in_progress
         AR_0115["AR-0115 - Open"]:::status_open
         AR_0116["AR-0116 - Open"]:::status_open
         AR_0117["AR-0117 - Open"]:::status_open
@@ -574,12 +574,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (8)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | awr-worker-0114 | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. |
+
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
-| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | Unclaimed | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. |
 | P0 | [AR-0115](tasks/AR-0115.md): Host process and sandbox enforcement | Unclaimed | Run bounded workers with process, filesystem, timeout, cancellation, and cleanup enforcement. | Implement and verify: host process supervision and enforceable worktree/resource boundary. |
 | P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Unclaimed | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. |
 | P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Unclaimed | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. |

@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. | awr-worker-0114 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
-| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. | - |
 | P0 | [AR-0115](tasks/AR-0115.md): Host process and sandbox enforcement | Run bounded workers with process, filesystem, timeout, cancellation, and cleanup enforcement. | Implement and verify: host process supervision and enforceable worktree/resource boundary. | - |
 | P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. | - |
 | P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. | - |

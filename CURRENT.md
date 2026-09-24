@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. | awr-worker-0105 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. | - |
 | P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. | - |
 | P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. | - |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |

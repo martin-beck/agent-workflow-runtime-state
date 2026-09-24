@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | awr-board-0124 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. | - |
+| P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. | awr-integration-0127 |
 
 ## Done
 

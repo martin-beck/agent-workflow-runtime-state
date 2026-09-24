@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**127 ARs tracked** across 4 active status categories.
+**127 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -157,7 +157,7 @@ flowchart LR
         AR_0124["AR-0124 - In progress"]:::status_in_progress
         AR_0125["AR-0125 - Superseded"]:::status_superseded
         AR_0126["AR-0126 - Done"]:::status_done
-        AR_0127["AR-0127 - Open"]:::status_open
+        AR_0127["AR-0127 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -597,17 +597,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Unclaimed | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. |
+| P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | awr-integration-0127 | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. |
 
 ### Done (122)
 

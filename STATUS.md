@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**79 ARs tracked** across 4 active status categories.
+**79 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -97,7 +97,7 @@ flowchart LR
         AR_0067["AR-0067 - Done"]:::status_done
         AR_0068["AR-0068 - Blocked"]:::status_blocked
         AR_0069["AR-0069 - Done"]:::status_done
-        AR_0070["AR-0070 - Open"]:::status_open
+        AR_0070["AR-0070 - In progress"]:::status_in_progress
         AR_0071["AR-0071 - Planned"]:::status_planned
         AR_0072["AR-0072 - Open"]:::status_open
         AR_0073["AR-0073 - Planned"]:::status_planned
@@ -406,11 +406,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Unclaimed | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. |
+| P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | awr-worker-0070 | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Unclaimed | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. |
 
 ### Blocked (1)

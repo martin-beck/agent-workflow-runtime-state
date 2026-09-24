@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -118,7 +118,7 @@ flowchart LR
         AR_0088["AR-0088 - Done"]:::status_done
         AR_0089["AR-0089 - Done"]:::status_done
         AR_0090["AR-0090 - Done"]:::status_done
-        AR_0091["AR-0091 - Open"]:::status_open
+        AR_0091["AR-0091 - In progress"]:::status_in_progress
         AR_0092["AR-0092 - Planned"]:::status_planned
         AR_0093["AR-0093 - Planned"]:::status_planned
         AR_0094["AR-0094 - Planned"]:::status_planned
@@ -508,11 +508,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Unclaimed | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. |
+| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | awr-worker-0091 | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. |
 
 ### Planned (6)
 

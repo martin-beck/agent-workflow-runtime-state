@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. | - |
+| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. | awr-worker-0091 |
 
 ## Planned
 

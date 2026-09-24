@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Conduct the separately approved bounded live pilot and make the evidence-based scheduler/contractor go-no-go decision. | - |
 
 ## Done

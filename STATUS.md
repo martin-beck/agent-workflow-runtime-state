@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 72 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -103,7 +103,7 @@ flowchart LR
         AR_0073["AR-0073 - Done"]:::status_done
         AR_0074["AR-0074 - Open"]:::status_open
         AR_0075["AR-0075 - Open"]:::status_open
-        AR_0076["AR-0076 - Planned"]:::status_planned
+        AR_0076["AR-0076 - Open"]:::status_open
         AR_0077["AR-0077 - Planned"]:::status_planned
         AR_0078["AR-0078 - Planned"]:::status_planned
         AR_0079["AR-0079 - Planned"]:::status_planned
@@ -406,12 +406,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | Unclaimed | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. |
 | P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Unclaimed | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. |
+| P0 | [AR-0076](tasks/AR-0076.md): OpenDesk-compatible executable adapter | Unclaimed | Add a third independently qualified adapter with explicit unsupported-capability behavior. | Implement the OpenDesk-compatible adapter through the bounded transport and fake conformance suite. |
 
 ### Blocked (1)
 
@@ -419,11 +420,10 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Obtain separately approved live-pilot authority before any real provider or host execution; current offline gate remains blocked by design. |
 
-### Planned (4)
+### Planned (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0076](tasks/AR-0076.md): OpenDesk-compatible executable adapter | Unclaimed | Add a third independently qualified adapter with explicit unsupported-capability behavior. | Implement the OpenDesk-compatible adapter through the bounded transport and fake conformance suite. |
 | P0 | [AR-0077](tasks/AR-0077.md): Executable scheduler-to-contractor workflow | Unclaimed | Make scheduled work flow through a real adapter into evidence-backed contractor acceptance or rejection. | Compose executable scheduling, adapters, evidence, accounting, and contractor lifecycle into one local end-to-end runtime. |
 | P0 | [AR-0078](tasks/AR-0078.md): Runtime observability and incident operations | Unclaimed | Make the executable runtime operable and auditable under failure without exposing private data. | Implement production-shaped observability, incident evidence, metrics, and privacy-safe operational diagnostics. |
 | P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Unclaimed | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. |

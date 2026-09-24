@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 2 active status categories.
+**112 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 12 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 11 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -131,7 +131,7 @@ flowchart LR
     subgraph series_01["01 - Contracts and runtime"]
         direction TB
         AR_0100["AR-0100 - Done"]:::status_done
-        AR_0101["AR-0101 - Open"]:::status_open
+        AR_0101["AR-0101 - In progress"]:::status_in_progress
         AR_0102["AR-0102 - Open"]:::status_open
         AR_0103["AR-0103 - Open"]:::status_open
         AR_0104["AR-0104 - Open"]:::status_open
@@ -550,11 +550,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (12)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | Unclaimed | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. |
+| P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | awr-worker-0101 | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. |
+
+### Open (11)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0102](tasks/AR-0102.md): Versioned authority bridge contracts | Unclaimed | Define versioned, testable runtime bridge contracts for Coordinator, AWQ, AWG, and UI. | Implement and verify: Versioned authority bridge contracts. |
 | P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Unclaimed | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. |
 | P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Unclaimed | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. |

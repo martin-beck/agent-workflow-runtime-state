@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. | awr-worker-0101 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. | - |
 | P0 | [AR-0102](tasks/AR-0102.md): Versioned authority bridge contracts | Define versioned, testable runtime bridge contracts for Coordinator, AWQ, AWG, and UI. | Implement and verify: Versioned authority bridge contracts. | - |
 | P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. | - |
 | P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. | - |

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Obtain separately approved live-pilot authority before any real provider or host execution; current offline gate remains blocked by design. | awr-worker-0068 |
+| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Obtain separately approved live-pilot authority before any real provider or host execution; current offline gate remains blocked by design. | - |
 
 ## Done
 

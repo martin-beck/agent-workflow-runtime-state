@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**97 ARs tracked** across 2 active status categories.
+**97 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 18 |
+| **Planned** | Defined work awaiting promotion or dependencies | 17 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 79 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -107,7 +107,7 @@ flowchart LR
         AR_0077["AR-0077 - Done"]:::status_done
         AR_0078["AR-0078 - Done"]:::status_done
         AR_0079["AR-0079 - Done"]:::status_done
-        AR_0080["AR-0080 - Planned"]:::status_planned
+        AR_0080["AR-0080 - Open"]:::status_open
         AR_0081["AR-0081 - Planned"]:::status_planned
         AR_0082["AR-0082 - Planned"]:::status_planned
         AR_0083["AR-0083 - Planned"]:::status_planned
@@ -500,11 +500,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (18)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0080](tasks/AR-0080.md): Production integration baseline and compatibility matrix | Unclaimed | Turn the offline runtime contracts into an explicit production-integration baseline across hosts, projects, authorities, and agent profiles. | Define the executable production-integration baseline and compatibility matrix. |
+
+### Planned (17)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0081](tasks/AR-0081.md): Executable Coordinator state client | Unclaimed | Connect runtime admission, revisions, claims, leases, events, and terminal state to Coordinator without moving authority into AWR. | Implement the production Coordinator client behind a bounded transport interface. |
 | P0 | [AR-0082](tasks/AR-0082.md): Concurrent lease and worker coordination | Unclaimed | Make simultaneous agents safe under claims, heartbeats, expiry, handoff, retries, and ambiguous writes. | Implement shared-state lease fencing and crash-safe multi-worker coordination. |
 | P0 | [AR-0083](tasks/AR-0083.md): Local host supervisor and sandbox enforcement | Unclaimed | Run bounded local worker processes with worktree, resource, timeout, cancellation, and cleanup enforcement. | Implement the local host process supervisor and enforceable sandbox boundary. |

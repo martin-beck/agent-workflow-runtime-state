@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -102,7 +102,7 @@ flowchart LR
         AR_0072["AR-0072 - Done"]:::status_done
         AR_0073["AR-0073 - Done"]:::status_done
         AR_0074["AR-0074 - In progress"]:::status_in_progress
-        AR_0075["AR-0075 - Open"]:::status_open
+        AR_0075["AR-0075 - In progress"]:::status_in_progress
         AR_0076["AR-0076 - Open"]:::status_open
         AR_0077["AR-0077 - Planned"]:::status_planned
         AR_0078["AR-0078 - Planned"]:::status_planned
@@ -406,17 +406,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | awr-worker-0074 | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. |
+| P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | awr-worker-0075 | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Unclaimed | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. |
 | P0 | [AR-0076](tasks/AR-0076.md): OpenDesk-compatible executable adapter | Unclaimed | Add a third independently qualified adapter with explicit unsupported-capability behavior. | Implement the OpenDesk-compatible adapter through the bounded transport and fake conformance suite. |
 
 ### Blocked (1)

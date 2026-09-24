@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. | awr-worker-0110 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -129,3 +123,4 @@ Never edit this file directly.
 | P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. | - |
 | P1 | [AR-0106](tasks/AR-0106.md): Multi-project operation | Support safe operation across multiple independent runtime-enabled projects. | Implement and verify: Multi-project operation. | - |
 | P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. | - |
+| P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. | - |

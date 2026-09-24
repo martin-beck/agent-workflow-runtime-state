@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 2 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 4 |
+| **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 95 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -121,7 +121,7 @@ flowchart LR
         AR_0091["AR-0091 - Done"]:::status_done
         AR_0092["AR-0092 - Done"]:::status_done
         AR_0093["AR-0093 - Done"]:::status_done
-        AR_0094["AR-0094 - Planned"]:::status_planned
+        AR_0094["AR-0094 - Open"]:::status_open
         AR_0095["AR-0095 - Planned"]:::status_planned
         AR_0096["AR-0096 - Planned"]:::status_planned
         AR_0097["AR-0097 - Planned"]:::status_planned
@@ -508,11 +508,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (4)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Unclaimed | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. |
+
+### Planned (3)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | Unclaimed | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. |
 | P0 | [AR-0096](tasks/AR-0096.md): Production readiness and staged rollout gate | Unclaimed | Make the integrated runtime releasable with explicit readiness, rollback, ownership, and residual-risk evidence. | Perform production-readiness review and staged local-mock rollout qualification. |
 | P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |

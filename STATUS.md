@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 3 active status categories.
+**112 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 106 |
+| **Done** | Accepted, integrated, and durably verified | 107 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -137,7 +137,7 @@ flowchart LR
         AR_0104["AR-0104 - Done"]:::status_done
         AR_0105["AR-0105 - Done"]:::status_done
         AR_0106["AR-0106 - Done"]:::status_done
-        AR_0107["AR-0107 - In progress"]:::status_in_progress
+        AR_0107["AR-0107 - Done"]:::status_done
         AR_0108["AR-0108 - Open"]:::status_open
         AR_0109["AR-0109 - Open"]:::status_open
         AR_0110["AR-0110 - Open"]:::status_open
@@ -550,12 +550,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | awr-worker-0107 | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. |
-
 ### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -566,7 +560,7 @@ flowchart LR
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
 
-### Done (106)
+### Done (107)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -676,3 +670,4 @@ flowchart LR
 | P1 | [AR-0045](tasks/AR-0045.md): Production readiness, upgrade, and rollback | Unclaimed | Qualify repeatable deployment, compatibility, observability, upgrade, rollback, incident recovery, and ongoing maintenance for production use. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
 | P1 | [AR-0106](tasks/AR-0106.md): Multi-project operation | Unclaimed | Support safe operation across multiple independent runtime-enabled projects. | Implement and verify: Multi-project operation. |
+| P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Unclaimed | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. |

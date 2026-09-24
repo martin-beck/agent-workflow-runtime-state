@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0082](tasks/AR-0082.md): Concurrent lease and worker coordination | Make simultaneous agents safe under claims, heartbeats, expiry, handoff, retries, and ambiguous writes. | Implement shared-state lease fencing and crash-safe multi-worker coordination. | awr-worker-0082 |
 | P0 | [AR-0098](tasks/AR-0098.md): Formal authority interaction and mandatory-gate model | Formally prove that quality, runtime, coordinator, and guidance authorities cannot be skipped, confused, or bypassed by ambiguity or missing responses. | Define and model mandatory AWQ-AWR-AWC-AWG interactions and non-skippable control-flow invariants. | awr-worker-0098 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0082](tasks/AR-0082.md): Concurrent lease and worker coordination | Make simultaneous agents safe under claims, heartbeats, expiry, handoff, retries, and ambiguous writes. | Implement shared-state lease fencing and crash-safe multi-worker coordination. | - |
 
 ## Planned
 

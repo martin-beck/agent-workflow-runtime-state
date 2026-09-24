@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0102](tasks/AR-0102.md): Versioned authority bridge contracts | Define versioned, testable runtime bridge contracts for Coordinator, AWQ, AWG, and UI. | Implement and verify: Versioned authority bridge contracts. | awr-worker-0102 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -97,6 +91,7 @@ Never edit this file directly.
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. | - |
 | P0 | [AR-0100](tasks/AR-0100.md): Umbrella and runtime registration | Register the Agent Workflow Runtime as a first-class child in the Agent Workflow umbrella and establish an owned, reviewable boundary for its deliverables. | Implement and verify: Umbrella and runtime registration. | - |
 | P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. | - |
+| P0 | [AR-0102](tasks/AR-0102.md): Versioned authority bridge contracts | Define versioned, testable runtime bridge contracts for Coordinator, AWQ, AWG, and UI. | Implement and verify: Versioned authority bridge contracts. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

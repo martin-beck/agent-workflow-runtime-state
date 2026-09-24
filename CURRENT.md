@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. | awr-worker-0111 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
-| P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. | - |
 
 ## Done
 

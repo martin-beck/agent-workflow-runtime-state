@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. | awr-worker-0091 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -83,6 +77,7 @@ Never edit this file directly.
 | P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. | - |
 | P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. | - |
 | P0 | [AR-0090](tasks/AR-0090.md): Cross-agent evidence and accounting integration | Attribute every agent action and project result to exact jobs, budgets, revisions, and replayable evidence. | Implement durable evidence, usage accounting, replay, and comparison across simultaneous agents. | - |
+| P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. | - |
 | P0 | [AR-0098](tasks/AR-0098.md): Formal authority interaction and mandatory-gate model | Formally prove that quality, runtime, coordinator, and guidance authorities cannot be skipped, confused, or bypassed by ambiguity or missing responses. | Define and model mandatory AWQ-AWR-AWC-AWG interactions and non-skippable control-flow invariants. | - |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |

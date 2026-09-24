@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 17 |
+| **Planned** | Defined work awaiting promotion or dependencies | 16 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 80 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -111,7 +111,7 @@ flowchart LR
         AR_0081["AR-0081 - Open"]:::status_open
         AR_0082["AR-0082 - Planned"]:::status_planned
         AR_0083["AR-0083 - Planned"]:::status_planned
-        AR_0084["AR-0084 - Planned"]:::status_planned
+        AR_0084["AR-0084 - Open"]:::status_open
         AR_0085["AR-0085 - Planned"]:::status_planned
         AR_0086["AR-0086 - Planned"]:::status_planned
         AR_0087["AR-0087 - Planned"]:::status_planned
@@ -505,19 +505,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0081](tasks/AR-0081.md): Executable Coordinator state client | Unclaimed | Connect runtime admission, revisions, claims, leases, events, and terminal state to Coordinator without moving authority into AWR. | Implement the production Coordinator client behind a bounded transport interface. |
+| P0 | [AR-0084](tasks/AR-0084.md): Agent registry and capability preflight | Unclaimed | Select compatible agent profiles without confusing catalog/setup acceptance with executable support. | Implement the runtime agent registry, capability negotiation, and admission preflight. |
 
-### Planned (17)
+### Planned (16)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0082](tasks/AR-0082.md): Concurrent lease and worker coordination | Unclaimed | Make simultaneous agents safe under claims, heartbeats, expiry, handoff, retries, and ambiguous writes. | Implement shared-state lease fencing and crash-safe multi-worker coordination. |
 | P0 | [AR-0083](tasks/AR-0083.md): Local host supervisor and sandbox enforcement | Unclaimed | Run bounded local worker processes with worktree, resource, timeout, cancellation, and cleanup enforcement. | Implement the local host process supervisor and enforceable sandbox boundary. |
-| P0 | [AR-0084](tasks/AR-0084.md): Agent registry and capability preflight | Unclaimed | Select compatible agent profiles without confusing catalog/setup acceptance with executable support. | Implement the runtime agent registry, capability negotiation, and admission preflight. |
 | P0 | [AR-0085](tasks/AR-0085.md): Multi-agent executable adapter sessions | Unclaimed | Make multiple agent profiles concurrently executable behind one bounded lifecycle and local-mock response boundary. | Implement executable provider-neutral adapter sessions over the supervised local transport. |
 | P0 | [AR-0086](tasks/AR-0086.md): Multi-agent fairness and resource scheduler | Unclaimed | Schedule many heterogeneous agents simultaneously without starvation, overcommitment, or cross-tenant leakage. | Implement fair multi-agent scheduling with quotas, backpressure, priorities, and resource pools. |
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Unclaimed | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. |

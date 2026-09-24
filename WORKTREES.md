@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `edc17659b5cd` | 6 | behind 0, ahead 2 |
-| changed files | - | - | - | `scripts/check_evidence_accounting.py`, `scripts/evidence_accounting.py`, `specifications/README.md`, `specifications/evidence-accounting-v1.json`, `specifications/fixtures/evidence-accounting-ar0065-v1.json`, `tests/test_evidence_accounting.py` |
+| `agent-workflow-runtime` | `main` | `979f1e79bd03` | 0 | behind 0, ahead 4 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 128, ahead 0 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 126, ahead 0 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 124, ahead 0 |

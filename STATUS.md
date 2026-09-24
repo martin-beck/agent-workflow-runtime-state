@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 1 active status categories.
+**112 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 13 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -127,6 +127,22 @@ flowchart LR
         AR_0097["AR-0097 - Done"]:::status_done
         AR_0098["AR-0098 - Done"]:::status_done
         AR_0099["AR-0099 - Done"]:::status_done
+    end
+    subgraph series_01["01 - Contracts and runtime"]
+        direction TB
+        AR_0100["AR-0100 - Open"]:::status_open
+        AR_0101["AR-0101 - Open"]:::status_open
+        AR_0102["AR-0102 - Open"]:::status_open
+        AR_0103["AR-0103 - Open"]:::status_open
+        AR_0104["AR-0104 - Open"]:::status_open
+        AR_0105["AR-0105 - Open"]:::status_open
+        AR_0106["AR-0106 - Open"]:::status_open
+        AR_0107["AR-0107 - Open"]:::status_open
+        AR_0108["AR-0108 - Open"]:::status_open
+        AR_0109["AR-0109 - Open"]:::status_open
+        AR_0110["AR-0110 - Open"]:::status_open
+        AR_0111["AR-0111 - Open"]:::status_open
+        AR_0112["AR-0112 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -392,6 +408,19 @@ flowchart LR
     AR_0096 --> AR_0097
     AR_0098 --> AR_0088
     AR_0098 --> AR_0099
+    AR_0099 --> AR_0100
+    AR_0100 --> AR_0101
+    AR_0101 --> AR_0102
+    AR_0102 --> AR_0103
+    AR_0103 --> AR_0104
+    AR_0104 --> AR_0105
+    AR_0105 --> AR_0106
+    AR_0106 --> AR_0107
+    AR_0107 --> AR_0108
+    AR_0108 --> AR_0109
+    AR_0109 --> AR_0110
+    AR_0110 --> AR_0111
+    AR_0111 --> AR_0112
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -504,9 +533,40 @@ flowchart LR
 | [AR-0096](tasks/AR-0096.md) | [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) | [AR-0097](tasks/AR-0097.md) |
 | [AR-0097](tasks/AR-0097.md) | [AR-0090](tasks/AR-0090.md), [AR-0091](tasks/AR-0091.md), [AR-0095](tasks/AR-0095.md), [AR-0096](tasks/AR-0096.md) | None |
 | [AR-0098](tasks/AR-0098.md) | [AR-0067](tasks/AR-0067.md), [AR-0080](tasks/AR-0080.md) | [AR-0088](tasks/AR-0088.md), [AR-0099](tasks/AR-0099.md) |
-| [AR-0099](tasks/AR-0099.md) | [AR-0098](tasks/AR-0098.md) | None |
+| [AR-0099](tasks/AR-0099.md) | [AR-0098](tasks/AR-0098.md) | [AR-0100](tasks/AR-0100.md) |
+| [AR-0100](tasks/AR-0100.md) | [AR-0099](tasks/AR-0099.md) | [AR-0101](tasks/AR-0101.md) |
+| [AR-0101](tasks/AR-0101.md) | [AR-0100](tasks/AR-0100.md) | [AR-0102](tasks/AR-0102.md) |
+| [AR-0102](tasks/AR-0102.md) | [AR-0101](tasks/AR-0101.md) | [AR-0103](tasks/AR-0103.md) |
+| [AR-0103](tasks/AR-0103.md) | [AR-0102](tasks/AR-0102.md) | [AR-0104](tasks/AR-0104.md) |
+| [AR-0104](tasks/AR-0104.md) | [AR-0103](tasks/AR-0103.md) | [AR-0105](tasks/AR-0105.md) |
+| [AR-0105](tasks/AR-0105.md) | [AR-0104](tasks/AR-0104.md) | [AR-0106](tasks/AR-0106.md) |
+| [AR-0106](tasks/AR-0106.md) | [AR-0105](tasks/AR-0105.md) | [AR-0107](tasks/AR-0107.md) |
+| [AR-0107](tasks/AR-0107.md) | [AR-0106](tasks/AR-0106.md) | [AR-0108](tasks/AR-0108.md) |
+| [AR-0108](tasks/AR-0108.md) | [AR-0107](tasks/AR-0107.md) | [AR-0109](tasks/AR-0109.md) |
+| [AR-0109](tasks/AR-0109.md) | [AR-0108](tasks/AR-0108.md) | [AR-0110](tasks/AR-0110.md) |
+| [AR-0110](tasks/AR-0110.md) | [AR-0109](tasks/AR-0109.md) | [AR-0111](tasks/AR-0111.md) |
+| [AR-0111](tasks/AR-0111.md) | [AR-0110](tasks/AR-0110.md) | [AR-0112](tasks/AR-0112.md) |
+| [AR-0112](tasks/AR-0112.md) | [AR-0111](tasks/AR-0111.md) | None |
 
 ## Complete AR inventory
+
+### Open (13)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0100](tasks/AR-0100.md): Umbrella and runtime registration | Unclaimed | Register the Agent Workflow Runtime as a first-class child in the Agent Workflow umbrella and establish an owned, reviewable boundary for its deliverables. | Implement and verify: Umbrella and runtime registration. |
+| P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | Unclaimed | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. |
+| P0 | [AR-0102](tasks/AR-0102.md): Versioned authority bridge contracts | Unclaimed | Define versioned, testable runtime bridge contracts for Coordinator, AWQ, AWG, and UI. | Implement and verify: Versioned authority bridge contracts. |
+| P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Unclaimed | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. |
+| P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Unclaimed | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. |
+| P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Unclaimed | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. |
+| P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Unclaimed | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. |
+| P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Unclaimed | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. |
+| P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
+| P1 | [AR-0106](tasks/AR-0106.md): Multi-project operation | Unclaimed | Support safe operation across multiple independent runtime-enabled projects. | Implement and verify: Multi-project operation. |
+| P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Unclaimed | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. |
+| P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
+| P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
 
 ### Done (99)
 

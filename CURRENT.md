@@ -3,6 +3,24 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0100](tasks/AR-0100.md): Umbrella and runtime registration | Register the Agent Workflow Runtime as a first-class child in the Agent Workflow umbrella and establish an owned, reviewable boundary for its deliverables. | Implement and verify: Umbrella and runtime registration. | - |
+| P0 | [AR-0101](tasks/AR-0101.md): Installable runtime package and CLI bootstrap | Deliver an installable runtime package and a reliable first-run CLI bootstrap path. | Implement and verify: Installable runtime package and CLI bootstrap. | - |
+| P0 | [AR-0102](tasks/AR-0102.md): Versioned authority bridge contracts | Define versioned, testable runtime bridge contracts for Coordinator, AWQ, AWG, and UI. | Implement and verify: Versioned authority bridge contracts. | - |
+| P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. | - |
+| P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. | - |
+| P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. | - |
+| P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. | - |
+| P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. | - |
+| P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
+| P1 | [AR-0106](tasks/AR-0106.md): Multi-project operation | Support safe operation across multiple independent runtime-enabled projects. | Implement and verify: Multi-project operation. | - |
+| P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. | - |
+| P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. | - |
+| P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 2 active status categories.
+**112 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 10 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 9 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -133,7 +133,7 @@ flowchart LR
         AR_0100["AR-0100 - Done"]:::status_done
         AR_0101["AR-0101 - Done"]:::status_done
         AR_0102["AR-0102 - Done"]:::status_done
-        AR_0103["AR-0103 - Open"]:::status_open
+        AR_0103["AR-0103 - In progress"]:::status_in_progress
         AR_0104["AR-0104 - Open"]:::status_open
         AR_0105["AR-0105 - Open"]:::status_open
         AR_0106["AR-0106 - Open"]:::status_open
@@ -550,11 +550,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (10)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Unclaimed | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. |
+| P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | awr-worker-0103 | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. |
+
+### Open (9)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Unclaimed | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. |
 | P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Unclaimed | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. |
 | P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Unclaimed | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. |

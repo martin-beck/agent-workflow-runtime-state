@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. | awr-worker-0103 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. | - |
 | P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. | - |
 | P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. | - |
 | P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. | - |

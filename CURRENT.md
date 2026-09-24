@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0083](tasks/AR-0083.md): Local host supervisor and sandbox enforcement | Run bounded local worker processes with worktree, resource, timeout, cancellation, and cleanup enforcement. | Implement the local host process supervisor and enforceable sandbox boundary. | awr-worker-0083 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. | - |
+| P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. | awr-worker-0099 |
 
 ## Planned
 

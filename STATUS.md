@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 4 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
@@ -126,7 +126,7 @@ flowchart LR
         AR_0096["AR-0096 - Planned"]:::status_planned
         AR_0097["AR-0097 - Planned"]:::status_planned
         AR_0098["AR-0098 - Done"]:::status_done
-        AR_0099["AR-0099 - Open"]:::status_open
+        AR_0099["AR-0099 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -508,17 +508,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0083](tasks/AR-0083.md): Local host supervisor and sandbox enforcement | awr-worker-0083 | Run bounded local worker processes with worktree, resource, timeout, cancellation, and cleanup enforcement. | Implement the local host process supervisor and enforceable sandbox boundary. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Unclaimed | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
+| P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | awr-worker-0099 | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
 
 ### Planned (13)
 

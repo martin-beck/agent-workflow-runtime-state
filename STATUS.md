@@ -5,18 +5,18 @@
 
 ## Portfolio overview
 
-**126 ARs tracked** across 3 active status categories.
+**126 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 122 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 0 |
+| **Superseded** | Replaced by another AR | 1 |
 
 ## Dependency graph
 
@@ -155,7 +155,7 @@ flowchart LR
         AR_0122["AR-0122 - Done"]:::status_done
         AR_0123["AR-0123 - Done"]:::status_done
         AR_0124["AR-0124 - In progress"]:::status_in_progress
-        AR_0125["AR-0125 - In progress"]:::status_in_progress
+        AR_0125["AR-0125 - Superseded"]:::status_superseded
         AR_0126["AR-0126 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -593,12 +593,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
-| P0 | [AR-0125](tasks/AR-0125.md): Corrected integrated runtime release | awr-release-0125-cleanup | Publish the fully green executable integration release and realign the umbrella pin. | Implement and verify: correct release after the v0.1.3 acceptance fixture repair. |
 
 ### Open (2)
 
@@ -733,3 +732,9 @@ flowchart LR
 | P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Unclaimed | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. |
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
+
+### Superseded (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0125](tasks/AR-0125.md): Corrected integrated runtime release | Unclaimed | Publish the fully green executable integration release and realign the umbrella pin. | Implement and verify: correct release after the v0.1.3 acceptance fixture repair. |

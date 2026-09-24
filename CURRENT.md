@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | awr-board-0124 |
-| P0 | [AR-0125](tasks/AR-0125.md): Corrected integrated runtime release | Publish the fully green executable integration release and realign the umbrella pin. | Implement and verify: correct release after the v0.1.3 acceptance fixture repair. | awr-release-0125-cleanup |
 
 ## Open
 
@@ -143,3 +142,9 @@ Never edit this file directly.
 | P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. | - |
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. | - |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. | - |
+
+## Superseded
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0125](tasks/AR-0125.md): Corrected integrated runtime release | Publish the fully green executable integration release and realign the umbrella pin. | Implement and verify: correct release after the v0.1.3 acceptance fixture repair. | - |

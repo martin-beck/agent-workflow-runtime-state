@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 2 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 90 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -116,7 +116,7 @@ flowchart LR
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - Done"]:::status_done
         AR_0088["AR-0088 - Done"]:::status_done
-        AR_0089["AR-0089 - Planned"]:::status_planned
+        AR_0089["AR-0089 - Open"]:::status_open
         AR_0090["AR-0090 - Planned"]:::status_planned
         AR_0091["AR-0091 - Planned"]:::status_planned
         AR_0092["AR-0092 - Planned"]:::status_planned
@@ -508,11 +508,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (9)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Unclaimed | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. |
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0090](tasks/AR-0090.md): Cross-agent evidence and accounting integration | Unclaimed | Attribute every agent action and project result to exact jobs, budgets, revisions, and replayable evidence. | Implement durable evidence, usage accounting, replay, and comparison across simultaneous agents. |
 | P0 | [AR-0091](tasks/AR-0091.md): Production observability and incident operations | Unclaimed | Operate and diagnose many concurrent agents without leaking private execution data or creating a second authority. | Implement operational observability, health/readiness, SLOs, and incident evidence. |
 | P0 | [AR-0092](tasks/AR-0092.md): Executable security and supply-chain enforcement | Unclaimed | Make security controls executable and fail closed for every concurrent agent session and artifact. | Enforce runtime security, supply-chain, secret, and egress policy at executable boundaries. |

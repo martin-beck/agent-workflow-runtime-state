@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `40711ac024e2` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/host-sandbox.md`, `scripts/host_sandbox.py`, `specifications/host-sandbox-v1.json`, `tests/test_host_sandbox.py` |
+| `agent-workflow-runtime` | `main` | `c144b8c780ef` | 0 | behind 0, ahead 1 |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 69, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 67, ahead 0 |
 | `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `d9b3f9438f92` | 0 | behind 63, ahead 0 |

@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. | awr-worker-0109 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. | - |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. | - |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. | - |

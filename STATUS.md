@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 2 active status categories.
+**120 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -148,7 +148,7 @@ flowchart LR
         AR_0115["AR-0115 - Done"]:::status_done
         AR_0116["AR-0116 - Done"]:::status_done
         AR_0117["AR-0117 - Done"]:::status_done
-        AR_0118["AR-0118 - Open"]:::status_open
+        AR_0118["AR-0118 - In progress"]:::status_in_progress
         AR_0119["AR-0119 - Open"]:::status_open
         AR_0120["AR-0120 - Open"]:::status_open
     end
@@ -574,12 +574,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | awr-worker-0118 | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. |
+
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
-| P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Unclaimed | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. |
 | P0 | [AR-0119](tasks/AR-0119.md): Concurrent multi-agent qualification | Unclaimed | Prove safe and efficient operation of heterogeneous agents on a large software system workload. | Implement and verify: concurrent multi-agent and multi-project qualification. |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
 

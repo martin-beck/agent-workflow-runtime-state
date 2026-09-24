@@ -611,7 +611,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
-| P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | awr-integration-0128 | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Implement and verify: durable provider-neutral agent registry and capability negotiation. |
+| P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | awr-integration-0128 | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. |
 
 ### Open (2)
 

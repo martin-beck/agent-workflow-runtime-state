@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. | awr-worker-0116 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
-| P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. | - |
 | P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. | - |
 | P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. | - |
 | P0 | [AR-0119](tasks/AR-0119.md): Concurrent multi-agent qualification | Prove safe and efficient operation of heterogeneous agents on a large software system workload. | Implement and verify: concurrent multi-agent and multi-project qualification. | - |

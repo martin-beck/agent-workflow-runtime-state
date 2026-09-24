@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 3 active status categories.
+**99 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 12 |
+| **Planned** | Defined work awaiting promotion or dependencies | 11 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 86 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -113,7 +113,7 @@ flowchart LR
         AR_0083["AR-0083 - Done"]:::status_done
         AR_0084["AR-0084 - Done"]:::status_done
         AR_0085["AR-0085 - Done"]:::status_done
-        AR_0086["AR-0086 - Planned"]:::status_planned
+        AR_0086["AR-0086 - Open"]:::status_open
         AR_0087["AR-0087 - Planned"]:::status_planned
         AR_0088["AR-0088 - Planned"]:::status_planned
         AR_0089["AR-0089 - Planned"]:::status_planned
@@ -514,11 +514,16 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | awr-worker-0099 | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
 
-### Planned (12)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0086](tasks/AR-0086.md): Multi-agent fairness and resource scheduler | Unclaimed | Schedule many heterogeneous agents simultaneously without starvation, overcommitment, or cross-tenant leakage. | Implement fair multi-agent scheduling with quotas, backpressure, priorities, and resource pools. |
+
+### Planned (11)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Unclaimed | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. |
 | P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Unclaimed | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. |
 | P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Unclaimed | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. |

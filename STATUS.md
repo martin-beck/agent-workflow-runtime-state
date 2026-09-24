@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**79 ARs tracked** across 5 active status categories.
+**79 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -99,7 +99,7 @@ flowchart LR
         AR_0069["AR-0069 - Done"]:::status_done
         AR_0070["AR-0070 - In progress"]:::status_in_progress
         AR_0071["AR-0071 - Planned"]:::status_planned
-        AR_0072["AR-0072 - Open"]:::status_open
+        AR_0072["AR-0072 - In progress"]:::status_in_progress
         AR_0073["AR-0073 - Planned"]:::status_planned
         AR_0074["AR-0074 - Planned"]:::status_planned
         AR_0075["AR-0075 - Planned"]:::status_planned
@@ -406,17 +406,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | awr-worker-0070 | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Unclaimed | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. |
+| P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | awr-worker-0072 | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. |
 
 ### Blocked (1)
 

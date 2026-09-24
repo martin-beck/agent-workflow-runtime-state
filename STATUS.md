@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 4 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 12 |
 | **Future** | Deferred roadmap work | 0 |
@@ -112,7 +112,7 @@ flowchart LR
         AR_0082["AR-0082 - Done"]:::status_done
         AR_0083["AR-0083 - Done"]:::status_done
         AR_0084["AR-0084 - Done"]:::status_done
-        AR_0085["AR-0085 - Open"]:::status_open
+        AR_0085["AR-0085 - In progress"]:::status_in_progress
         AR_0086["AR-0086 - Planned"]:::status_planned
         AR_0087["AR-0087 - Planned"]:::status_planned
         AR_0088["AR-0088 - Planned"]:::status_planned
@@ -508,17 +508,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0085](tasks/AR-0085.md): Multi-agent executable adapter sessions | awr-worker-0085 | Make multiple agent profiles concurrently executable behind one bounded lifecycle and local-mock response boundary. | Implement executable provider-neutral adapter sessions over the supervised local transport. |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | awr-worker-0099 | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0085](tasks/AR-0085.md): Multi-agent executable adapter sessions | Unclaimed | Make multiple agent profiles concurrently executable behind one bounded lifecycle and local-mock response boundary. | Implement executable provider-neutral adapter sessions over the supervised local transport. |
 
 ### Planned (12)
 

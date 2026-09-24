@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 2 active status categories.
+**120 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 9 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -143,6 +143,14 @@ flowchart LR
         AR_0110["AR-0110 - Done"]:::status_done
         AR_0111["AR-0111 - Done"]:::status_done
         AR_0112["AR-0112 - Open"]:::status_open
+        AR_0113["AR-0113 - Open"]:::status_open
+        AR_0114["AR-0114 - Open"]:::status_open
+        AR_0115["AR-0115 - Open"]:::status_open
+        AR_0116["AR-0116 - Open"]:::status_open
+        AR_0117["AR-0117 - Open"]:::status_open
+        AR_0118["AR-0118 - Open"]:::status_open
+        AR_0119["AR-0119 - Open"]:::status_open
+        AR_0120["AR-0120 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -421,6 +429,14 @@ flowchart LR
     AR_0109 --> AR_0110
     AR_0110 --> AR_0111
     AR_0111 --> AR_0112
+    AR_0111 --> AR_0113
+    AR_0113 --> AR_0114
+    AR_0114 --> AR_0115
+    AR_0115 --> AR_0116
+    AR_0116 --> AR_0117
+    AR_0117 --> AR_0118
+    AR_0118 --> AR_0119
+    AR_0119 --> AR_0120
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -545,16 +561,32 @@ flowchart LR
 | [AR-0108](tasks/AR-0108.md) | [AR-0107](tasks/AR-0107.md) | [AR-0109](tasks/AR-0109.md) |
 | [AR-0109](tasks/AR-0109.md) | [AR-0108](tasks/AR-0108.md) | [AR-0110](tasks/AR-0110.md) |
 | [AR-0110](tasks/AR-0110.md) | [AR-0109](tasks/AR-0109.md) | [AR-0111](tasks/AR-0111.md) |
-| [AR-0111](tasks/AR-0111.md) | [AR-0110](tasks/AR-0110.md) | [AR-0112](tasks/AR-0112.md) |
+| [AR-0111](tasks/AR-0111.md) | [AR-0110](tasks/AR-0110.md) | [AR-0112](tasks/AR-0112.md), [AR-0113](tasks/AR-0113.md) |
 | [AR-0112](tasks/AR-0112.md) | [AR-0111](tasks/AR-0111.md) | None |
+| [AR-0113](tasks/AR-0113.md) | [AR-0111](tasks/AR-0111.md) | [AR-0114](tasks/AR-0114.md) |
+| [AR-0114](tasks/AR-0114.md) | [AR-0113](tasks/AR-0113.md) | [AR-0115](tasks/AR-0115.md) |
+| [AR-0115](tasks/AR-0115.md) | [AR-0114](tasks/AR-0114.md) | [AR-0116](tasks/AR-0116.md) |
+| [AR-0116](tasks/AR-0116.md) | [AR-0115](tasks/AR-0115.md) | [AR-0117](tasks/AR-0117.md) |
+| [AR-0117](tasks/AR-0117.md) | [AR-0116](tasks/AR-0116.md) | [AR-0118](tasks/AR-0118.md) |
+| [AR-0118](tasks/AR-0118.md) | [AR-0117](tasks/AR-0117.md) | [AR-0119](tasks/AR-0119.md) |
+| [AR-0119](tasks/AR-0119.md) | [AR-0118](tasks/AR-0118.md) | [AR-0120](tasks/AR-0120.md) |
+| [AR-0120](tasks/AR-0120.md) | [AR-0119](tasks/AR-0119.md) | None |
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
+| P0 | [AR-0113](tasks/AR-0113.md): Live Coordinator state and lease integration | Unclaimed | Connect runtime admission and lifecycle to Coordinator-owned state without moving authority. | Implement and verify: live Coordinator state client and durable claim/lease exchange. |
+| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | Unclaimed | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. |
+| P0 | [AR-0115](tasks/AR-0115.md): Host process and sandbox enforcement | Unclaimed | Run bounded workers with process, filesystem, timeout, cancellation, and cleanup enforcement. | Implement and verify: host process supervision and enforceable worktree/resource boundary. |
+| P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Unclaimed | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. |
+| P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Unclaimed | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. |
+| P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Unclaimed | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. |
+| P0 | [AR-0119](tasks/AR-0119.md): Concurrent multi-agent qualification | Unclaimed | Prove safe and efficient operation of heterogeneous agents on a large software system workload. | Implement and verify: concurrent multi-agent and multi-project qualification. |
+| P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
 
 ### Done (111)
 

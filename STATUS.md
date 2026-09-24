@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 2 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 15 |
+| **Planned** | Defined work awaiting promotion or dependencies | 14 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 84 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -110,7 +110,7 @@ flowchart LR
         AR_0080["AR-0080 - Done"]:::status_done
         AR_0081["AR-0081 - Done"]:::status_done
         AR_0082["AR-0082 - Done"]:::status_done
-        AR_0083["AR-0083 - Planned"]:::status_planned
+        AR_0083["AR-0083 - Open"]:::status_open
         AR_0084["AR-0084 - Done"]:::status_done
         AR_0085["AR-0085 - Planned"]:::status_planned
         AR_0086["AR-0086 - Planned"]:::status_planned
@@ -508,11 +508,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (15)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0083](tasks/AR-0083.md): Local host supervisor and sandbox enforcement | Unclaimed | Run bounded local worker processes with worktree, resource, timeout, cancellation, and cleanup enforcement. | Implement the local host process supervisor and enforceable sandbox boundary. |
+
+### Planned (14)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0085](tasks/AR-0085.md): Multi-agent executable adapter sessions | Unclaimed | Make multiple agent profiles concurrently executable behind one bounded lifecycle and local-mock response boundary. | Implement executable provider-neutral adapter sessions over the supervised local transport. |
 | P0 | [AR-0086](tasks/AR-0086.md): Multi-agent fairness and resource scheduler | Unclaimed | Schedule many heterogeneous agents simultaneously without starvation, overcommitment, or cross-tenant leakage. | Implement fair multi-agent scheduling with quotas, backpressure, priorities, and resource pools. |
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Unclaimed | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. |

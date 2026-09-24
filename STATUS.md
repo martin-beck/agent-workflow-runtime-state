@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 3 active status categories.
+**99 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 91 |
+| **Done** | Accepted, integrated, and durably verified | 92 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -117,7 +117,7 @@ flowchart LR
         AR_0087["AR-0087 - Done"]:::status_done
         AR_0088["AR-0088 - Done"]:::status_done
         AR_0089["AR-0089 - Done"]:::status_done
-        AR_0090["AR-0090 - In progress"]:::status_in_progress
+        AR_0090["AR-0090 - Done"]:::status_done
         AR_0091["AR-0091 - Planned"]:::status_planned
         AR_0092["AR-0092 - Planned"]:::status_planned
         AR_0093["AR-0093 - Planned"]:::status_planned
@@ -508,12 +508,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0090](tasks/AR-0090.md): Cross-agent evidence and accounting integration | awr-worker-0090 | Attribute every agent action and project result to exact jobs, budgets, revisions, and replayable evidence. | Implement durable evidence, usage accounting, replay, and comparison across simultaneous agents. |
-
 ### Planned (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -526,7 +520,7 @@ flowchart LR
 | P0 | [AR-0096](tasks/AR-0096.md): Production readiness and staged rollout gate | Unclaimed | Make the integrated runtime releasable with explicit readiness, rollback, ownership, and residual-risk evidence. | Perform production-readiness review and staged local-mock rollout qualification. |
 | P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
 
-### Done (91)
+### Done (92)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -588,6 +582,7 @@ flowchart LR
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Unclaimed | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. |
 | P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Unclaimed | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. |
 | P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Unclaimed | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. |
+| P0 | [AR-0090](tasks/AR-0090.md): Cross-agent evidence and accounting integration | Unclaimed | Attribute every agent action and project result to exact jobs, budgets, revisions, and replayable evidence. | Implement durable evidence, usage accounting, replay, and comparison across simultaneous agents. |
 | P0 | [AR-0098](tasks/AR-0098.md): Formal authority interaction and mandatory-gate model | Unclaimed | Formally prove that quality, runtime, coordinator, and guidance authorities cannot be skipped, confused, or bypassed by ambiguity or missing responses. | Define and model mandatory AWQ-AWR-AWC-AWG interactions and non-skippable control-flow invariants. |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Unclaimed | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |

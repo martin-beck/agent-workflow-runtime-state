@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 124 |
+| **Done** | Accepted, integrated, and durably verified | 125 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 3 |
 
@@ -159,7 +159,7 @@ flowchart LR
         AR_0126["AR-0126 - Done"]:::status_done
         AR_0127["AR-0127 - Done"]:::status_done
         AR_0128["AR-0128 - Done"]:::status_done
-        AR_0129["AR-0129 - In progress"]:::status_in_progress
+        AR_0129["AR-0129 - Done"]:::status_done
         AR_0130["AR-0130 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
@@ -606,12 +606,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
-| P0 | [AR-0129](tasks/AR-0129.md): Local LLM mock, streaming, and record/replay adapter | awr-integration-0129 | Test real agent lifecycle and comparison flows against a local deterministic LLM mock without external provider connections. | Implement and verify: local LLM-mock conversation protocol and record/replay integration. |
 
 ### Open (1)
 
@@ -619,7 +618,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | Unclaimed | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. |
 
-### Done (124)
+### Done (125)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -711,6 +710,7 @@ flowchart LR
 | P0 | [AR-0126](tasks/AR-0126.md): Release identity consistency | Unclaimed | Ensure the released CLI version, wheel metadata, Git tag, source commit, and umbrella lock are identical. | Implement and verify: exact package, tag, artifact, and umbrella version identity. |
 | P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Unclaimed | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. |
 | P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Unclaimed | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. |
+| P0 | [AR-0129](tasks/AR-0129.md): Local LLM mock, streaming, and record/replay adapter | Unclaimed | Test real agent lifecycle and comparison flows against a local deterministic LLM mock without external provider connections. | Implement and verify: local LLM-mock conversation protocol and record/replay integration. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

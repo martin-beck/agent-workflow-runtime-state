@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**124 ARs tracked** across 2 active status categories.
+**124 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -151,7 +151,7 @@ flowchart LR
         AR_0118["AR-0118 - Done"]:::status_done
         AR_0119["AR-0119 - Done"]:::status_done
         AR_0120["AR-0120 - Open"]:::status_open
-        AR_0121["AR-0121 - Open"]:::status_open
+        AR_0121["AR-0121 - In progress"]:::status_in_progress
         AR_0122["AR-0122 - Open"]:::status_open
         AR_0123["AR-0123 - Open"]:::status_open
         AR_0124["AR-0124 - Open"]:::status_open
@@ -587,13 +587,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | codex-AR-0121 | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. |
+
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
-| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | Unclaimed | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. |
 | P0 | [AR-0122](tasks/AR-0122.md): Production release and umbrella integration alignment | Unclaimed | Publish a coherent runtime release containing the executable integration and pin it in the umbrella. | Implement and verify: release runtime integration and update umbrella compatibility pins. |
 | P0 | [AR-0123](tasks/AR-0123.md): Enforceable worker sandbox profile | Unclaimed | Replace reported-but-unenforced host controls with an explicit enforceable sandbox profile. | Implement and verify: enforceable OS sandbox and network/filesystem policy adapter. |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Unclaimed | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |

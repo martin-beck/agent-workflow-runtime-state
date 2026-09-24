@@ -3,13 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. | codex-AR-0121 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. | - |
-| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. | - |
 | P0 | [AR-0122](tasks/AR-0122.md): Production release and umbrella integration alignment | Publish a coherent runtime release containing the executable integration and pin it in the umbrella. | Implement and verify: release runtime integration and update umbrella compatibility pins. | - |
 | P0 | [AR-0123](tasks/AR-0123.md): Enforceable worker sandbox profile | Replace reported-but-unenforced host controls with an explicit enforceable sandbox profile. | Implement and verify: enforceable OS sandbox and network/filesystem policy adapter. | - |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | - |

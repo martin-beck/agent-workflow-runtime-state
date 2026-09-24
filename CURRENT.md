@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -13,7 +19,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | - |
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. | - |
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | - |
 | P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. | - |

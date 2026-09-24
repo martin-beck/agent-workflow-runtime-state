@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**68 ARs tracked** across 2 active status categories.
+**68 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 3 |
+| **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 65 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -93,7 +93,7 @@ flowchart LR
         AR_0063["AR-0063 - Done"]:::status_done
         AR_0064["AR-0064 - Done"]:::status_done
         AR_0065["AR-0065 - Done"]:::status_done
-        AR_0066["AR-0066 - Planned"]:::status_planned
+        AR_0066["AR-0066 - Open"]:::status_open
         AR_0067["AR-0067 - Planned"]:::status_planned
         AR_0068["AR-0068 - Planned"]:::status_planned
     end
@@ -357,11 +357,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (3)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0066](tasks/AR-0066.md): Closed-loop contractor behavior | Unclaimed | Turn scheduled agent work into an evidence-backed contracting loop with revision, quality, oracle, and human controls. | Implement closed-loop contractor orchestration from job admission through acceptance or bounded rejection. |
+
+### Planned (2)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Unclaimed | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Conduct the separately approved bounded live pilot and make the evidence-based scheduler/contractor go-no-go decision. |
 

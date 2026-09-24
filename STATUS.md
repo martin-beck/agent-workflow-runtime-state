@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**96 ARs tracked** across 2 active status categories.
+**97 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 17 |
+| **Planned** | Defined work awaiting promotion or dependencies | 18 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 79 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -124,6 +124,7 @@ flowchart LR
         AR_0094["AR-0094 - Planned"]:::status_planned
         AR_0095["AR-0095 - Planned"]:::status_planned
         AR_0096["AR-0096 - Planned"]:::status_planned
+        AR_0097["AR-0097 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -372,15 +373,19 @@ flowchart LR
     AR_0090 --> AR_0091
     AR_0090 --> AR_0094
     AR_0090 --> AR_0095
+    AR_0090 --> AR_0097
     AR_0091 --> AR_0092
     AR_0091 --> AR_0093
     AR_0091 --> AR_0094
+    AR_0091 --> AR_0097
     AR_0092 --> AR_0093
     AR_0092 --> AR_0094
     AR_0093 --> AR_0096
     AR_0094 --> AR_0095
     AR_0094 --> AR_0096
     AR_0095 --> AR_0096
+    AR_0095 --> AR_0097
+    AR_0096 --> AR_0097
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -484,17 +489,18 @@ flowchart LR
 | [AR-0087](tasks/AR-0087.md) | [AR-0082](tasks/AR-0082.md), [AR-0083](tasks/AR-0083.md), [AR-0086](tasks/AR-0086.md) | [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) |
 | [AR-0088](tasks/AR-0088.md) | [AR-0066](tasks/AR-0066.md), [AR-0081](tasks/AR-0081.md), [AR-0086](tasks/AR-0086.md) | [AR-0089](tasks/AR-0089.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) |
 | [AR-0089](tasks/AR-0089.md) | [AR-0084](tasks/AR-0084.md), [AR-0085](tasks/AR-0085.md), [AR-0088](tasks/AR-0088.md) | [AR-0090](tasks/AR-0090.md), [AR-0095](tasks/AR-0095.md) |
-| [AR-0090](tasks/AR-0090.md) | [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0089](tasks/AR-0089.md) | [AR-0091](tasks/AR-0091.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) |
-| [AR-0091](tasks/AR-0091.md) | [AR-0082](tasks/AR-0082.md), [AR-0083](tasks/AR-0083.md), [AR-0086](tasks/AR-0086.md), [AR-0090](tasks/AR-0090.md) | [AR-0092](tasks/AR-0092.md), [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md) |
+| [AR-0090](tasks/AR-0090.md) | [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0089](tasks/AR-0089.md) | [AR-0091](tasks/AR-0091.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md), [AR-0097](tasks/AR-0097.md) |
+| [AR-0091](tasks/AR-0091.md) | [AR-0082](tasks/AR-0082.md), [AR-0083](tasks/AR-0083.md), [AR-0086](tasks/AR-0086.md), [AR-0090](tasks/AR-0090.md) | [AR-0092](tasks/AR-0092.md), [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md), [AR-0097](tasks/AR-0097.md) |
 | [AR-0092](tasks/AR-0092.md) | [AR-0083](tasks/AR-0083.md), [AR-0085](tasks/AR-0085.md), [AR-0091](tasks/AR-0091.md) | [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md) |
 | [AR-0093](tasks/AR-0093.md) | [AR-0091](tasks/AR-0091.md), [AR-0092](tasks/AR-0092.md) | [AR-0096](tasks/AR-0096.md) |
 | [AR-0094](tasks/AR-0094.md) | [AR-0082](tasks/AR-0082.md), [AR-0085](tasks/AR-0085.md), [AR-0086](tasks/AR-0086.md), [AR-0087](tasks/AR-0087.md), [AR-0088](tasks/AR-0088.md), [AR-0090](tasks/AR-0090.md), [AR-0091](tasks/AR-0091.md), [AR-0092](tasks/AR-0092.md) | [AR-0095](tasks/AR-0095.md), [AR-0096](tasks/AR-0096.md) |
-| [AR-0095](tasks/AR-0095.md) | [AR-0087](tasks/AR-0087.md), [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md), [AR-0090](tasks/AR-0090.md), [AR-0094](tasks/AR-0094.md) | [AR-0096](tasks/AR-0096.md) |
-| [AR-0096](tasks/AR-0096.md) | [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) | None |
+| [AR-0095](tasks/AR-0095.md) | [AR-0087](tasks/AR-0087.md), [AR-0088](tasks/AR-0088.md), [AR-0089](tasks/AR-0089.md), [AR-0090](tasks/AR-0090.md), [AR-0094](tasks/AR-0094.md) | [AR-0096](tasks/AR-0096.md), [AR-0097](tasks/AR-0097.md) |
+| [AR-0096](tasks/AR-0096.md) | [AR-0093](tasks/AR-0093.md), [AR-0094](tasks/AR-0094.md), [AR-0095](tasks/AR-0095.md) | [AR-0097](tasks/AR-0097.md) |
+| [AR-0097](tasks/AR-0097.md) | [AR-0090](tasks/AR-0090.md), [AR-0091](tasks/AR-0091.md), [AR-0095](tasks/AR-0095.md), [AR-0096](tasks/AR-0096.md) | None |
 
 ## Complete AR inventory
 
-### Planned (17)
+### Planned (18)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -515,6 +521,7 @@ flowchart LR
 | P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Unclaimed | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. |
 | P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | Unclaimed | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. |
 | P0 | [AR-0096](tasks/AR-0096.md): Production readiness and staged rollout gate | Unclaimed | Make the integrated runtime releasable with explicit readiness, rollback, ownership, and residual-risk evidence. | Perform production-readiness review and staged local-mock rollout qualification. |
+| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
 
 ### Done (79)
 

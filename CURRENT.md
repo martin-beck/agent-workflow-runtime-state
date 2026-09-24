@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0080](tasks/AR-0080.md): Production integration baseline and compatibility matrix | Turn the offline runtime contracts into an explicit production-integration baseline across hosts, projects, authorities, and agent profiles. | Define the executable production-integration baseline and compatibility matrix. | - |
+| P0 | [AR-0080](tasks/AR-0080.md): Production integration baseline and compatibility matrix | Turn the offline runtime contracts into an explicit production-integration baseline across hosts, projects, authorities, and agent profiles. | Define the executable production-integration baseline and compatibility matrix. | awr-worker-0080 |
 
 ## Planned
 

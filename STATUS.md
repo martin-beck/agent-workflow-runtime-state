@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -106,7 +106,7 @@ flowchart LR
         AR_0076["AR-0076 - Done"]:::status_done
         AR_0077["AR-0077 - Done"]:::status_done
         AR_0078["AR-0078 - Done"]:::status_done
-        AR_0079["AR-0079 - Open"]:::status_open
+        AR_0079["AR-0079 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -406,11 +406,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Unclaimed | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. |
+| P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | awr-worker-0079 | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. |
 
 ### Blocked (1)
 

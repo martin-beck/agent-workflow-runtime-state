@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. | - |
 | P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. | - |
 | P0 | [AR-0090](tasks/AR-0090.md): Cross-agent evidence and accounting integration | Attribute every agent action and project result to exact jobs, budgets, revisions, and replayable evidence. | Implement durable evidence, usage accounting, replay, and comparison across simultaneous agents. | - |

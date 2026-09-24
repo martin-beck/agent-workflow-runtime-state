@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. | - |
+| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. | awr-worker-0097 |
 
 ## Done
 

@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -124,7 +124,7 @@ flowchart LR
         AR_0094["AR-0094 - Done"]:::status_done
         AR_0095["AR-0095 - Done"]:::status_done
         AR_0096["AR-0096 - Done"]:::status_done
-        AR_0097["AR-0097 - Open"]:::status_open
+        AR_0097["AR-0097 - In progress"]:::status_in_progress
         AR_0098["AR-0098 - Done"]:::status_done
         AR_0099["AR-0099 - Done"]:::status_done
     end
@@ -508,11 +508,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
+| P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | awr-worker-0097 | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
 
 ### Done (98)
 

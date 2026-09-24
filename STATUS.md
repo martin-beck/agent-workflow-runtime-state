@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 3 active status categories.
+**99 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 96 |
+| **Done** | Accepted, integrated, and durably verified | 97 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -122,7 +122,7 @@ flowchart LR
         AR_0092["AR-0092 - Done"]:::status_done
         AR_0093["AR-0093 - Done"]:::status_done
         AR_0094["AR-0094 - Done"]:::status_done
-        AR_0095["AR-0095 - In progress"]:::status_in_progress
+        AR_0095["AR-0095 - Done"]:::status_done
         AR_0096["AR-0096 - Planned"]:::status_planned
         AR_0097["AR-0097 - Planned"]:::status_planned
         AR_0098["AR-0098 - Done"]:::status_done
@@ -508,12 +508,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | awr-worker-0095 | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. |
-
 ### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -521,7 +515,7 @@ flowchart LR
 | P0 | [AR-0096](tasks/AR-0096.md): Production readiness and staged rollout gate | Unclaimed | Make the integrated runtime releasable with explicit readiness, rollback, ownership, and residual-risk evidence. | Perform production-readiness review and staged local-mock rollout qualification. |
 | P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
 
-### Done (96)
+### Done (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -588,6 +582,7 @@ flowchart LR
 | P0 | [AR-0092](tasks/AR-0092.md): Executable security and supply-chain enforcement | Unclaimed | Make security controls executable and fail closed for every concurrent agent session and artifact. | Enforce runtime security, supply-chain, secret, and egress policy at executable boundaries. |
 | P0 | [AR-0093](tasks/AR-0093.md): Runtime deployment and release operations | Unclaimed | Make the integrated runtime installable and recoverable across supported hosts and workflow projects. | Implement reproducible packaging, deployment, upgrade, rollback, and configuration migration. |
 | P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Unclaimed | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. |
+| P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | Unclaimed | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. |
 | P0 | [AR-0098](tasks/AR-0098.md): Formal authority interaction and mandatory-gate model | Unclaimed | Formally prove that quality, runtime, coordinator, and guidance authorities cannot be skipped, confused, or bypassed by ambiguity or missing responses. | Define and model mandatory AWQ-AWR-AWC-AWG interactions and non-skippable control-flow invariants. |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Unclaimed | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |

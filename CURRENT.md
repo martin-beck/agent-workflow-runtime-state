@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. | awr-worker-0095 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -83,6 +77,7 @@ Never edit this file directly.
 | P0 | [AR-0092](tasks/AR-0092.md): Executable security and supply-chain enforcement | Make security controls executable and fail closed for every concurrent agent session and artifact. | Enforce runtime security, supply-chain, secret, and egress policy at executable boundaries. | - |
 | P0 | [AR-0093](tasks/AR-0093.md): Runtime deployment and release operations | Make the integrated runtime installable and recoverable across supported hosts and workflow projects. | Implement reproducible packaging, deployment, upgrade, rollback, and configuration migration. | - |
 | P0 | [AR-0094](tasks/AR-0094.md): Integrated multi-agent qualification and chaos | Prove safety and efficiency for large concurrent workloads using local mock agents and injected failures. | Run deterministic concurrency, chaos, recovery, and performance qualification for the integrated runtime. | - |
+| P0 | [AR-0095](tasks/AR-0095.md): Full multi-project workflow orchestration | Coordinate large dependency graphs across many projects and agent roles from admission through accepted artifacts. | Implement the end-to-end huge-software-system workflow orchestrator and terminal reconciliation. | - |
 | P0 | [AR-0098](tasks/AR-0098.md): Formal authority interaction and mandatory-gate model | Formally prove that quality, runtime, coordinator, and guidance authorities cannot be skipped, confused, or bypassed by ambiguity or missing responses. | Define and model mandatory AWQ-AWR-AWC-AWG interactions and non-skippable control-flow invariants. | - |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |

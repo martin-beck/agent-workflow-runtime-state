@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | awr-board-0124 |
-| P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. | awr-integration-0128 |
 
 ## Open
 
@@ -108,6 +107,7 @@ Never edit this file directly.
 | P0 | [AR-0123](tasks/AR-0123.md): Enforceable worker sandbox profile | Replace reported-but-unenforced host controls with an explicit enforceable sandbox profile. | Implement and verify: enforceable OS sandbox and network/filesystem policy adapter. | - |
 | P0 | [AR-0126](tasks/AR-0126.md): Release identity consistency | Ensure the released CLI version, wheel metadata, Git tag, source commit, and umbrella lock are identical. | Implement and verify: exact package, tag, artifact, and umbrella version identity. | - |
 | P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. | - |
+| P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

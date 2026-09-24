@@ -20,6 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0099-worker` | `feature/ar-0099-worker` | `a8a436318d4f` | 0 | behind 53, ahead 0 |
 | `agent-workflow-runtime-0101-worker` | `feature/ar-0101-bootstrap-lifecycle` | `ed1911bd9c65` | 4 | behind 21, ahead 0 |
 | changed files | - | - | - | `awr_cli/cli.py`, `awr_cli/install.py`, `docs/awr-install.md`, `tests/test_awr_install.py` |
+| `agent-workflow-runtime-0121-worker` | `feature/ar-0121-hosted-authority` | `40711ac024e2` | 0 | behind 0, ahead 0 |
 | `agent-workflow-runtime-local-authority-bridge` | `prep/local-authority-bridge` | `ed1911bd9c65` | 3 | behind 21, ahead 0 |
 | changed files | - | - | - | `scripts/check_local_authority_bridge.py`, `scripts/local_authority_bridge.py`, `tests/test_local_authority_bridge.py` |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 232, ahead 0 |

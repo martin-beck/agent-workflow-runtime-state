@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. | - |
+| P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. | - |
 
 ## Blocked
 
@@ -19,7 +20,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. | - |
 | P0 | [AR-0076](tasks/AR-0076.md): OpenDesk-compatible executable adapter | Add a third independently qualified adapter with explicit unsupported-capability behavior. | Implement the OpenDesk-compatible adapter through the bounded transport and fake conformance suite. | - |
 | P0 | [AR-0077](tasks/AR-0077.md): Executable scheduler-to-contractor workflow | Make scheduled work flow through a real adapter into evidence-backed contractor acceptance or rejection. | Compose executable scheduling, adapters, evidence, accounting, and contractor lifecycle into one local end-to-end runtime. | - |
 | P0 | [AR-0078](tasks/AR-0078.md): Runtime observability and incident operations | Make the executable runtime operable and auditable under failure without exposing private data. | Implement production-shaped observability, incident evidence, metrics, and privacy-safe operational diagnostics. | - |

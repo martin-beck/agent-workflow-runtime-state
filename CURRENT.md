@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. | awr-worker-0114 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -101,6 +95,7 @@ Never edit this file directly.
 | P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. | - |
 | P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. | - |
 | P0 | [AR-0113](tasks/AR-0113.md): Live Coordinator state and lease integration | Connect runtime admission and lifecycle to Coordinator-owned state without moving authority. | Implement and verify: live Coordinator state client and durable claim/lease exchange. | - |
+| P0 | [AR-0114](tasks/AR-0114.md): Executable cross-agent scheduler | Dispatch dependency-aware jobs to multiple bounded workers with fair leases and recovery. | Implement and verify: executable durable cross-agent scheduler. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

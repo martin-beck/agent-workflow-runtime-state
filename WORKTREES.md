@@ -8,8 +8,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 5, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 3, ahead 0 |
 | `agent-workflow-runtime-0084-worker` | `feature/ar-0084-worker` | `b3c01cf548c7` | 0 | behind 3, ahead 0 |
-| `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `915d2ddd93b6` | 5 | behind 4, ahead 0 |
-| changed files | - | - | - | `scripts/authority_interaction_model.py`, `scripts/check_authority_interaction.py`, `specifications/authority-interaction-v1.json`, `specifications/fixtures/authority-interaction-ar0098-v1.json`, `tests/test_authority_interaction.py` |
+| `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `915d2ddd93b6` | 6 | behind 4, ahead 0 |
+| changed files | - | - | - | `.github/workflows/ci.yml`, `scripts/authority_interaction_model.py`, `scripts/check_authority_interaction.py`, `specifications/authority-interaction-v1.json`, `specifications/fixtures/authority-interaction-ar0098-v1.json`, `tests/test_authority_interaction.py` |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 168, ahead 0 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 166, ahead 0 |
 | `agent-workflow-runtime-0003` | `feature/ar-0003` | `74450d59c6d7` | 0 | behind 164, ahead 0 |

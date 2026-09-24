@@ -2,9 +2,9 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `2dd0881701a62f5cd85571dd0063adce381a3289`
-- Local origin/main: `2dd0881701a62f5cd85571dd0063adce381a3289`
-- Primary worktree head: `2dd0881701a62f5cd85571dd0063adce381a3289`
+- Product remote main: `40711ac024e2e5f9e529bd29bb5921b6960498e9`
+- Local origin/main: `40711ac024e2e5f9e529bd29bb5921b6960498e9`
+- Primary worktree head: `40711ac024e2e5f9e529bd29bb5921b6960498e9`
 
 ## Open pull requests
 
@@ -15,7 +15,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35987336704 | `2dd0881701a6` | push | Agent Workflow Runtime CI | in_progress:- |
+| 35987434107 | `40711ac024e2` | push | Agent Workflow Runtime CI | in_progress:- |
+| 35987336704 | `2dd0881701a6` | push | Agent Workflow Runtime CI | completed:failure |
 | 35987228579 | `2d2de4f64714` | push | Agent Workflow Runtime CI | completed:failure |
 | 35987099746 | `e66b1f944714` | push | Agent Workflow Runtime CI | completed:failure |
 | 35986987984 | `a04147f9732d` | push | Agent Workflow Runtime CI | completed:failure |
@@ -26,4 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35974460563 | `e4788e1a86d8` | push | Agent Workflow Runtime CI | completed:success |
 | 35974415535 | `b6d24121cceb` | pull_request | Agent Workflow Runtime CI | completed:success |
 | 35974151548 | `80b5cdf5ee25` | push | Agent Workflow Runtime CI | completed:success |
-| 35974103009 | `ab65f8547266` | pull_request | Agent Workflow Runtime CI | completed:success |

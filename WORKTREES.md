@@ -6,8 +6,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-workflow-runtime` | `main` | `915d2ddd93b6` | 0 | behind 0, ahead 0 |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 1, ahead 0 |
-| `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `915d2ddd93b6` | 0 | behind 0, ahead 0 |
-| `agent-workflow-runtime-0084-worker` | `feature/ar-0084-worker` | `915d2ddd93b6` | 0 | behind 0, ahead 0 |
+| `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `915d2ddd93b6` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `scripts/coordinator_client.py` |
+| `agent-workflow-runtime-0084-worker` | `feature/ar-0084-worker` | `915d2ddd93b6` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `scripts/agent_registry.py` |
 | `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `915d2ddd93b6` | 0 | behind 0, ahead 0 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 164, ahead 0 |
 | `agent-workflow-runtime-0002` | `feature/ar-0002` | `0216c1782968` | 0 | behind 162, ahead 0 |

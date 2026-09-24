@@ -9,6 +9,14 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. | awr-board-0124 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Implement and verify: durable provider-neutral agent registry and capability negotiation. | - |
+| P0 | [AR-0129](tasks/AR-0129.md): Local LLM mock, streaming, and record/replay adapter | Test real agent lifecycle and comparison flows against a local deterministic LLM mock without external provider connections. | Implement and verify: local LLM-mock conversation protocol and record/replay integration. | - |
+| P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |

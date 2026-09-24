@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 2 active status categories.
+**124 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -151,6 +151,10 @@ flowchart LR
         AR_0118["AR-0118 - Done"]:::status_done
         AR_0119["AR-0119 - Done"]:::status_done
         AR_0120["AR-0120 - Open"]:::status_open
+        AR_0121["AR-0121 - Open"]:::status_open
+        AR_0122["AR-0122 - Open"]:::status_open
+        AR_0123["AR-0123 - Open"]:::status_open
+        AR_0124["AR-0124 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -433,10 +437,15 @@ flowchart LR
     AR_0113 --> AR_0114
     AR_0114 --> AR_0115
     AR_0115 --> AR_0116
+    AR_0115 --> AR_0123
     AR_0116 --> AR_0117
     AR_0117 --> AR_0118
+    AR_0117 --> AR_0121
     AR_0118 --> AR_0119
     AR_0119 --> AR_0120
+    AR_0121 --> AR_0122
+    AR_0122 --> AR_0124
+    AR_0123 --> AR_0124
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -565,21 +574,29 @@ flowchart LR
 | [AR-0112](tasks/AR-0112.md) | [AR-0111](tasks/AR-0111.md) | None |
 | [AR-0113](tasks/AR-0113.md) | [AR-0111](tasks/AR-0111.md) | [AR-0114](tasks/AR-0114.md) |
 | [AR-0114](tasks/AR-0114.md) | [AR-0113](tasks/AR-0113.md) | [AR-0115](tasks/AR-0115.md) |
-| [AR-0115](tasks/AR-0115.md) | [AR-0114](tasks/AR-0114.md) | [AR-0116](tasks/AR-0116.md) |
+| [AR-0115](tasks/AR-0115.md) | [AR-0114](tasks/AR-0114.md) | [AR-0116](tasks/AR-0116.md), [AR-0123](tasks/AR-0123.md) |
 | [AR-0116](tasks/AR-0116.md) | [AR-0115](tasks/AR-0115.md) | [AR-0117](tasks/AR-0117.md) |
-| [AR-0117](tasks/AR-0117.md) | [AR-0116](tasks/AR-0116.md) | [AR-0118](tasks/AR-0118.md) |
+| [AR-0117](tasks/AR-0117.md) | [AR-0116](tasks/AR-0116.md) | [AR-0118](tasks/AR-0118.md), [AR-0121](tasks/AR-0121.md) |
 | [AR-0118](tasks/AR-0118.md) | [AR-0117](tasks/AR-0117.md) | [AR-0119](tasks/AR-0119.md) |
 | [AR-0119](tasks/AR-0119.md) | [AR-0118](tasks/AR-0118.md) | [AR-0120](tasks/AR-0120.md) |
 | [AR-0120](tasks/AR-0120.md) | [AR-0119](tasks/AR-0119.md) | None |
+| [AR-0121](tasks/AR-0121.md) | [AR-0117](tasks/AR-0117.md) | [AR-0122](tasks/AR-0122.md) |
+| [AR-0122](tasks/AR-0122.md) | [AR-0121](tasks/AR-0121.md) | [AR-0124](tasks/AR-0124.md) |
+| [AR-0123](tasks/AR-0123.md) | [AR-0115](tasks/AR-0115.md) | [AR-0124](tasks/AR-0124.md) |
+| [AR-0124](tasks/AR-0124.md) | [AR-0122](tasks/AR-0122.md), [AR-0123](tasks/AR-0123.md) | None |
 
 ## Complete AR inventory
 
-### Open (2)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
+| P0 | [AR-0121](tasks/AR-0121.md): Hosted authority transport and observation adapters | Unclaimed | Consume hosted Coordinator, AWQ, AWG, and UI observations without moving authority into runtime. | Implement and verify: hosted authority transport adapters with revision-bound observation. |
+| P0 | [AR-0122](tasks/AR-0122.md): Production release and umbrella integration alignment | Unclaimed | Publish a coherent runtime release containing the executable integration and pin it in the umbrella. | Implement and verify: release runtime integration and update umbrella compatibility pins. |
+| P0 | [AR-0123](tasks/AR-0123.md): Enforceable worker sandbox profile | Unclaimed | Replace reported-but-unenforced host controls with an explicit enforceable sandbox profile. | Implement and verify: enforceable OS sandbox and network/filesystem policy adapter. |
+| P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | Unclaimed | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
 
 ### Done (118)
 

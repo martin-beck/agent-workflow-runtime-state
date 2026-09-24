@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**126 ARs tracked** across 3 active status categories.
+**127 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -157,6 +157,7 @@ flowchart LR
         AR_0124["AR-0124 - In progress"]:::status_in_progress
         AR_0125["AR-0125 - Superseded"]:::status_superseded
         AR_0126["AR-0126 - Done"]:::status_done
+        AR_0127["AR-0127 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -446,10 +447,12 @@ flowchart LR
     AR_0118 --> AR_0119
     AR_0119 --> AR_0120
     AR_0121 --> AR_0122
+    AR_0121 --> AR_0127
     AR_0122 --> AR_0124
     AR_0122 --> AR_0125
     AR_0122 --> AR_0126
     AR_0123 --> AR_0124
+    AR_0123 --> AR_0127
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -584,12 +587,13 @@ flowchart LR
 | [AR-0118](tasks/AR-0118.md) | [AR-0117](tasks/AR-0117.md) | [AR-0119](tasks/AR-0119.md) |
 | [AR-0119](tasks/AR-0119.md) | [AR-0118](tasks/AR-0118.md) | [AR-0120](tasks/AR-0120.md) |
 | [AR-0120](tasks/AR-0120.md) | [AR-0119](tasks/AR-0119.md) | None |
-| [AR-0121](tasks/AR-0121.md) | [AR-0117](tasks/AR-0117.md) | [AR-0122](tasks/AR-0122.md) |
+| [AR-0121](tasks/AR-0121.md) | [AR-0117](tasks/AR-0117.md) | [AR-0122](tasks/AR-0122.md), [AR-0127](tasks/AR-0127.md) |
 | [AR-0122](tasks/AR-0122.md) | [AR-0121](tasks/AR-0121.md) | [AR-0124](tasks/AR-0124.md), [AR-0125](tasks/AR-0125.md), [AR-0126](tasks/AR-0126.md) |
-| [AR-0123](tasks/AR-0123.md) | [AR-0115](tasks/AR-0115.md) | [AR-0124](tasks/AR-0124.md) |
+| [AR-0123](tasks/AR-0123.md) | [AR-0115](tasks/AR-0115.md) | [AR-0124](tasks/AR-0124.md), [AR-0127](tasks/AR-0127.md) |
 | [AR-0124](tasks/AR-0124.md) | [AR-0122](tasks/AR-0122.md), [AR-0123](tasks/AR-0123.md) | None |
 | [AR-0125](tasks/AR-0125.md) | [AR-0122](tasks/AR-0122.md) | None |
 | [AR-0126](tasks/AR-0126.md) | [AR-0122](tasks/AR-0122.md) | None |
+| [AR-0127](tasks/AR-0127.md) | [AR-0121](tasks/AR-0121.md), [AR-0123](tasks/AR-0123.md) | None |
 
 ## Complete AR inventory
 
@@ -598,6 +602,12 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0127](tasks/AR-0127.md): Executable integration of authority transport and sandbox | Unclaimed | Ensure implemented authority and sandbox adapters cannot remain optional dead-end components in production execution paths. | Implement and verify: wire hosted authority and enforceable sandbox paths into executable runtime flows. |
 
 ### Done (122)
 

@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. | awr-worker-0074 |
 | P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. | awr-worker-0075 |
 | P0 | [AR-0076](tasks/AR-0076.md): OpenDesk-compatible executable adapter | Add a third independently qualified adapter with explicit unsupported-capability behavior. | Implement the OpenDesk-compatible adapter through the bounded transport and fake conformance suite. | awr-worker-0076 |
 
@@ -70,6 +69,7 @@ Never edit this file directly.
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | - |
 | P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. | - |
 | P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. | - |
+| P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

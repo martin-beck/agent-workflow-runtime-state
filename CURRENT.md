@@ -3,17 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Obtain separately approved live-pilot authority before any real provider or host execution; current offline gate remains blocked by design. | - |
-
-## Planned
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0079](tasks/AR-0079.md): Executable runtime qualification | Qualify the executable scheduler and contractor as a release candidate without using live providers. | Run deterministic end-to-end qualification of the executable runtime with exact thresholds and retained counterexamples. | - |
 
 ## Done
 

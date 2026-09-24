@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 68 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -99,7 +99,7 @@ flowchart LR
         AR_0069["AR-0069 - Done"]:::status_done
         AR_0070["AR-0070 - Open"]:::status_open
         AR_0071["AR-0071 - Planned"]:::status_planned
-        AR_0072["AR-0072 - Planned"]:::status_planned
+        AR_0072["AR-0072 - Open"]:::status_open
         AR_0073["AR-0073 - Planned"]:::status_planned
         AR_0074["AR-0074 - Planned"]:::status_planned
         AR_0075["AR-0075 - Planned"]:::status_planned
@@ -406,11 +406,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Unclaimed | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. |
+| P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Unclaimed | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. |
 
 ### Blocked (1)
 
@@ -418,12 +419,11 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Obtain separately approved live-pilot authority before any real provider or host execution; current offline gate remains blocked by design. |
 
-### Planned (9)
+### Planned (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Unclaimed | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. |
-| P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Unclaimed | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. |
 | P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Unclaimed | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. |
 | P0 | [AR-0074](tasks/AR-0074.md): Codex-compatible executable adapter | Unclaimed | Provide the first provider-specific adapter without leaking provider policy into the runtime core. | Implement the Codex-compatible adapter through the bounded transport and fake conformance suite. |
 | P0 | [AR-0075](tasks/AR-0075.md): OpenCode-compatible executable adapter | Unclaimed | Add an independent OpenCode adapter behind the same provider-neutral runtime boundary. | Implement the OpenCode-compatible adapter through the bounded transport and fake conformance suite. |

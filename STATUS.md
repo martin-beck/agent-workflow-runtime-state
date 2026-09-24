@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
@@ -98,7 +98,7 @@ flowchart LR
         AR_0068["AR-0068 - Blocked"]:::status_blocked
         AR_0069["AR-0069 - Done"]:::status_done
         AR_0070["AR-0070 - Done"]:::status_done
-        AR_0071["AR-0071 - Open"]:::status_open
+        AR_0071["AR-0071 - In progress"]:::status_in_progress
         AR_0072["AR-0072 - Done"]:::status_done
         AR_0073["AR-0073 - Planned"]:::status_planned
         AR_0074["AR-0074 - Planned"]:::status_planned
@@ -406,11 +406,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Unclaimed | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. |
+| P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | awr-worker-0071 | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. |
 
 ### Blocked (1)
 

@@ -11,8 +11,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0083-worker` | `feature/ar-0083-worker` | `df8eb79649bb` | 0 | behind 15, ahead 0 |
 | `agent-workflow-runtime-0084-worker` | `feature/ar-0084-worker` | `b3c01cf548c7` | 0 | behind 15, ahead 0 |
 | `agent-workflow-runtime-0085-worker` | `feature/ar-0085-worker` | `2f0adac3467f` | 0 | behind 5, ahead 0 |
-| `agent-workflow-runtime-0086-worker` | `feature/ar-0086-worker` | `3c34ce876155` | 1 | behind 4, ahead 0 |
-| changed files | - | - | - | `scripts/fair_scheduler.py` |
+| `agent-workflow-runtime-0086-worker` | `feature/ar-0086-worker` | `3c34ce876155` | 5 | behind 4, ahead 0 |
+| changed files | - | - | - | `scripts/check_fair_scheduler.py`, `scripts/fair_scheduler.py`, `specifications/fair-scheduler-v1.json`, `specifications/fixtures/fair-scheduler-ar0086-v1.json`, `tests/test_fair_scheduler.py` |
 | `agent-workflow-runtime-0098-worker` | `feature/ar-0098-formal-authority` | `a243e88e1924` | 0 | behind 15, ahead 0 |
 | `agent-workflow-runtime-0099-worker` | `feature/ar-0099-worker` | `a8a436318d4f` | 0 | behind 1, ahead 0 |
 | `agent-workflow-runtime-0001` | `feature/ar-0001` | `dfac0c901e12` | 0 | behind 180, ahead 0 |

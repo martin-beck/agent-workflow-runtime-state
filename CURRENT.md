@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | awr-worker-0071 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -69,6 +63,7 @@ Never edit this file directly.
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. | - |
 | P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | - |
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. | - |
+| P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | - |
 | P0 | [AR-0072](tasks/AR-0072.md): Host enforcement and sandbox boundary | Enforce the runtime contract at the host boundary before any provider process can run. | Implement least-privilege local process, filesystem, resource, timeout, and cancellation enforcement interfaces. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |

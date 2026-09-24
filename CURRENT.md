@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. | - |
+| P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. | awr-worker-0087 |
 
 ## Planned
 

@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 3 active status categories.
+**112 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 107 |
+| **Done** | Accepted, integrated, and durably verified | 108 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -138,7 +138,7 @@ flowchart LR
         AR_0105["AR-0105 - Done"]:::status_done
         AR_0106["AR-0106 - Done"]:::status_done
         AR_0107["AR-0107 - Done"]:::status_done
-        AR_0108["AR-0108 - In progress"]:::status_in_progress
+        AR_0108["AR-0108 - Done"]:::status_done
         AR_0109["AR-0109 - Open"]:::status_open
         AR_0110["AR-0110 - Open"]:::status_open
         AR_0111["AR-0111 - Open"]:::status_open
@@ -550,12 +550,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | awr-worker-0108 | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -565,7 +559,7 @@ flowchart LR
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
 
-### Done (107)
+### Done (108)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -642,6 +636,7 @@ flowchart LR
 | P0 | [AR-0103](tasks/AR-0103.md): Local bridge implementations and conformance | Unclaimed | Implement live local bridges against the versioned, provider-neutral authority contracts. | Implement and verify: Local bridge implementations and conformance. |
 | P0 | [AR-0104](tasks/AR-0104.md): New-project bootstrap | Unclaimed | Make it straightforward to create and register a new runtime-enabled project from a clean directory. | Implement and verify: New-project bootstrap. |
 | P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Unclaimed | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. |
+| P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Unclaimed | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

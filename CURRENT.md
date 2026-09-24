@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. | awr-worker-0064 |
 | P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. | awr-worker-0065 |
 
 ## Planned
@@ -54,6 +53,7 @@ Never edit this file directly.
 | P0 | [AR-0061](tasks/AR-0061.md): Durable job contract | Create the durable, auditable job contract consumed by every scheduler and contractor operation. | Define and implement the revision-bound durable job contract and checker. | - |
 | P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. | - |
 | P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. | - |
+| P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 63 |
+| **Done** | Accepted, integrated, and durably verified | 64 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -91,7 +91,7 @@ flowchart LR
         AR_0061["AR-0061 - Done"]:::status_done
         AR_0062["AR-0062 - Done"]:::status_done
         AR_0063["AR-0063 - Done"]:::status_done
-        AR_0064["AR-0064 - In progress"]:::status_in_progress
+        AR_0064["AR-0064 - Done"]:::status_done
         AR_0065["AR-0065 - In progress"]:::status_in_progress
         AR_0066["AR-0066 - Planned"]:::status_planned
         AR_0067["AR-0067 - Planned"]:::status_planned
@@ -357,11 +357,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | awr-worker-0064 | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. |
 | P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | awr-worker-0065 | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. |
 
 ### Planned (3)
@@ -372,7 +371,7 @@ flowchart LR
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Unclaimed | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. |
 | P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime with real approved agents and workloads without weakening offline or authority gates. | Conduct the separately approved bounded live pilot and make the evidence-based scheduler/contractor go-no-go decision. |
 
-### Done (63)
+### Done (64)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -408,6 +407,7 @@ flowchart LR
 | P0 | [AR-0061](tasks/AR-0061.md): Durable job contract | Unclaimed | Create the durable, auditable job contract consumed by every scheduler and contractor operation. | Define and implement the revision-bound durable job contract and checker. |
 | P0 | [AR-0062](tasks/AR-0062.md): Cross-agent scheduler kernel | Unclaimed | Build the real bounded scheduler for dependency-aware cross-agent dispatch and recovery. | Implement the durable fair scheduler and worker-lease kernel against AR-0061. |
 | P0 | [AR-0063](tasks/AR-0063.md): Provider-neutral agent adapters | Unclaimed | Make Codex, OpenCode, OpenDesk, and future agents interchangeable behind one bounded adapter contract. | Implement the provider-neutral adapter protocol and capability router. |
+| P0 | [AR-0064](tasks/AR-0064.md): Deterministic fake-agent simulator | Unclaimed | Provide deterministic no-LLM test doubles that rigorously exercise every cross-agent lifecycle and failure path. | Build deterministic fake agents and an interleaving simulator for scheduler and adapter verification. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

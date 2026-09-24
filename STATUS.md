@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 88 |
+| **Done** | Accepted, integrated, and durably verified | 89 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -115,7 +115,7 @@ flowchart LR
         AR_0085["AR-0085 - Done"]:::status_done
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - In progress"]:::status_in_progress
-        AR_0088["AR-0088 - In progress"]:::status_in_progress
+        AR_0088["AR-0088 - Done"]:::status_done
         AR_0089["AR-0089 - Planned"]:::status_planned
         AR_0090["AR-0090 - Planned"]:::status_planned
         AR_0091["AR-0091 - Planned"]:::status_planned
@@ -508,12 +508,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | awr-worker-0087 | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. |
-| P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | awr-worker-0088 | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. |
 
 ### Planned (9)
 
@@ -529,7 +528,7 @@ flowchart LR
 | P0 | [AR-0096](tasks/AR-0096.md): Production readiness and staged rollout gate | Unclaimed | Make the integrated runtime releasable with explicit readiness, rollback, ownership, and residual-risk evidence. | Perform production-readiness review and staged local-mock rollout qualification. |
 | P1 | [AR-0097](tasks/AR-0097.md): Autonomous development case-study and improvement loop | Unclaimed | Learn from autonomous development cycles without making any example project a runtime dependency or authority. | Implement a project-neutral autonomous-development case-study and improvement-evidence loop. |
 
-### Done (88)
+### Done (89)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -588,6 +587,7 @@ flowchart LR
 | P0 | [AR-0084](tasks/AR-0084.md): Agent registry and capability preflight | Unclaimed | Select compatible agent profiles without confusing catalog/setup acceptance with executable support. | Implement the runtime agent registry, capability negotiation, and admission preflight. |
 | P0 | [AR-0085](tasks/AR-0085.md): Multi-agent executable adapter sessions | Unclaimed | Make multiple agent profiles concurrently executable behind one bounded lifecycle and local-mock response boundary. | Implement executable provider-neutral adapter sessions over the supervised local transport. |
 | P0 | [AR-0086](tasks/AR-0086.md): Multi-agent fairness and resource scheduler | Unclaimed | Schedule many heterogeneous agents simultaneously without starvation, overcommitment, or cross-tenant leakage. | Implement fair multi-agent scheduling with quotas, backpressure, priorities, and resource pools. |
+| P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Unclaimed | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. |
 | P0 | [AR-0098](tasks/AR-0098.md): Formal authority interaction and mandatory-gate model | Unclaimed | Formally prove that quality, runtime, coordinator, and guidance authorities cannot be skipped, confused, or bypassed by ambiguity or missing responses. | Define and model mandatory AWQ-AWR-AWC-AWG interactions and non-skippable control-flow invariants. |
 | P0 | [AR-0099](tasks/AR-0099.md): TLA+ formal authority and workflow gate model | Unclaimed | Provide an executable TLA+/TLC model and refinement checks for the non-skippable multi-authority workflow gates. | Specify and check the mandatory authority interaction model in TLA+/TLC. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |

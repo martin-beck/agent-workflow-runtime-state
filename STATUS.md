@@ -9,14 +9,14 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 122 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 2 |
+| **Superseded** | Replaced by another AR | 3 |
 
 ## Dependency graph
 
@@ -142,7 +142,7 @@ flowchart LR
         AR_0109["AR-0109 - Done"]:::status_done
         AR_0110["AR-0110 - Done"]:::status_done
         AR_0111["AR-0111 - Done"]:::status_done
-        AR_0112["AR-0112 - In progress"]:::status_in_progress
+        AR_0112["AR-0112 - Superseded"]:::status_superseded
         AR_0113["AR-0113 - Done"]:::status_done
         AR_0114["AR-0114 - Done"]:::status_done
         AR_0115["AR-0115 - Done"]:::status_done
@@ -593,11 +593,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | awr-board-0112-cleanup | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
 | P0 | [AR-0124](tasks/AR-0124.md): Final integrated platform board acceptance | awr-board-0124 | Prove the complete agent-workflow platform is professionally usable for complex autonomous development. | Implement and verify: final board acceptance after hosted adapters, release alignment, and sandbox qualification. |
 
 ### Done (122)
@@ -727,9 +726,10 @@ flowchart LR
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
 
-### Superseded (2)
+### Superseded (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
 | P0 | [AR-0125](tasks/AR-0125.md): Corrected integrated runtime release | Unclaimed | Publish the fully green executable integration release and realign the umbrella pin. | Implement and verify: correct release after the v0.1.3 acceptance fixture repair. |

@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. | awr-worker-0117 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. | - |
-| P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. | - |
 | P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. | - |
 | P0 | [AR-0119](tasks/AR-0119.md): Concurrent multi-agent qualification | Prove safe and efficient operation of heterogeneous agents on a large software system workload. | Implement and verify: concurrent multi-agent and multi-project qualification. | - |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. | - |

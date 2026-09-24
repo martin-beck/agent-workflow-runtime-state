@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**112 ARs tracked** across 2 active status categories.
+**112 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -137,7 +137,7 @@ flowchart LR
         AR_0104["AR-0104 - Done"]:::status_done
         AR_0105["AR-0105 - Done"]:::status_done
         AR_0106["AR-0106 - Done"]:::status_done
-        AR_0107["AR-0107 - Open"]:::status_open
+        AR_0107["AR-0107 - In progress"]:::status_in_progress
         AR_0108["AR-0108 - Open"]:::status_open
         AR_0109["AR-0109 - Open"]:::status_open
         AR_0110["AR-0110 - Open"]:::status_open
@@ -550,14 +550,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | awr-worker-0107 | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. |
+
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Unclaimed | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. |
 | P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Unclaimed | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
-| P1 | [AR-0107](tasks/AR-0107.md): Operational observability and diagnostics | Unclaimed | Provide actionable, privacy-safe observability for install, runtime, bridges, and project workflows. | Implement and verify: Operational observability and diagnostics. |
 | P1 | [AR-0110](tasks/AR-0110.md): Professional onboarding and operator documentation | Unclaimed | Provide complete first-run and operator guidance backed by executable examples. | Implement and verify: Professional onboarding and operator documentation. |
 | P1 | [AR-0111](tasks/AR-0111.md): Optional provider and backend qualification boundaries | Unclaimed | Make optional external execution integrations explicit, isolated, and independently qualified. | Implement and verify: Optional provider and backend qualification boundaries. |
 

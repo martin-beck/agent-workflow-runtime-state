@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 3 active status categories.
+**120 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 111 |
+| **Done** | Accepted, integrated, and durably verified | 112 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -143,7 +143,7 @@ flowchart LR
         AR_0110["AR-0110 - Done"]:::status_done
         AR_0111["AR-0111 - Done"]:::status_done
         AR_0112["AR-0112 - Open"]:::status_open
-        AR_0113["AR-0113 - In progress"]:::status_in_progress
+        AR_0113["AR-0113 - Done"]:::status_done
         AR_0114["AR-0114 - Open"]:::status_open
         AR_0115["AR-0115 - Open"]:::status_open
         AR_0116["AR-0116 - Open"]:::status_open
@@ -574,12 +574,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0113](tasks/AR-0113.md): Live Coordinator state and lease integration | awr-worker-0113 | Connect runtime admission and lifecycle to Coordinator-owned state without moving authority. | Implement and verify: live Coordinator state client and durable claim/lease exchange. |
-
 ### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -593,7 +587,7 @@ flowchart LR
 | P0 | [AR-0119](tasks/AR-0119.md): Concurrent multi-agent qualification | Unclaimed | Prove safe and efficient operation of heterogeneous agents on a large software system workload. | Implement and verify: concurrent multi-agent and multi-project qualification. |
 | P0 | [AR-0120](tasks/AR-0120.md): Final board acceptance and staged readiness | Unclaimed | Make the board-level acceptance claim evidence-based after executable integration and qualification. | Implement and verify: final board acceptance and staged production readiness. |
 
-### Done (111)
+### Done (112)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -672,6 +666,7 @@ flowchart LR
 | P0 | [AR-0105](tasks/AR-0105.md): Deterministic local mock end-to-end workflow | Unclaimed | Prove an entire project workflow locally using deterministic authorities and mock workers. | Implement and verify: Deterministic local mock end-to-end workflow. |
 | P0 | [AR-0108](tasks/AR-0108.md): Security and isolation hardening | Unclaimed | Harden local runtime boundaries, data handling, and failure behavior for professional use. | Implement and verify: Security and isolation hardening. |
 | P0 | [AR-0109](tasks/AR-0109.md): Release, provenance, upgrades, and recovery | Unclaimed | Establish a reproducible release process for the installable runtime and CLI. | Implement and verify: Release, provenance, upgrades, and recovery. |
+| P0 | [AR-0113](tasks/AR-0113.md): Live Coordinator state and lease integration | Unclaimed | Connect runtime admission and lifecycle to Coordinator-owned state without moving authority. | Implement and verify: live Coordinator state client and durable claim/lease exchange. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

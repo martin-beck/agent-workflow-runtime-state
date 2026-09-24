@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
@@ -116,7 +116,7 @@ flowchart LR
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - Done"]:::status_done
         AR_0088["AR-0088 - Done"]:::status_done
-        AR_0089["AR-0089 - Open"]:::status_open
+        AR_0089["AR-0089 - In progress"]:::status_in_progress
         AR_0090["AR-0090 - Planned"]:::status_planned
         AR_0091["AR-0091 - Planned"]:::status_planned
         AR_0092["AR-0092 - Planned"]:::status_planned
@@ -508,11 +508,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Unclaimed | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. |
+| P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | awr-worker-0089 | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. |
 
 ### Planned (8)
 

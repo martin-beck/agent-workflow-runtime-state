@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. | - |
+| P0 | [AR-0089](tasks/AR-0089.md): Generic agent-workflow project integration | Integrate arbitrary agent-workflow projects through a provider-neutral project contract without embedding any application-specific policy. | Implement the generic agent-workflow project integration contract through local project fakes and replay. | awr-worker-0089 |
 
 ## Planned
 

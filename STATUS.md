@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 2 active status categories.
+**120 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -145,7 +145,7 @@ flowchart LR
         AR_0112["AR-0112 - Open"]:::status_open
         AR_0113["AR-0113 - Done"]:::status_done
         AR_0114["AR-0114 - Done"]:::status_done
-        AR_0115["AR-0115 - Open"]:::status_open
+        AR_0115["AR-0115 - In progress"]:::status_in_progress
         AR_0116["AR-0116 - Open"]:::status_open
         AR_0117["AR-0117 - Open"]:::status_open
         AR_0118["AR-0118 - Open"]:::status_open
@@ -574,12 +574,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (7)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0115](tasks/AR-0115.md): Host process and sandbox enforcement | awr-worker-0115 | Run bounded workers with process, filesystem, timeout, cancellation, and cleanup enforcement. | Implement and verify: host process supervision and enforceable worktree/resource boundary. |
+
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0112](tasks/AR-0112.md): Board-level production acceptance | Unclaimed | Demonstrate that the runtime is a professionally usable, supportable autonomous development platform. | Implement and verify: Board-level production acceptance. |
-| P0 | [AR-0115](tasks/AR-0115.md): Host process and sandbox enforcement | Unclaimed | Run bounded workers with process, filesystem, timeout, cancellation, and cleanup enforcement. | Implement and verify: host process supervision and enforceable worktree/resource boundary. |
 | P0 | [AR-0116](tasks/AR-0116.md): Executable provider-neutral agent sessions | Unclaimed | Run multiple deterministic fake and optional adapter sessions through one bounded lifecycle. | Implement and verify: provider-neutral executable agent sessions. |
 | P0 | [AR-0117](tasks/AR-0117.md): Executable authority and human-gate integration | Unclaimed | Make quality, guidance, and validated human decisions mandatory in executable workflows. | Implement and verify: executable AWQ/AWG/UI authority bridges and human gates. |
 | P0 | [AR-0118](tasks/AR-0118.md): Closed-loop contractor and accounting runtime | Unclaimed | Turn scheduled agent work into an evidence-backed contractor loop from admission through accepted artifact. | Implement and verify: closed-loop contractor, evidence, accounting, and acceptance. |

@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**99 ARs tracked** across 4 active status categories.
+**99 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
@@ -115,7 +115,7 @@ flowchart LR
         AR_0085["AR-0085 - Done"]:::status_done
         AR_0086["AR-0086 - Done"]:::status_done
         AR_0087["AR-0087 - In progress"]:::status_in_progress
-        AR_0088["AR-0088 - Open"]:::status_open
+        AR_0088["AR-0088 - In progress"]:::status_in_progress
         AR_0089["AR-0089 - Planned"]:::status_planned
         AR_0090["AR-0090 - Planned"]:::status_planned
         AR_0091["AR-0091 - Planned"]:::status_planned
@@ -508,17 +508,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0087](tasks/AR-0087.md): Multi-project isolation and artifact routing | awr-worker-0087 | Safely operate many agent-workflow projects and repositories concurrently with exact revision and artifact boundaries. | Implement multi-project worktree, artifact, and revision isolation. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | Unclaimed | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. |
+| P0 | [AR-0088](tasks/AR-0088.md): Authority bridge execution and human gates | awr-worker-0088 | Make quality, guidance, and human decisions part of the concurrent runtime loop without duplicating authority. | Implement executable AWQ, AWG, and UI authority bridges with fail-closed decisions. |
 
 ### Planned (9)
 

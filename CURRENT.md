@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime through a bounded local-mock agent cohort without requiring backend-provider connectivity. | Run the bounded deterministic local-mock pilot; never require a backend provider, network, credentials, or external LLM. | awr-worker-0068 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -49,6 +43,7 @@ Never edit this file directly.
 | P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. | - |
 | P0 | [AR-0066](tasks/AR-0066.md): Closed-loop contractor behavior | Turn scheduled agent work into an evidence-backed contracting loop with revision, quality, oracle, and human controls. | Implement closed-loop contractor orchestration from job admission through acceptance or bounded rejection. | - |
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. | - |
+| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Validate the executable runtime through a bounded local-mock agent cohort without requiring backend-provider connectivity. | Run the bounded deterministic local-mock pilot; never require a backend provider, network, credentials, or external LLM. | - |
 | P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. | - |
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. | - |
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. | - |

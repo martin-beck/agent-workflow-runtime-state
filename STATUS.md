@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**79 ARs tracked** across 2 active status categories.
+**79 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 78 |
+| **Done** | Accepted, integrated, and durably verified | 79 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -95,7 +95,7 @@ flowchart LR
         AR_0065["AR-0065 - Done"]:::status_done
         AR_0066["AR-0066 - Done"]:::status_done
         AR_0067["AR-0067 - Done"]:::status_done
-        AR_0068["AR-0068 - In progress"]:::status_in_progress
+        AR_0068["AR-0068 - Done"]:::status_done
         AR_0069["AR-0069 - Done"]:::status_done
         AR_0070["AR-0070 - Done"]:::status_done
         AR_0071["AR-0071 - Done"]:::status_done
@@ -406,13 +406,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | awr-worker-0068 | Validate the executable runtime through a bounded local-mock agent cohort without requiring backend-provider connectivity. | Run the bounded deterministic local-mock pilot; never require a backend provider, network, credentials, or external LLM. |
-
-### Done (78)
+### Done (79)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -452,6 +446,7 @@ flowchart LR
 | P0 | [AR-0065](tasks/AR-0065.md): Evidence and accounting | Unclaimed | Make every contracted agent action auditable, attributable, budgeted, and reconciliable. | Implement evidence provenance, usage accounting, budget metering, and audit export. |
 | P0 | [AR-0066](tasks/AR-0066.md): Closed-loop contractor behavior | Unclaimed | Turn scheduled agent work into an evidence-backed contracting loop with revision, quality, oracle, and human controls. | Implement closed-loop contractor orchestration from job admission through acceptance or bounded rejection. |
 | P0 | [AR-0067](tasks/AR-0067.md): Cross-agent rigorous qualification | Unclaimed | Prove scheduler and contractor invariants across agents, workloads, failures, budgets, and recovery traces. | Run rigorous deterministic cross-agent conformance, property, chaos, performance, and accounting qualification. |
+| P0 | [AR-0068](tasks/AR-0068.md): Scheduler and contractor production pilot | Unclaimed | Validate the executable runtime through a bounded local-mock agent cohort without requiring backend-provider connectivity. | Run the bounded deterministic local-mock pilot; never require a backend provider, network, credentials, or external LLM. |
 | P0 | [AR-0069](tasks/AR-0069.md): Executable runtime kernel and persistence boundary | Unclaimed | Turn the validated contracts into an executable, restartable runtime kernel without moving authority into the runtime. | Define and implement the executable runtime kernel boundary and local durable storage interfaces. |
 | P0 | [AR-0070](tasks/AR-0070.md): Durable journal and recovery engine | Unclaimed | Make scheduler and contractor state restartable with durable journal and checkpoint semantics. | Implement durable event journal, checkpoints, recovery, and fencing on the executable kernel. |
 | P0 | [AR-0071](tasks/AR-0071.md): Executable scheduler service | Unclaimed | Replace the scheduler reference-only path with an executable local scheduler service. | Connect executable job admission, fair dispatch, leases, retries, cancellation, and terminal reconciliation. |

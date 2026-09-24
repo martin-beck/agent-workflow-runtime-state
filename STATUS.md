@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
@@ -100,7 +100,7 @@ flowchart LR
         AR_0070["AR-0070 - Done"]:::status_done
         AR_0071["AR-0071 - Done"]:::status_done
         AR_0072["AR-0072 - Done"]:::status_done
-        AR_0073["AR-0073 - Open"]:::status_open
+        AR_0073["AR-0073 - In progress"]:::status_in_progress
         AR_0074["AR-0074 - Planned"]:::status_planned
         AR_0075["AR-0075 - Planned"]:::status_planned
         AR_0076["AR-0076 - Planned"]:::status_planned
@@ -406,11 +406,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | Unclaimed | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. |
+| P0 | [AR-0073](tasks/AR-0073.md): Adapter process transport harness | awr-worker-0073 | Connect provider-neutral adapter contracts to safely supervised local processes. | Implement the bounded process transport and normalized event harness for provider adapters. |
 
 ### Blocked (1)
 

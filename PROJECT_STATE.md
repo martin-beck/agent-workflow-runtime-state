@@ -15,7 +15,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36121456945 | `6fc0ff4e4927` | push | Agent Workflow Runtime CI | in_progress:- |
+| 36121456945 | `6fc0ff4e4927` | push | Agent Workflow Runtime CI | completed:failure |
 | 36120850827 | `82266a26a0ab` | push | Agent Workflow Runtime CI | completed:failure |
 | 36120694072 | `8153999c29cd` | push | Agent Workflow Runtime CI | completed:failure |
 | 35990985178 | `79b0c25af69c` | push | Agent Workflow Runtime CI | completed:failure |

@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**140 ARs tracked** across 3 active status categories.
+**140 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -168,7 +168,7 @@ flowchart LR
         AR_0135["AR-0135 - Done"]:::status_done
         AR_0136["AR-0136 - Done"]:::status_done
         AR_0137["AR-0137 - Done"]:::status_done
-        AR_0138["AR-0138 - Open"]:::status_open
+        AR_0138["AR-0138 - In progress"]:::status_in_progress
         AR_0139["AR-0139 - Open"]:::status_open
         AR_0140["AR-0140 - Open"]:::status_open
     end
@@ -636,11 +636,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | Unclaimed | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. |
+| P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | awr-exec-0138 | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. |
+
+### Open (2)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Unclaimed | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. |
 | P0 | [AR-0140](tasks/AR-0140.md): Final autonomous execution board acceptance | Unclaimed | Accept only when a new complex project can be started and autonomously advanced by controlled agent sessions through the whole framework. | Implement and verify: final board acceptance for actually autonomous agent-workflow execution. |
 

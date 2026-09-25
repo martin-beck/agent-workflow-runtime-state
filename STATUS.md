@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**140 ARs tracked** across 3 active status categories.
+**140 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -166,7 +166,7 @@ flowchart LR
         AR_0133["AR-0133 - Done"]:::status_done
         AR_0134["AR-0134 - Done"]:::status_done
         AR_0135["AR-0135 - Done"]:::status_done
-        AR_0136["AR-0136 - Open"]:::status_open
+        AR_0136["AR-0136 - In progress"]:::status_in_progress
         AR_0137["AR-0137 - Open"]:::status_open
         AR_0138["AR-0138 - Open"]:::status_open
         AR_0139["AR-0139 - Open"]:::status_open
@@ -636,11 +636,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (5)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | Unclaimed | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. |
+| P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | awr-exec-0136 | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. |
+
+### Open (4)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0137](tasks/AR-0137.md): End-to-end autonomous project run with local agents | Unclaimed | Run multiple interacting fake agents through the complete autonomous loop on a new complex project. | Implement and verify: provider-free multi-agent autonomous project execution. |
 | P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | Unclaimed | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. |
 | P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Unclaimed | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. |

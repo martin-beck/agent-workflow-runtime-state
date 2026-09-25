@@ -89,7 +89,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0137` | `feature/ar-0137` | `98361aaf03eb` | 0 | behind 2, ahead 0 |
 | `agent-workflow-runtime-0138` | `feature/ar-0138` | `6d906d1b7fc2` | 0 | behind 1, ahead 0 |
 | `agent-workflow-runtime-0139` | `feature/ar-0139` | `b114299db608` | 0 | behind 0, ahead 0 |
-| `agent-workflow-runtime-0140` | `feature/ar-0140` | `b114299db608` | 8 | behind 0, ahead 0 |
-| changed files | - | - | - | `README.md`, `awr_cli/authority_gates.py`, `awr_cli/cli.py`, `scripts/autonomous_orchestrator.py`, `docs/autonomous-board-acceptance.md`, `scripts/board_acceptance.py`, `specifications/autonomous-board-acceptance-v1.json`, `tests/test_board_acceptance_ar0140.py` |
+| `agent-workflow-runtime-0140` | `feature/ar-0140` | `b114299db608` | 9 | behind 0, ahead 0 |
+| changed files | - | - | - | `README.md`, `awr_cli/authority_gates.py`, `awr_cli/cli.py`, `scripts/autonomous_orchestrator.py`, `scripts/local_authority_bridge.py`, `docs/autonomous-board-acceptance.md`, `scripts/board_acceptance.py`, `specifications/autonomous-board-acceptance-v1.json`, `tests/test_board_acceptance_ar0140.py` |
 | `agent-workflow-runtime-local-project-workflow` | `prep/local-project-workflow` | `ed1911bd9c65` | 4 | behind 42, ahead 0 |
 | changed files | - | - | - | `docs/local-project-workflow.md`, `scripts/check_local_project_workflow.py`, `scripts/local_project_workflow.py`, `tests/test_local_project_workflow.py` |

@@ -1395,6 +1395,19 @@ def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
     ]
     if held:
         raise RuntimeError(f"owner already holds {held[0]}")
+    branch = str(getattr(args, "branch", "") or "")
+    worktree_key = str(getattr(args, "worktree_key", "") or "")
+    if bool(branch) != bool(worktree_key):
+        raise RuntimeError("branch and worktree-key must be supplied together")
+    if branch:
+        if branch in {"main", "master"}:
+            raise RuntimeError("claimed work must use a dedicated non-default branch")
+        if not re.fullmatch(r"[A-Za-z0-9._/-]+", branch):
+            raise RuntimeError("invalid claim branch")
+        if not re.fullmatch(r"[A-Za-z0-9._-]+", worktree_key):
+            raise RuntimeError("invalid claim worktree-key")
+        meta["branch"] = branch
+        meta["worktree_key"] = worktree_key
     meta["owner"] = args.owner
     meta["status"] = "in_progress"
     meta["claim_expires"] = (
@@ -2158,6 +2171,9 @@ def main() -> int:
         item.add_argument("task")
         item.add_argument("--owner", required=True)
         item.add_argument("--lease-minutes", type=int, default=120)
+        if name == "claim":
+            item.add_argument("--branch", help="dedicated product branch bound to this claim")
+            item.add_argument("--worktree-key", help="privacy-safe product worktree key bound to this claim")
     item = commands.add_parser("release")
     item.add_argument("task")
     item.add_argument("--owner", required=True)

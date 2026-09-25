@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0135](tasks/AR-0135.md): Executable quality, guidance, and UI control loop | Ensure worker plans, specification changes, tests, uncertainty, and blocked states enter the owning gates. | Implement and verify: executable AWQ/AWG/UI decision loop around worker actions. | awr-exec-0135 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -117,6 +111,7 @@ Never edit this file directly.
 | P0 | [AR-0132](tasks/AR-0132.md): Interactive agent-session protocol | Interact with spawned agent sessions through bounded normalized messages and streaming events. | Implement and verify: bidirectional provider-neutral agent-session interaction. | - |
 | P0 | [AR-0133](tasks/AR-0133.md): Durable Coordinator lease integration | Make every spawned session consume a durable Coordinator claim and fenced lease. | Implement and verify: Coordinator-owned task/lease lifecycle around spawned sessions. | - |
 | P0 | [AR-0134](tasks/AR-0134.md): Worker monitoring and recovery control | Continuously monitor and control spawned workers, including cancellation and crash recovery. | Implement and verify: live worker monitoring, cancellation, heartbeat, and recovery controller. | - |
+| P0 | [AR-0135](tasks/AR-0135.md): Executable quality, guidance, and UI control loop | Ensure worker plans, specification changes, tests, uncertainty, and blocked states enter the owning gates. | Implement and verify: executable AWQ/AWG/UI decision loop around worker actions. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0140](tasks/AR-0140.md): Final autonomous execution board acceptance | Accept only when a new complex project can be started and autonomously advanced by controlled agent sessions through the whole framework. | Implement and verify: final board acceptance for actually autonomous agent-workflow execution. | - |
+| P0 | [AR-0140](tasks/AR-0140.md): Final autonomous execution board acceptance | Accept only when a new complex project can be started and autonomously advanced by controlled agent sessions through the whole framework. | Implement and verify: final board acceptance for actually autonomous agent-workflow execution. | awr-exec-0140 |
 
 ## Done
 

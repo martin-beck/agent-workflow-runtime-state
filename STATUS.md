@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**130 ARs tracked** across 2 active status categories.
+**140 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 10 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -161,6 +161,16 @@ flowchart LR
         AR_0128["AR-0128 - Done"]:::status_done
         AR_0129["AR-0129 - Done"]:::status_done
         AR_0130["AR-0130 - Done"]:::status_done
+        AR_0131["AR-0131 - Open"]:::status_open
+        AR_0132["AR-0132 - Open"]:::status_open
+        AR_0133["AR-0133 - Open"]:::status_open
+        AR_0134["AR-0134 - Open"]:::status_open
+        AR_0135["AR-0135 - Open"]:::status_open
+        AR_0136["AR-0136 - Open"]:::status_open
+        AR_0137["AR-0137 - Open"]:::status_open
+        AR_0138["AR-0138 - Open"]:::status_open
+        AR_0139["AR-0139 - Open"]:::status_open
+        AR_0140["AR-0140 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0004
@@ -457,8 +467,18 @@ flowchart LR
     AR_0123 --> AR_0124
     AR_0123 --> AR_0127
     AR_0127 --> AR_0128
+    AR_0127 --> AR_0131
     AR_0128 --> AR_0129
     AR_0129 --> AR_0130
+    AR_0131 --> AR_0132
+    AR_0132 --> AR_0133
+    AR_0133 --> AR_0134
+    AR_0134 --> AR_0135
+    AR_0135 --> AR_0136
+    AR_0136 --> AR_0137
+    AR_0137 --> AR_0138
+    AR_0138 --> AR_0139
+    AR_0139 --> AR_0140
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -599,12 +619,37 @@ flowchart LR
 | [AR-0124](tasks/AR-0124.md) | [AR-0122](tasks/AR-0122.md), [AR-0123](tasks/AR-0123.md) | None |
 | [AR-0125](tasks/AR-0125.md) | [AR-0122](tasks/AR-0122.md) | None |
 | [AR-0126](tasks/AR-0126.md) | [AR-0122](tasks/AR-0122.md) | None |
-| [AR-0127](tasks/AR-0127.md) | [AR-0121](tasks/AR-0121.md), [AR-0123](tasks/AR-0123.md) | [AR-0128](tasks/AR-0128.md) |
+| [AR-0127](tasks/AR-0127.md) | [AR-0121](tasks/AR-0121.md), [AR-0123](tasks/AR-0123.md) | [AR-0128](tasks/AR-0128.md), [AR-0131](tasks/AR-0131.md) |
 | [AR-0128](tasks/AR-0128.md) | [AR-0127](tasks/AR-0127.md) | [AR-0129](tasks/AR-0129.md) |
 | [AR-0129](tasks/AR-0129.md) | [AR-0128](tasks/AR-0128.md) | [AR-0130](tasks/AR-0130.md) |
 | [AR-0130](tasks/AR-0130.md) | [AR-0129](tasks/AR-0129.md) | None |
+| [AR-0131](tasks/AR-0131.md) | [AR-0127](tasks/AR-0127.md) | [AR-0132](tasks/AR-0132.md) |
+| [AR-0132](tasks/AR-0132.md) | [AR-0131](tasks/AR-0131.md) | [AR-0133](tasks/AR-0133.md) |
+| [AR-0133](tasks/AR-0133.md) | [AR-0132](tasks/AR-0132.md) | [AR-0134](tasks/AR-0134.md) |
+| [AR-0134](tasks/AR-0134.md) | [AR-0133](tasks/AR-0133.md) | [AR-0135](tasks/AR-0135.md) |
+| [AR-0135](tasks/AR-0135.md) | [AR-0134](tasks/AR-0134.md) | [AR-0136](tasks/AR-0136.md) |
+| [AR-0136](tasks/AR-0136.md) | [AR-0135](tasks/AR-0135.md) | [AR-0137](tasks/AR-0137.md) |
+| [AR-0137](tasks/AR-0137.md) | [AR-0136](tasks/AR-0136.md) | [AR-0138](tasks/AR-0138.md) |
+| [AR-0138](tasks/AR-0138.md) | [AR-0137](tasks/AR-0137.md) | [AR-0139](tasks/AR-0139.md) |
+| [AR-0139](tasks/AR-0139.md) | [AR-0138](tasks/AR-0138.md) | [AR-0140](tasks/AR-0140.md) |
+| [AR-0140](tasks/AR-0140.md) | [AR-0139](tasks/AR-0139.md) | None |
 
 ## Complete AR inventory
+
+### Open (10)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | Unclaimed | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. |
+| P0 | [AR-0132](tasks/AR-0132.md): Interactive agent-session protocol | Unclaimed | Interact with spawned agent sessions through bounded normalized messages and streaming events. | Implement and verify: bidirectional provider-neutral agent-session interaction. |
+| P0 | [AR-0133](tasks/AR-0133.md): Durable Coordinator lease integration | Unclaimed | Make every spawned session consume a durable Coordinator claim and fenced lease. | Implement and verify: Coordinator-owned task/lease lifecycle around spawned sessions. |
+| P0 | [AR-0134](tasks/AR-0134.md): Worker monitoring and recovery control | Unclaimed | Continuously monitor and control spawned workers, including cancellation and crash recovery. | Implement and verify: live worker monitoring, cancellation, heartbeat, and recovery controller. |
+| P0 | [AR-0135](tasks/AR-0135.md): Executable quality, guidance, and UI control loop | Unclaimed | Ensure worker plans, specification changes, tests, uncertainty, and blocked states enter the owning gates. | Implement and verify: executable AWQ/AWG/UI decision loop around worker actions. |
+| P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | Unclaimed | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. |
+| P0 | [AR-0137](tasks/AR-0137.md): End-to-end autonomous project run with local agents | Unclaimed | Run multiple interacting fake agents through the complete autonomous loop on a new complex project. | Implement and verify: provider-free multi-agent autonomous project execution. |
+| P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | Unclaimed | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. |
+| P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Unclaimed | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. |
+| P0 | [AR-0140](tasks/AR-0140.md): Final autonomous execution board acceptance | Unclaimed | Accept only when a new complex project can be started and autonomously advanced by controlled agent sessions through the whole framework. | Implement and verify: final board acceptance for actually autonomous agent-workflow execution. |
 
 ### Done (126)
 

@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `4d50cacc558e` | 0 | behind 0, ahead 0 |
+| `agent-workflow-runtime` | `main` | `c7e7960308c4` | 0 | behind 0, ahead 0 |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 84, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 82, ahead 0 |
 | `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `d9b3f9438f92` | 0 | behind 78, ahead 0 |

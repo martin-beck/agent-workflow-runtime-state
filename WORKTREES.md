@@ -4,7 +4,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `91ea078c868f` | 0 | behind 0, ahead 0 |
+| `agent-workflow-runtime` | `main` | `91ea078c868f` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `README.md`, `docs/worker-control-loop.md`, `scripts/worker_control_loop.py`, `specifications/worker-control-loop-v1.json`, `tests/test_worker_control_loop.py` |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 85, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 83, ahead 0 |
 | `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `d9b3f9438f92` | 0 | behind 79, ahead 0 |

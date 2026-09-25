@@ -85,7 +85,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0057` | `feature/ar-0057` | `de315ffd5b74` | 0 | behind 137, ahead 0 |
 | `agent-workflow-runtime-0058` | `feature/ar-0058` | `f6eed586a02c` | 0 | behind 134, ahead 0 |
 | `agent-workflow-runtime-0059` | `feature/ar-0059` | `5c388000fffb` | 0 | behind 137, ahead 0 |
-| `agent-workflow-runtime-0136` | `feature/ar-0136` | `a0acc8c98b29` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `awr_cli/cli.py`, `scripts/agent_sessions.py`, `scripts/execution_controller.py`, `docs/autonomous-orchestrator.md`, `scripts/autonomous_orchestrator.py`, `specifications/autonomous-orchestrator-v1.json`, `tests/test_autonomous_orchestrator.py` |
+| `agent-workflow-runtime-0136` | `feature/ar-0136` | `a0acc8c98b29` | 8 | behind 0, ahead 0 |
+| changed files | - | - | - | `awr_cli/cli.py`, `scripts/agent_sessions.py`, `scripts/execution_controller.py`, `tests/test_execution_controller.py`, `docs/autonomous-orchestrator.md`, `scripts/autonomous_orchestrator.py`, `specifications/autonomous-orchestrator-v1.json`, `tests/test_autonomous_orchestrator.py` |
 | `agent-workflow-runtime-local-project-workflow` | `prep/local-project-workflow` | `ed1911bd9c65` | 4 | behind 38, ahead 0 |
 | changed files | - | - | - | `docs/local-project-workflow.md`, `scripts/check_local_project_workflow.py`, `scripts/local_project_workflow.py`, `tests/test_local_project_workflow.py` |

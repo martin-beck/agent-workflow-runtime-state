@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. | awr-exec-0131 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -117,6 +111,7 @@ Never edit this file directly.
 | P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. | - |
 | P0 | [AR-0129](tasks/AR-0129.md): Local LLM mock, streaming, and record/replay adapter | Test real agent lifecycle and comparison flows against a local deterministic LLM mock without external provider connections. | Implement and verify: local LLM-mock conversation protocol and record/replay integration. | - |
 | P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. | - |
+| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

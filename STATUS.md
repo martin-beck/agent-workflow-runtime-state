@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**140 ARs tracked** across 4 active status categories.
+**140 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 9 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 126 |
+| **Done** | Accepted, integrated, and durably verified | 127 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -161,7 +161,7 @@ flowchart LR
         AR_0128["AR-0128 - Done"]:::status_done
         AR_0129["AR-0129 - Done"]:::status_done
         AR_0130["AR-0130 - Done"]:::status_done
-        AR_0131["AR-0131 - In progress"]:::status_in_progress
+        AR_0131["AR-0131 - Done"]:::status_done
         AR_0132["AR-0132 - Open"]:::status_open
         AR_0133["AR-0133 - Open"]:::status_open
         AR_0134["AR-0134 - Open"]:::status_open
@@ -636,12 +636,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | awr-exec-0131 | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. |
-
 ### Open (9)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -656,7 +650,7 @@ flowchart LR
 | P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Unclaimed | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. |
 | P0 | [AR-0140](tasks/AR-0140.md): Final autonomous execution board acceptance | Unclaimed | Accept only when a new complex project can be started and autonomously advanced by controlled agent sessions through the whole framework. | Implement and verify: final board acceptance for actually autonomous agent-workflow execution. |
 
-### Done (126)
+### Done (127)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -750,6 +744,7 @@ flowchart LR
 | P0 | [AR-0128](tasks/AR-0128.md): Provider-neutral agent registry and capability negotiation | Unclaimed | Register heterogeneous agent adapters with explicit capabilities, lifecycle contracts, and fail-closed admission. | Completed: durable registry, capability negotiation, session/scheduler admission, hostile tests, signed commit, and pushed product evidence. |
 | P0 | [AR-0129](tasks/AR-0129.md): Local LLM mock, streaming, and record/replay adapter | Unclaimed | Test real agent lifecycle and comparison flows against a local deterministic LLM mock without external provider connections. | Implement and verify: local LLM-mock conversation protocol and record/replay integration. |
 | P0 | [AR-0130](tasks/AR-0130.md): Final multi-agent autonomous development acceptance | Unclaimed | Prove a new complex project can safely use multiple heterogeneous agents concurrently through the complete workflow. | Implement and verify: final multi-agent platform board acceptance. |
+| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | Unclaimed | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

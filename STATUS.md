@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**140 ARs tracked** across 3 active status categories.
+**140 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 10 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 9 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
@@ -161,7 +161,7 @@ flowchart LR
         AR_0128["AR-0128 - Done"]:::status_done
         AR_0129["AR-0129 - Done"]:::status_done
         AR_0130["AR-0130 - Done"]:::status_done
-        AR_0131["AR-0131 - Open"]:::status_open
+        AR_0131["AR-0131 - In progress"]:::status_in_progress
         AR_0132["AR-0132 - Open"]:::status_open
         AR_0133["AR-0133 - Open"]:::status_open
         AR_0134["AR-0134 - Open"]:::status_open
@@ -636,11 +636,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (10)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | Unclaimed | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. |
+| P0 | [AR-0131](tasks/AR-0131.md): Executable agent-session spawn and admission | awr-exec-0131 | Turn an admitted registry profile and durable job lease into a real controlled local agent process. | Implement and verify: executable worker-session spawn and admission controller. |
+
+### Open (9)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0132](tasks/AR-0132.md): Interactive agent-session protocol | Unclaimed | Interact with spawned agent sessions through bounded normalized messages and streaming events. | Implement and verify: bidirectional provider-neutral agent-session interaction. |
 | P0 | [AR-0133](tasks/AR-0133.md): Durable Coordinator lease integration | Unclaimed | Make every spawned session consume a durable Coordinator claim and fenced lease. | Implement and verify: Coordinator-owned task/lease lifecycle around spawned sessions. |
 | P0 | [AR-0134](tasks/AR-0134.md): Worker monitoring and recovery control | Unclaimed | Continuously monitor and control spawned workers, including cancellation and crash recovery. | Implement and verify: live worker monitoring, cancellation, heartbeat, and recovery controller. |

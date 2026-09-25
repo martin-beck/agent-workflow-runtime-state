@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0133](tasks/AR-0133.md): Durable Coordinator lease integration | Make every spawned session consume a durable Coordinator claim and fenced lease. | Implement and verify: Coordinator-owned task/lease lifecycle around spawned sessions. | awr-exec-0133 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0133](tasks/AR-0133.md): Durable Coordinator lease integration | Make every spawned session consume a durable Coordinator claim and fenced lease. | Implement and verify: Coordinator-owned task/lease lifecycle around spawned sessions. | - |
 | P0 | [AR-0134](tasks/AR-0134.md): Worker monitoring and recovery control | Continuously monitor and control spawned workers, including cancellation and crash recovery. | Implement and verify: live worker monitoring, cancellation, heartbeat, and recovery controller. | - |
 | P0 | [AR-0135](tasks/AR-0135.md): Executable quality, guidance, and UI control loop | Ensure worker plans, specification changes, tests, uncertainty, and blocked states enter the owning gates. | Implement and verify: executable AWQ/AWG/UI decision loop around worker actions. | - |
 | P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. | - |

@@ -15,7 +15,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36122618480 | `4d50cacc558e` | push | Agent Workflow Runtime CI | queued:- |
+| 36122618480 | `4d50cacc558e` | push | Agent Workflow Runtime CI | completed:failure |
 | 36121456945 | `6fc0ff4e4927` | push | Agent Workflow Runtime CI | completed:failure |
 | 36120850827 | `82266a26a0ab` | push | Agent Workflow Runtime CI | completed:failure |
 | 36120694072 | `8153999c29cd` | push | Agent Workflow Runtime CI | completed:failure |

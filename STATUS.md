@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**140 ARs tracked** across 4 active status categories.
+**140 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 134 |
+| **Done** | Accepted, integrated, and durably verified | 135 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 4 |
 
@@ -169,7 +169,7 @@ flowchart LR
         AR_0136["AR-0136 - Done"]:::status_done
         AR_0137["AR-0137 - Done"]:::status_done
         AR_0138["AR-0138 - Done"]:::status_done
-        AR_0139["AR-0139 - In progress"]:::status_in_progress
+        AR_0139["AR-0139 - Done"]:::status_done
         AR_0140["AR-0140 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
@@ -636,19 +636,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | awr-exec-0139 | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0140](tasks/AR-0140.md): Final autonomous execution board acceptance | Unclaimed | Accept only when a new complex project can be started and autonomously advanced by controlled agent sessions through the whole framework. | Implement and verify: final board acceptance for actually autonomous agent-workflow execution. |
 
-### Done (134)
+### Done (135)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -750,6 +744,7 @@ flowchart LR
 | P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | Unclaimed | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. |
 | P0 | [AR-0137](tasks/AR-0137.md): End-to-end autonomous project run with local agents | Unclaimed | Run multiple interacting fake agents through the complete autonomous loop on a new complex project. | Implement and verify: provider-free multi-agent autonomous project execution. |
 | P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | Unclaimed | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. |
+| P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Unclaimed | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Unclaimed | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Unclaimed | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Unclaimed | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. |

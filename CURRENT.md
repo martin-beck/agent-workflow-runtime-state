@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. | awr-exec-0139 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -117,6 +111,7 @@ Never edit this file directly.
 | P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. | - |
 | P0 | [AR-0137](tasks/AR-0137.md): End-to-end autonomous project run with local agents | Run multiple interacting fake agents through the complete autonomous loop on a new complex project. | Implement and verify: provider-free multi-agent autonomous project execution. | - |
 | P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. | - |
+| P0 | [AR-0139](tasks/AR-0139.md): Autonomous workflow chaos and restart qualification | Prove autonomous operation remains safe under worker, authority, host, and transport failures. | Implement and verify: hostile crash/chaos and restart qualification for autonomous runs. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Codex-compatible reference adapter | Implement a provider adapter against the normalized contract for a Codex-style agent session, with capability discovery and replay fixtures. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): OpenCode-compatible adapter | Implement a provider adapter for an OpenCode-style agent session without leaking provider-specific policy into the runtime core. | Write and check the versioned specification, then implement only after review. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): OpenDesk-compatible adapter | Implement a provider adapter for an OpenDesk-style agent session with explicit unsupported-capability behavior. | Write and check the versioned specification, then implement only after review. | - |

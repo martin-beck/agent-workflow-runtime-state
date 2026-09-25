@@ -87,5 +87,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-workflow-runtime-0059` | `feature/ar-0059` | `5c388000fffb` | 0 | behind 139, ahead 0 |
 | `agent-workflow-runtime-0136` | `feature/ar-0136` | `32e2cf50f7f7` | 0 | behind 1, ahead 0 |
 | `agent-workflow-runtime-0137` | `feature/ar-0137` | `98361aaf03eb` | 0 | behind 0, ahead 0 |
+| `agent-workflow-runtime-0138` | `feature/ar-0138` | `98361aaf03eb` | 0 | behind 0, ahead 0 |
 | `agent-workflow-runtime-local-project-workflow` | `prep/local-project-workflow` | `ed1911bd9c65` | 4 | behind 40, ahead 0 |
 | changed files | - | - | - | `docs/local-project-workflow.md`, `scripts/check_local_project_workflow.py`, `scripts/local_project_workflow.py`, `tests/test_local_project_workflow.py` |

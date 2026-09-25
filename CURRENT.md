@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0135](tasks/AR-0135.md): Executable quality, guidance, and UI control loop | Ensure worker plans, specification changes, tests, uncertainty, and blocked states enter the owning gates. | Implement and verify: executable AWQ/AWG/UI decision loop around worker actions. | awr-exec-0135 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0135](tasks/AR-0135.md): Executable quality, guidance, and UI control loop | Ensure worker plans, specification changes, tests, uncertainty, and blocked states enter the owning gates. | Implement and verify: executable AWQ/AWG/UI decision loop around worker actions. | - |
 | P0 | [AR-0136](tasks/AR-0136.md): Full autonomous workflow orchestrator | Orchestrate planning, parallel work, review, repair, decisions, merge observation, and continuation without manual glue. | Implement and verify: autonomous development orchestration loop. | - |
 | P0 | [AR-0137](tasks/AR-0137.md): End-to-end autonomous project run with local agents | Run multiple interacting fake agents through the complete autonomous loop on a new complex project. | Implement and verify: provider-free multi-agent autonomous project execution. | - |
 | P0 | [AR-0138](tasks/AR-0138.md): Autonomous-run operations and evidence | Make the autonomous loop operable, inspectable, resumable, and supportable by the board. | Implement and verify: operational CLI, observability, evidence, accounting, and safe resume for autonomous runs. | - |

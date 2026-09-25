@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-runtime` | `main` | `6fc0ff4e4927` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `README.md`, `docs/execution-controller.md`, `scripts/durable_coordinator.py`, `scripts/execution_controller.py`, `specifications/durable-coordinator-session-v1.json`, `tests/test_durable_coordinator.py`, `tests/test_execution_controller.py` |
+| `agent-workflow-runtime` | `main` | `4d50cacc558e` | 0 | behind 0, ahead 1 |
 | `agent-workflow-runtime-0080-worker` | `feature/ar-0080-worker` | `b36877ac4172` | 0 | behind 83, ahead 0 |
 | `agent-workflow-runtime-0081-worker` | `feature/ar-0081-coordinator-client` | `7d6ab77f32bc` | 0 | behind 81, ahead 0 |
 | `agent-workflow-runtime-0082-worker` | `feature/ar-0082-worker` | `d9b3f9438f92` | 0 | behind 77, ahead 0 |
